@@ -8,8 +8,14 @@ server/                             the API (worker.js, wrangler.toml): AI names
 ```
 
 ## 1. Put the site online (works on its own)
-Upload `index.html`, `config.js`, `robots.txt` and the `data/` folder to any host. Without an API address the app runs fully offline: no AI names, no submissions, simple name suggestions from `blends.csv`.
+Upload `index.html`, `config.js`, `robots.txt` and the `data/` folder to any host. Without an API address the app runs fully offline: no AI names; combined-feeling names come from `blends.csv` (each with a one-line description).
 Local test: `python3 -m http.server 8000` in this folder, then open http://localhost:8000 (double-clicking index.html will not work).
+
+### Suggest and flag icons without the server
+The + and flag icons are always shown. With no server they open a form of your choice:
+1. Make a Google Form (or any form) with fields like: type, title, author or director, short line or why it fits, link, feeling.
+2. Put its link in `config.js` as `formUrl`, then re-upload `config.js`.
+Until `formUrl` is set, tapping an icon just shows a short "not switched on yet" message. You add good suggestions yourself in `source/works.csv`.
 
 ## 2. Turn on AI names, submissions and the review queue (Cloudflare, free plan)
 1. `cd server`, then `npx wrangler login` (creates/uses a free Cloudflare account).

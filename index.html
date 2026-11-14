@@ -205,7 +205,7 @@ const [FJ,WJ]=await Promise.all(['data/feelings.json','data/works.json'].map(u=>
 const F=FJ.families.map(f=>[f.hue_start,f.hue_end<=f.hue_start?f.hue_end+360:f.hue_end,f.name,Object.fromEntries(f.tiers.mid.map(e=>[e.emotion,e.finer]))]);
 const LT={},DK={};
 FJ.families.forEach(f=>{LT[f.name]=Object.fromEntries(f.tiers.light.map(e=>[e.emotion,e.finer]));DK[f.name]=Object.fromEntries(f.tiers.deep.map(e=>[e.emotion,e.finer]));});
-const C={};FJ.blends.forEach(b=>{C[b.families.slice().sort().join('+')]=b.names;});
+const C={},GL={};FJ.blends.forEach(b=>{C[b.families.slice().sort().join('+')]=b.names;Object.assign(GL,b.glosses||{});});
 const Q=[],M=[],FD={},QU={};
 WJ.forEach(w=>{const n=(w.feelings||[]).concat(w.default_for_layered?[' + ']:[]);
   if(w.type==='quote'){Q.push({t:w.text,s:w.creator+', '+w.title,f:w.families,n});if(w.url)QU[w.text]=w.url;}
@@ -344,9 +344,9 @@ $('ssend').onclick=async()=>{
     $('subm').hidden=true;['stitle','screator','stext','surl'].forEach(i=>{$(i).value='';});note(live?'Thanks — it’s live.':'Thanks — it will appear once a reviewer approves it.');}
   catch(e){note('Couldn’t save. You may need contributor access.');}
 };
-if(!(window.CONFIG||{}).apiUrl)['fq','fm','aq','am'].forEach(i=>{$(i).hidden=true;});
-$('fq').onclick=()=>toggleFlag(cq);$('fm').onclick=()=>toggleFlag(cm);
-$('aq').onclick=()=>openSub('quote');$('am').onclick=()=>openSub('film');
+const noApi=!(window.CONFIG||{}).apiUrl,FU=(window.CONFIG||{}).formUrl||'',viaForm=()=>{if(FU)window.open(FU,'_blank','noopener');else note('Suggestions and flags are not switched on in this test version yet.');};
+$('fq').onclick=noApi?viaForm:()=>toggleFlag(cq);$('fm').onclick=noApi?viaForm:()=>toggleFlag(cm);
+$('aq').onclick=noApi?viaForm:()=>openSub('quote');$('am').onclick=noApi?viaForm:()=>openSub('film');
 function hidePick(){const p=$('pick');p.classList.add('out');setTimeout(()=>{p.hidden=true;p.classList.remove('out');$('again').hidden=false;},600);window.scrollTo({top:0,behavior:'smooth'});}
 $('again').onclick=()=>{$('pick').hidden=false;$('again').hidden=true;$('final').hidden=true;$('extras').hidden=true;};
 // Roles: visitor (entries wait for review), trusted contributor (entries go live), reviewer (owner/editor: approves, rejects, trusts).
@@ -479,7 +479,7 @@ $('refine').onclick=()=>{
   for(let i=0;i<layers.length;i++)for(let j=i+1;j<layers.length;j++){const a=layers[i].words[0],b=layers[j].words[0];if(a&&b)s.add(a+' and '+b.toLowerCase());}
   s.add(layers.map(l=>l.emo).join(' + '));
   const c=$('cx');c.hidden=false;c.innerHTML='';
-  s.forEach(x=>{const b=document.createElement('button');b.className='chip';b.textContent=x;b.onclick=()=>finish(x);c.appendChild(b);});
+  s.forEach(x=>{const b=document.createElement('button');if(GL[x]){b.className='sug';const n=document.createElement('b'),g=document.createElement('span');n.textContent=x;g.textContent=GL[x];b.appendChild(n);b.appendChild(g);b.onclick=()=>finish(x,GL[x]);}else{b.className='chip';b.textContent=x;b.onclick=()=>finish(x);}c.appendChild(b);});
   $('final').hidden=true;$('extras').hidden=true;$('pick').hidden=false;$('again').hidden=true;$('own').value='';$('ai').innerHTML='';$('aiState').hidden=true;$('cxh').hidden=true;show('s4');aiNames();
 };
 })().catch(e=>{document.body.insertAdjacentHTML('afterbegin','<p style="padding:20px">Could not load the data files. Open this page through a web server, not by double-clicking the file.</p>');console.error(e);});

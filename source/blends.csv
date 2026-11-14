@@ -1,91 +1,91 @@
 family_a,family_b,blend_name,gloss
-Blue,Green,Gentle acceptance,
-Blue,Green,Wistful peace,
-Blue,Indigo,Deep melancholy,
-Blue,Indigo,Brooding,
-Blue,Lime,Tentative hope,
-Blue,Lime,Healing,
-Blue,Orange,Warm sorrow,
-Blue,Orange,Comforting grief,
-Blue,Pink,Tender sorrow,
-Blue,Pink,Compassion,
-Blue,Purple,Nostalgia,
-Blue,Purple,Homesickness,
-Blue,Red,Betrayal,
-Blue,Red,Hurt anger,
-Blue,Teal,Quiet sorrow,
-Blue,Teal,Resigned calm,
-Blue,Yellow,Bittersweet,
-Blue,Yellow,Melancholy joy,
-Green,Indigo,Uneasy calm,
-Green,Indigo,Wary stillness,
-Green,Lime,Renewal,
-Green,Lime,Quiet growth,
-Green,Orange,Homely contentment,
-Green,Orange,Settled warmth,
-Green,Pink,Tender contentment,
-Green,Pink,Feeling safe in love,
-Green,Purple,Reverie,
-Green,Purple,Soulful stillness,
-Green,Red,Jealous rage,
-Green,Red,Resentment,
-Green,Teal,Deep serenity,
-Green,Teal,Equanimity,
-Green,Yellow,Contentment,
-Green,Yellow,Gratitude,
-Indigo,Lime,Anxious curiosity,
-Indigo,Lime,Apprehensive anticipation,
-Indigo,Orange,Nervous excitement,
-Indigo,Orange,Stage fright,
-Indigo,Pink,Tender fear,
-Indigo,Pink,Protective worry,
-Indigo,Purple,Mystic awe,
-Indigo,Purple,Haunted longing,
-Indigo,Red,Simmering dread,
-Indigo,Red,Apprehension,
-Indigo,Teal,Cold unease,
-Indigo,Teal,Distant wariness,
-Indigo,Yellow,Nervous hope,
-Indigo,Yellow,Anxious optimism,
-Lime,Orange,Eager anticipation,
-Lime,Orange,Restless curiosity,
-Lime,Pink,Budding tenderness,
-Lime,Pink,New love,
-Lime,Purple,Creative wonder,
-Lime,Purple,Inspired curiosity,
-Lime,Red,Hungry ambition,
-Lime,Red,Impatient eagerness,
-Lime,Teal,Refreshed clarity,
-Lime,Teal,Cleansed relief,
-Lime,Yellow,Hopeful joy,
-Lime,Yellow,Anticipation,
-Orange,Pink,Warm affection,
-Orange,Pink,Playful tenderness,
-Orange,Purple,Wanderlust,
-Orange,Purple,Inspired restlessness,
-Orange,Red,Fiery excitement,
-Orange,Red,Fierce drive,
-Orange,Teal,Easygoing warmth,
-Orange,Teal,Sunny ease,
-Orange,Yellow,Exhilaration,
-Orange,Yellow,Euphoria,
-Pink,Purple,Yearning love,
-Pink,Purple,Romantic nostalgia,
-Pink,Red,Passionate love,
-Pink,Red,Burning devotion,
-Pink,Teal,Soft serenity,
-Pink,Teal,Gentle relief,
-Pink,Yellow,Tender joy,
-Pink,Yellow,Adoration,
-Purple,Red,Humiliated fury,
-Purple,Red,Burning shame,
-Purple,Teal,Dreamy detachment,
-Purple,Teal,Wistful distance,
-Purple,Yellow,Whimsical joy,
-Purple,Yellow,Imaginative delight,
-Red,Teal,Cold anger,
-Red,Teal,Controlled fury,
-Red,Yellow,Defiant pride,
-Red,Yellow,Fierce joy,
-Teal,Yellow,Clear-eyed optimism,
-Teal,Yellow,Calm joy,
+Blue,Green,Gentle acceptance,"Letting a sorrow be, and finding some peace beside it."
+Blue,Green,Wistful peace,Calm that still carries a trace of what was lost.
+Blue,Indigo,Deep melancholy,"Heavy, reflective sadness that settles in."
+Blue,Indigo,Brooding,Turning dark thoughts over and over in quiet.
+Blue,Lime,Tentative hope,"Cautious light after sadness, not yet trusting it."
+Blue,Lime,Healing,Pain easing as something new slowly grows.
+Blue,Orange,Warm sorrow,Sadness softened by remembered comfort.
+Blue,Orange,Comforting grief,"Mourning that feels held, even loved."
+Blue,Pink,Tender sorrow,"Sadness softened by care, grieving gently with someone or for them."
+Blue,Pink,Compassion,Feeling another’s pain and wanting to ease it.
+Blue,Purple,Nostalgia,A warm ache for a time or place that is gone.
+Blue,Purple,Homesickness,Longing for the place or people where you belong.
+Blue,Red,Betrayal,Hurt and anger at trust broken by someone close.
+Blue,Red,Hurt anger,Anger that is really pain wearing armour.
+Blue,Teal,Quiet sorrow,"Sadness held still, without drama or tears."
+Blue,Teal,Resigned calm,Peace that comes from accepting what cannot be changed.
+Blue,Yellow,Bittersweet,"Joy and loss in the same moment, neither cancelling the other."
+Blue,Yellow,Melancholy joy,A gentle happiness shadowed by knowing it will pass.
+Green,Indigo,Uneasy calm,Stillness on the surface with unrest beneath.
+Green,Indigo,Wary stillness,"Staying quiet and alert, waiting to see."
+Green,Lime,Renewal,Feeling fresh and restored after a hard stretch.
+Green,Lime,Quiet growth,"Slow, steady change you feel more than see."
+Green,Orange,Homely contentment,"Easy happiness in familiar, comfortable surroundings."
+Green,Orange,Settled warmth,Feeling at home and quietly cared for.
+Green,Pink,Tender contentment,"Peaceful satisfaction, softened by affection."
+Green,Pink,Feeling safe in love,Relaxing completely because you trust who is beside you.
+Green,Purple,Reverie,"Pleasant, absorbed daydreaming."
+Green,Purple,Soulful stillness,Deep quiet in which feeling and imagination move freely.
+Green,Red,Jealous rage,Anger at someone who has what you want or fear losing.
+Green,Red,Resentment,Bitterness held against someone over a perceived unfairness.
+Green,Teal,Deep serenity,"A still, clear peace that runs below the surface."
+Green,Teal,Equanimity,Staying steady and balanced whatever happens.
+Green,Yellow,Contentment,Quietly feeling that what you have is enough.
+Green,Yellow,Gratitude,Warm appreciation for something good you were given.
+Indigo,Lime,Anxious curiosity,"Wanting to know, while fearing what you will find."
+Indigo,Lime,Apprehensive anticipation,Looking ahead with interest and worry together.
+Indigo,Orange,Nervous excitement,Wanting something badly and feeling jittery about it.
+Indigo,Orange,Stage fright,"Dread before being watched, mixed with the urge to perform."
+Indigo,Pink,Tender fear,Being afraid for someone or something you care about.
+Indigo,Pink,Protective worry,Anxiety that comes from wanting to keep another safe.
+Indigo,Purple,Mystic awe,"Wonder at something vast, tinged with the unknown."
+Indigo,Purple,Haunted longing,Yearning that lingers like a presence.
+Indigo,Red,Simmering dread,Slow-building fear with anger underneath.
+Indigo,Red,Apprehension,Uneasy anticipation of something that might go wrong.
+Indigo,Teal,Cold unease,"A distant, chilly sense that something is wrong."
+Indigo,Teal,Distant wariness,Keeping your guard up from a safe remove.
+Indigo,Yellow,Nervous hope,Wanting good news and bracing in case it does not come.
+Indigo,Yellow,Anxious optimism,Expecting things to go well while fretting they will not.
+Lime,Orange,Eager anticipation,Impatient excitement for what is coming.
+Lime,Orange,Restless curiosity,A need to explore that will not let you sit still.
+Lime,Pink,Budding tenderness,"Early, shy affection beginning to grow."
+Lime,Pink,New love,"The fresh, giddy start of caring for someone."
+Lime,Purple,Creative wonder,Awe that sparks the urge to make something.
+Lime,Purple,Inspired curiosity,Wanting to know more because something has lit you up.
+Lime,Red,Hungry ambition,"A strong drive to achieve, with impatience to begin."
+Lime,Red,Impatient eagerness,Wanting it now and finding the waiting hard.
+Lime,Teal,Refreshed clarity,"A clean, clear mind after a weight lifts."
+Lime,Teal,Cleansed relief,Feeling lighter after letting something go.
+Lime,Yellow,Hopeful joy,Gladness that looks ahead and expects good things.
+Lime,Yellow,Anticipation,Eager waiting for something about to happen.
+Orange,Pink,Warm affection,"Friendly, glowing fondness."
+Orange,Pink,Playful tenderness,Fondness expressed through teasing and lightness.
+Orange,Purple,Wanderlust,A strong pull toward travel and new places.
+Orange,Purple,Inspired restlessness,Creative energy that needs somewhere to go.
+Orange,Red,Fiery excitement,"Intense, hot enthusiasm."
+Orange,Red,Fierce drive,Determination with real force behind it.
+Orange,Teal,Easygoing warmth,Relaxed friendliness with no strain in it.
+Orange,Teal,Sunny ease,"Light, carefree comfort."
+Orange,Yellow,Exhilaration,A rush of excitement and delight.
+Orange,Yellow,Euphoria,"Intense, soaring happiness."
+Pink,Purple,Yearning love,Love that aches because the person is out of reach.
+Pink,Purple,Romantic nostalgia,"Missing a love, or the idea of one, with sweetness."
+Pink,Red,Passionate love,"Love with heat, intensity and devotion."
+Pink,Red,Burning devotion,"Total, ardent commitment to someone or something."
+Pink,Teal,Soft serenity,"Gentle, tender calm."
+Pink,Teal,Gentle relief,Quiet ease after worry lifts.
+Pink,Yellow,Tender joy,Happiness gentled by affection.
+Pink,Yellow,Adoration,Deep delight in someone you love and admire.
+Purple,Red,Humiliated fury,Rage born from being shamed in front of others.
+Purple,Red,Burning shame,"Shame so hot it feels physical, with anger at yourself."
+Purple,Teal,Dreamy detachment,"Floating slightly apart from the world, imagining."
+Purple,Teal,Wistful distance,Gentle longing felt from far away.
+Purple,Yellow,Whimsical joy,Playful happiness with an imaginative streak.
+Purple,Yellow,Imaginative delight,"Pleasure in ideas, stories and what could be."
+Red,Teal,Cold anger,"Anger that is controlled, quiet and unforgiving."
+Red,Teal,Controlled fury,Strong rage held tightly in check.
+Red,Yellow,Defiant pride,Standing tall against pressure to shrink.
+Red,Yellow,Fierce joy,Happiness with fire and force in it.
+Teal,Yellow,Clear-eyed optimism,Hope that sees the situation as it is.
+Teal,Yellow,Calm joy,"Happiness without agitation, quietly full."

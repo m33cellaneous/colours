@@ -1090,7 +1090,11 @@
       "names": [
         "Gentle acceptance",
         "Wistful peace"
-      ]
+      ],
+      "glosses": {
+        "Gentle acceptance": "Letting a sorrow be, and finding some peace beside it.",
+        "Wistful peace": "Calm that still carries a trace of what was lost."
+      }
     },
     {
       "families": [
@@ -1100,7 +1104,11 @@
       "names": [
         "Deep melancholy",
         "Brooding"
-      ]
+      ],
+      "glosses": {
+        "Deep melancholy": "Heavy, reflective sadness that settles in.",
+        "Brooding": "Turning dark thoughts over and over in quiet."
+      }
     },
     {
       "families": [
@@ -1110,7 +1118,11 @@
       "names": [
         "Tentative hope",
         "Healing"
-      ]
+      ],
+      "glosses": {
+        "Tentative hope": "Cautious light after sadness, not yet trusting it.",
+        "Healing": "Pain easing as something new slowly grows."
+      }
     },
     {
       "families": [
@@ -1120,7 +1132,11 @@
       "names": [
         "Warm sorrow",
         "Comforting grief"
-      ]
+      ],
+      "glosses": {
+        "Warm sorrow": "Sadness softened by remembered comfort.",
+        "Comforting grief": "Mourning that feels held, even loved."
+      }
     },
     {
       "families": [
@@ -1130,7 +1146,11 @@
       "names": [
         "Tender sorrow",
         "Compassion"
-      ]
+      ],
+      "glosses": {
+        "Tender sorrow": "Sadness softened by care, grieving gently with someone or for them.",
+        "Compassion": "Feeling another’s pain and wanting to ease it."
+      }
     },
     {
       "families": [
@@ -1140,7 +1160,11 @@
       "names": [
         "Nostalgia",
         "Homesickness"
-      ]
+      ],
+      "glosses": {
+        "Nostalgia": "A warm ache for a time or place that is gone.",
+        "Homesickness": "Longing for the place or people where you belong."
+      }
     },
     {
       "families": [
@@ -1150,7 +1174,11 @@
       "names": [
         "Betrayal",
         "Hurt anger"
-      ]
+      ],
+      "glosses": {
+        "Betrayal": "Hurt and anger at trust broken by someone close.",
+        "Hurt anger": "Anger that is really pain wearing armour."
+      }
     },
     {
       "families": [
@@ -1160,7 +1188,11 @@
       "names": [
         "Quiet sorrow",
         "Resigned calm"
-      ]
+      ],
+      "glosses": {
+        "Quiet sorrow": "Sadness held still, without drama or tears.",
+        "Resigned calm": "Peace that comes from accepting what cannot be changed."
+      }
     },
     {
       "families": [
@@ -1170,7 +1202,11 @@
       "names": [
         "Bittersweet",
         "Melancholy joy"
-      ]
+      ],
+      "glosses": {
+        "Bittersweet": "Joy and loss in the same moment, neither cancelling the other.",
+        "Melancholy joy": "A gentle happiness shadowed by knowing it will pass."
+      }
     },
     {
       "families": [
@@ -1180,7 +1216,11 @@
       "names": [
         "Uneasy calm",
         "Wary stillness"
-      ]
+      ],
+      "glosses": {
+        "Uneasy calm": "Stillness on the surface with unrest beneath.",
+        "Wary stillness": "Staying quiet and alert, waiting to see."
+      }
     },
     {
       "families": [
@@ -1190,7 +1230,11 @@
       "names": [
         "Renewal",
         "Quiet growth"
-      ]
+      ],
+      "glosses": {
+        "Renewal": "Feeling fresh and restored after a hard stretch.",
+        "Quiet growth": "Slow, steady change you feel more than see."
+      }
     },
     {
       "families": [
@@ -1200,7 +1244,11 @@
       "names": [
         "Homely contentment",
         "Settled warmth"
-      ]
+      ],
+      "glosses": {
+        "Homely contentment": "Easy happiness in familiar, comfortable surroundings.",
+        "Settled warmth": "Feeling at home and quietly cared for."
+      }
     },
     {
       "families": [
@@ -1210,7 +1258,11 @@
       "names": [
         "Tender contentment",
         "Feeling safe in love"
-      ]
+      ],
+      "glosses": {
+        "Tender contentment": "Peaceful satisfaction, softened by affection.",
+        "Feeling safe in love": "Relaxing completely because you trust who is beside you."
+      }
     },
     {
       "families": [
@@ -1220,7 +1272,11 @@
       "names": [
         "Reverie",
         "Soulful stillness"
-      ]
+      ],
+      "glosses": {
+        "Reverie": "Pleasant, absorbed daydreaming.",
+        "Soulful stillness": "Deep quiet in which feeling and imagination move freely."
+      }
     },
     {
       "families": [
@@ -1230,7 +1286,11 @@
       "names": [
         "Jealous rage",
         "Resentment"
-      ]
+      ],
+      "glosses": {
+        "Jealous rage": "Anger at someone who has what you want or fear losing.",
+        "Resentment": "Bitterness held against someone over a perceived unfairness."
+      }
     },
     {
       "families": [
@@ -1240,7 +1300,11 @@
       "names": [
         "Deep serenity",
         "Equanimity"
-      ]
+      ],
+      "glosses": {
+        "Deep serenity": "A still, clear peace that runs below the surface.",
+        "Equanimity": "Staying steady and balanced whatever happens."
+      }
     },
     {
       "families": [
@@ -1250,7 +1314,11 @@
       "names": [
         "Contentment",
         "Gratitude"
-      ]
+      ],
+      "glosses": {
+        "Contentment": "Quietly feeling that what you have is enough.",
+        "Gratitude": "Warm appreciation for something good you were given."
+      }
     },
     {
       "families": [
@@ -1260,7 +1328,11 @@
       "names": [
         "Anxious curiosity",
         "Apprehensive anticipation"
-      ]
+      ],
+      "glosses": {
+        "Anxious curiosity": "Wanting to know, while fearing what you will find.",
+        "Apprehensive anticipation": "Looking ahead with interest and worry together."
+      }
     },
     {
       "families": [
@@ -1270,7 +1342,11 @@
       "names": [
         "Nervous excitement",
         "Stage fright"
-      ]
+      ],
+      "glosses": {
+        "Nervous excitement": "Wanting something badly and feeling jittery about it.",
+        "Stage fright": "Dread before being watched, mixed with the urge to perform."
+      }
     },
     {
       "families": [
@@ -1280,7 +1356,11 @@
       "names": [
         "Tender fear",
         "Protective worry"
-      ]
+      ],
+      "glosses": {
+        "Tender fear": "Being afraid for someone or something you care about.",
+        "Protective worry": "Anxiety that comes from wanting to keep another safe."
+      }
     },
     {
       "families": [
@@ -1290,7 +1370,11 @@
       "names": [
         "Mystic awe",
         "Haunted longing"
-      ]
+      ],
+      "glosses": {
+        "Mystic awe": "Wonder at something vast, tinged with the unknown.",
+        "Haunted longing": "Yearning that lingers like a presence."
+      }
     },
     {
       "families": [
@@ -1300,7 +1384,11 @@
       "names": [
         "Simmering dread",
         "Apprehension"
-      ]
+      ],
+      "glosses": {
+        "Simmering dread": "Slow-building fear with anger underneath.",
+        "Apprehension": "Uneasy anticipation of something that might go wrong."
+      }
     },
     {
       "families": [
@@ -1310,7 +1398,11 @@
       "names": [
         "Cold unease",
         "Distant wariness"
-      ]
+      ],
+      "glosses": {
+        "Cold unease": "A distant, chilly sense that something is wrong.",
+        "Distant wariness": "Keeping your guard up from a safe remove."
+      }
     },
     {
       "families": [
@@ -1320,7 +1412,11 @@
       "names": [
         "Nervous hope",
         "Anxious optimism"
-      ]
+      ],
+      "glosses": {
+        "Nervous hope": "Wanting good news and bracing in case it does not come.",
+        "Anxious optimism": "Expecting things to go well while fretting they will not."
+      }
     },
     {
       "families": [
@@ -1330,7 +1426,11 @@
       "names": [
         "Eager anticipation",
         "Restless curiosity"
-      ]
+      ],
+      "glosses": {
+        "Eager anticipation": "Impatient excitement for what is coming.",
+        "Restless curiosity": "A need to explore that will not let you sit still."
+      }
     },
     {
       "families": [
@@ -1340,7 +1440,11 @@
       "names": [
         "Budding tenderness",
         "New love"
-      ]
+      ],
+      "glosses": {
+        "Budding tenderness": "Early, shy affection beginning to grow.",
+        "New love": "The fresh, giddy start of caring for someone."
+      }
     },
     {
       "families": [
@@ -1350,7 +1454,11 @@
       "names": [
         "Creative wonder",
         "Inspired curiosity"
-      ]
+      ],
+      "glosses": {
+        "Creative wonder": "Awe that sparks the urge to make something.",
+        "Inspired curiosity": "Wanting to know more because something has lit you up."
+      }
     },
     {
       "families": [
@@ -1360,7 +1468,11 @@
       "names": [
         "Hungry ambition",
         "Impatient eagerness"
-      ]
+      ],
+      "glosses": {
+        "Hungry ambition": "A strong drive to achieve, with impatience to begin.",
+        "Impatient eagerness": "Wanting it now and finding the waiting hard."
+      }
     },
     {
       "families": [
@@ -1370,7 +1482,11 @@
       "names": [
         "Refreshed clarity",
         "Cleansed relief"
-      ]
+      ],
+      "glosses": {
+        "Refreshed clarity": "A clean, clear mind after a weight lifts.",
+        "Cleansed relief": "Feeling lighter after letting something go."
+      }
     },
     {
       "families": [
@@ -1380,7 +1496,11 @@
       "names": [
         "Hopeful joy",
         "Anticipation"
-      ]
+      ],
+      "glosses": {
+        "Hopeful joy": "Gladness that looks ahead and expects good things.",
+        "Anticipation": "Eager waiting for something about to happen."
+      }
     },
     {
       "families": [
@@ -1390,7 +1510,11 @@
       "names": [
         "Warm affection",
         "Playful tenderness"
-      ]
+      ],
+      "glosses": {
+        "Warm affection": "Friendly, glowing fondness.",
+        "Playful tenderness": "Fondness expressed through teasing and lightness."
+      }
     },
     {
       "families": [
@@ -1400,7 +1524,11 @@
       "names": [
         "Wanderlust",
         "Inspired restlessness"
-      ]
+      ],
+      "glosses": {
+        "Wanderlust": "A strong pull toward travel and new places.",
+        "Inspired restlessness": "Creative energy that needs somewhere to go."
+      }
     },
     {
       "families": [
@@ -1410,7 +1538,11 @@
       "names": [
         "Fiery excitement",
         "Fierce drive"
-      ]
+      ],
+      "glosses": {
+        "Fiery excitement": "Intense, hot enthusiasm.",
+        "Fierce drive": "Determination with real force behind it."
+      }
     },
     {
       "families": [
@@ -1420,7 +1552,11 @@
       "names": [
         "Easygoing warmth",
         "Sunny ease"
-      ]
+      ],
+      "glosses": {
+        "Easygoing warmth": "Relaxed friendliness with no strain in it.",
+        "Sunny ease": "Light, carefree comfort."
+      }
     },
     {
       "families": [
@@ -1430,7 +1566,11 @@
       "names": [
         "Exhilaration",
         "Euphoria"
-      ]
+      ],
+      "glosses": {
+        "Exhilaration": "A rush of excitement and delight.",
+        "Euphoria": "Intense, soaring happiness."
+      }
     },
     {
       "families": [
@@ -1440,7 +1580,11 @@
       "names": [
         "Yearning love",
         "Romantic nostalgia"
-      ]
+      ],
+      "glosses": {
+        "Yearning love": "Love that aches because the person is out of reach.",
+        "Romantic nostalgia": "Missing a love, or the idea of one, with sweetness."
+      }
     },
     {
       "families": [
@@ -1450,7 +1594,11 @@
       "names": [
         "Passionate love",
         "Burning devotion"
-      ]
+      ],
+      "glosses": {
+        "Passionate love": "Love with heat, intensity and devotion.",
+        "Burning devotion": "Total, ardent commitment to someone or something."
+      }
     },
     {
       "families": [
@@ -1460,7 +1608,11 @@
       "names": [
         "Soft serenity",
         "Gentle relief"
-      ]
+      ],
+      "glosses": {
+        "Soft serenity": "Gentle, tender calm.",
+        "Gentle relief": "Quiet ease after worry lifts."
+      }
     },
     {
       "families": [
@@ -1470,7 +1622,11 @@
       "names": [
         "Tender joy",
         "Adoration"
-      ]
+      ],
+      "glosses": {
+        "Tender joy": "Happiness gentled by affection.",
+        "Adoration": "Deep delight in someone you love and admire."
+      }
     },
     {
       "families": [
@@ -1480,7 +1636,11 @@
       "names": [
         "Humiliated fury",
         "Burning shame"
-      ]
+      ],
+      "glosses": {
+        "Humiliated fury": "Rage born from being shamed in front of others.",
+        "Burning shame": "Shame so hot it feels physical, with anger at yourself."
+      }
     },
     {
       "families": [
@@ -1490,7 +1650,11 @@
       "names": [
         "Dreamy detachment",
         "Wistful distance"
-      ]
+      ],
+      "glosses": {
+        "Dreamy detachment": "Floating slightly apart from the world, imagining.",
+        "Wistful distance": "Gentle longing felt from far away."
+      }
     },
     {
       "families": [
@@ -1500,7 +1664,11 @@
       "names": [
         "Whimsical joy",
         "Imaginative delight"
-      ]
+      ],
+      "glosses": {
+        "Whimsical joy": "Playful happiness with an imaginative streak.",
+        "Imaginative delight": "Pleasure in ideas, stories and what could be."
+      }
     },
     {
       "families": [
@@ -1510,7 +1678,11 @@
       "names": [
         "Cold anger",
         "Controlled fury"
-      ]
+      ],
+      "glosses": {
+        "Cold anger": "Anger that is controlled, quiet and unforgiving.",
+        "Controlled fury": "Strong rage held tightly in check."
+      }
     },
     {
       "families": [
@@ -1520,7 +1692,11 @@
       "names": [
         "Defiant pride",
         "Fierce joy"
-      ]
+      ],
+      "glosses": {
+        "Defiant pride": "Standing tall against pressure to shrink.",
+        "Fierce joy": "Happiness with fire and force in it."
+      }
     },
     {
       "families": [
@@ -1530,7 +1706,11 @@
       "names": [
         "Clear-eyed optimism",
         "Calm joy"
-      ]
+      ],
+      "glosses": {
+        "Clear-eyed optimism": "Hope that sees the situation as it is.",
+        "Calm joy": "Happiness without agitation, quietly full."
+      }
     }
   ]
 }

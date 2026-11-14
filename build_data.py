@@ -25,10 +25,12 @@ for r in rows('emotions.csv'):
 
 blends = {}
 for r in rows('blends.csv'):
-    blends.setdefault((r['family_a'], r['family_b']), []).append(r['blend_name'])
+    b = blends.setdefault((r['family_a'], r['family_b']), {'names': [], 'glosses': {}})
+    b['names'].append(r['blend_name'])
+    if r['gloss'].strip(): b['glosses'][r['blend_name']] = r['gloss'].strip()
 
 os.makedirs(out, exist_ok=True)
 dump = lambda name, obj: open(os.path.join(out, name), 'w', encoding='utf-8').write(json.dumps(obj, indent=2, ensure_ascii=False))
 dump('works.json', works)
-dump('feelings.json', {'families': list(fams.values()), 'blends': [{'families': list(k), 'names': v} for k, v in blends.items()]})
-print('works', len(works), '| emotions', sum(len(t) for f in fams.values() for t in f['tiers'].values()), '| blends', sum(len(v) for v in blends.values()))
+dump('feelings.json', {'families': list(fams.values()), 'blends': [dict(families=list(k), names=v['names'], glosses=v['glosses']) for k, v in blends.items()]})
+print('works', len(works), '| emotions', sum(len(t) for f in fams.values() for t in f['tiers'].values()), '| blends', sum(len(v['names']) for v in blends.values()))
