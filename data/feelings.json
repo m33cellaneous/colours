@@ -1,0 +1,1536 @@
+{
+  "families": [
+    {
+      "id": "red",
+      "name": "Red",
+      "hue_start": 345,
+      "hue_end": 15,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Eager",
+            "finer": [
+              "Keen",
+              "Spirited",
+              "Fired up",
+              "Restless"
+            ]
+          },
+          {
+            "emotion": "Flushed",
+            "finer": [
+              "Embarrassed",
+              "Bashful",
+              "Excited",
+              "Warm"
+            ]
+          },
+          {
+            "emotion": "Affectionate",
+            "finer": [
+              "Fond",
+              "Caring",
+              "Warm",
+              "Cuddly"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Angry",
+            "finer": [
+              "Irritated",
+              "Furious",
+              "Resentful",
+              "Bitter",
+              "Indignant"
+            ]
+          },
+          {
+            "emotion": "Frustrated",
+            "finer": [
+              "Blocked",
+              "Impatient",
+              "Fed up",
+              "Exasperated",
+              "Stuck"
+            ]
+          },
+          {
+            "emotion": "Passionate",
+            "finer": [
+              "Intense",
+              "Driven",
+              "Fiery",
+              "Eager",
+              "Devoted"
+            ]
+          },
+          {
+            "emotion": "Determined",
+            "finer": [
+              "Resolute",
+              "Bold",
+              "Courageous",
+              "Stubborn",
+              "Fierce"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Rage",
+            "finer": [
+              "Seething",
+              "Vengeful",
+              "Wrathful",
+              "Explosive"
+            ]
+          },
+          {
+            "emotion": "Desire",
+            "finer": [
+              "Lust",
+              "Hunger",
+              "Obsession",
+              "Craving"
+            ]
+          },
+          {
+            "emotion": "Resentment",
+            "finer": [
+              "Grudging",
+              "Bitter",
+              "Simmering",
+              "Hostile"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "orange",
+      "name": "Orange",
+      "hue_start": 15,
+      "hue_end": 45,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Cheerful",
+            "finer": [
+              "Sunny",
+              "Friendly",
+              "Bubbly",
+              "Chatty"
+            ]
+          },
+          {
+            "emotion": "Cosy",
+            "finer": [
+              "Snug",
+              "Homey",
+              "Warm",
+              "Comforted"
+            ]
+          },
+          {
+            "emotion": "Welcoming",
+            "finer": [
+              "Open",
+              "Inviting",
+              "Kind",
+              "Generous"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Excited",
+            "finer": [
+              "Thrilled",
+              "Pumped",
+              "Giddy",
+              "Anticipating",
+              "Buzzing"
+            ]
+          },
+          {
+            "emotion": "Energetic",
+            "finer": [
+              "Lively",
+              "Restless",
+              "Spirited",
+              "Active",
+              "Charged"
+            ]
+          },
+          {
+            "emotion": "Adventurous",
+            "finer": [
+              "Daring",
+              "Curious",
+              "Free",
+              "Spontaneous",
+              "Restless"
+            ]
+          },
+          {
+            "emotion": "Warm",
+            "finer": [
+              "Welcoming",
+              "Friendly",
+              "Generous",
+              "Cosy",
+              "Sociable"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Ambitious",
+            "finer": [
+              "Driven",
+              "Hungry",
+              "Competitive",
+              "Striving"
+            ]
+          },
+          {
+            "emotion": "Agitated",
+            "finer": [
+              "Impatient",
+              "Fidgety",
+              "Unsettled",
+              "On edge"
+            ]
+          },
+          {
+            "emotion": "Nostalgic",
+            "finer": [
+              "Reminiscent",
+              "Sentimental",
+              "Fond of the past",
+              "Longing"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "yellow",
+      "name": "Yellow",
+      "hue_start": 45,
+      "hue_end": 75,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Gentle joy",
+            "finer": [
+              "Content",
+              "Sweet",
+              "Pleased",
+              "Amused"
+            ]
+          },
+          {
+            "emotion": "Hopeful",
+            "finer": [
+              "Expectant",
+              "Bright",
+              "Looking up",
+              "Eager"
+            ]
+          },
+          {
+            "emotion": "Innocent",
+            "finer": [
+              "Naive",
+              "Playful",
+              "Carefree",
+              "Trusting"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Joyful",
+            "finer": [
+              "Delighted",
+              "Elated",
+              "Grateful",
+              "Amused",
+              "Radiant"
+            ]
+          },
+          {
+            "emotion": "Optimistic",
+            "finer": [
+              "Hopeful",
+              "Confident",
+              "Encouraged",
+              "Bright",
+              "Upbeat"
+            ]
+          },
+          {
+            "emotion": "Playful",
+            "finer": [
+              "Silly",
+              "Mischievous",
+              "Light-hearted",
+              "Carefree",
+              "Cheeky"
+            ]
+          },
+          {
+            "emotion": "Proud",
+            "finer": [
+              "Accomplished",
+              "Satisfied",
+              "Worthy",
+              "Triumphant",
+              "Fulfilled"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Triumphant",
+            "finer": [
+              "Victorious",
+              "Proud",
+              "Glorious",
+              "Radiant"
+            ]
+          },
+          {
+            "emotion": "Wary",
+            "finer": [
+              "Cautious",
+              "Suspicious",
+              "On edge",
+              "Doubtful"
+            ]
+          },
+          {
+            "emotion": "Ecstatic",
+            "finer": [
+              "Euphoric",
+              "Overjoyed",
+              "Exalted",
+              "Blissful"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "lime",
+      "name": "Lime",
+      "hue_start": 75,
+      "hue_end": 105,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Refreshed",
+            "finer": [
+              "Cleansed",
+              "Invigorated",
+              "Crisp",
+              "Awake"
+            ]
+          },
+          {
+            "emotion": "Budding",
+            "finer": [
+              "Tentative",
+              "New",
+              "Beginning",
+              "Sprouting"
+            ]
+          },
+          {
+            "emotion": "Curious",
+            "finer": [
+              "Wondering",
+              "Playful",
+              "Open",
+              "Exploring"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Fresh",
+            "finer": [
+              "Renewed",
+              "Awake",
+              "Revived",
+              "Clean",
+              "Open"
+            ]
+          },
+          {
+            "emotion": "Curious",
+            "finer": [
+              "Intrigued",
+              "Inquisitive",
+              "Wondering",
+              "Absorbed",
+              "Interested"
+            ]
+          },
+          {
+            "emotion": "Growing",
+            "finer": [
+              "Learning",
+              "Changing",
+              "Developing",
+              "Emerging",
+              "Stretching"
+            ]
+          },
+          {
+            "emotion": "Hopeful",
+            "finer": [
+              "Expectant",
+              "Looking forward",
+              "Trusting",
+              "Aspiring",
+              "Patient"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Envious",
+            "finer": [
+              "Jealous",
+              "Covetous",
+              "Begrudging",
+              "Sour"
+            ]
+          },
+          {
+            "emotion": "Queasy",
+            "finer": [
+              "Sick",
+              "Uneasy",
+              "Disgusted",
+              "Nauseated"
+            ]
+          },
+          {
+            "emotion": "Stagnant",
+            "finer": [
+              "Stuck",
+              "Dull",
+              "Weary",
+              "Unchanging"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "green",
+      "name": "Green",
+      "hue_start": 105,
+      "hue_end": 165,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Soothed",
+            "finer": [
+              "Eased",
+              "Relieved",
+              "Comforted",
+              "Soft"
+            ]
+          },
+          {
+            "emotion": "Gentle",
+            "finer": [
+              "Mild",
+              "Kind",
+              "Tender",
+              "Patient"
+            ]
+          },
+          {
+            "emotion": "Harmonious",
+            "finer": [
+              "In tune",
+              "Balanced",
+              "Connected",
+              "Agreeable"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Calm",
+            "finer": [
+              "Peaceful",
+              "Relaxed",
+              "Settled",
+              "Easy",
+              "Still"
+            ]
+          },
+          {
+            "emotion": "Content",
+            "finer": [
+              "Comfortable",
+              "Satisfied",
+              "At home",
+              "Secure",
+              "Fine"
+            ]
+          },
+          {
+            "emotion": "Balanced",
+            "finer": [
+              "Grounded",
+              "Steady",
+              "Centred",
+              "Even",
+              "Stable"
+            ]
+          },
+          {
+            "emotion": "Envious",
+            "finer": [
+              "Jealous",
+              "Covetous",
+              "Wanting",
+              "Comparing",
+              "Resentful"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Grounded",
+            "finer": [
+              "Rooted",
+              "Secure",
+              "Steady",
+              "Stable"
+            ]
+          },
+          {
+            "emotion": "Possessive",
+            "finer": [
+              "Greedy",
+              "Territorial",
+              "Guarded",
+              "Clinging"
+            ]
+          },
+          {
+            "emotion": "Resilient",
+            "finer": [
+              "Enduring",
+              "Sturdy",
+              "Persistent",
+              "Strong"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "teal",
+      "name": "Teal",
+      "hue_start": 165,
+      "hue_end": 205,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Airy",
+            "finer": [
+              "Light",
+              "Free",
+              "Weightless",
+              "Open"
+            ]
+          },
+          {
+            "emotion": "Clear-headed",
+            "finer": [
+              "Sharp",
+              "Calm",
+              "Focused",
+              "Rational"
+            ]
+          },
+          {
+            "emotion": "Breezy",
+            "finer": [
+              "Easy",
+              "Cool",
+              "Relaxed",
+              "Unbothered"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Serene",
+            "finer": [
+              "Tranquil",
+              "Soothed",
+              "Quiet",
+              "Gentle",
+              "Floating"
+            ]
+          },
+          {
+            "emotion": "Clear",
+            "finer": [
+              "Focused",
+              "Lucid",
+              "Sharp",
+              "Certain",
+              "Open-minded"
+            ]
+          },
+          {
+            "emotion": "Refreshed",
+            "finer": [
+              "Cleansed",
+              "Relieved",
+              "Lighter",
+              "Restored",
+              "Released"
+            ]
+          },
+          {
+            "emotion": "Detached",
+            "finer": [
+              "Distant",
+              "Numb",
+              "Aloof",
+              "Neutral",
+              "Disconnected"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Composed",
+            "finer": [
+              "Poised",
+              "Controlled",
+              "Cool",
+              "Dignified"
+            ]
+          },
+          {
+            "emotion": "Introspective",
+            "finer": [
+              "Inward",
+              "Searching",
+              "Private",
+              "Quiet"
+            ]
+          },
+          {
+            "emotion": "Aloof",
+            "finer": [
+              "Remote",
+              "Cold",
+              "Reserved",
+              "Detached"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "blue",
+      "name": "Blue",
+      "hue_start": 205,
+      "hue_end": 255,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Peaceful",
+            "finer": [
+              "Tranquil",
+              "Calm",
+              "Easy",
+              "Restful"
+            ]
+          },
+          {
+            "emotion": "Optimistic",
+            "finer": [
+              "Dreaming",
+              "Open",
+              "Trusting",
+              "Hopeful"
+            ]
+          },
+          {
+            "emotion": "Wistful",
+            "finer": [
+              "Pensive",
+              "Soft sadness",
+              "Longing",
+              "Gentle"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Sad",
+            "finer": [
+              "Down",
+              "Heartbroken",
+              "Grieving",
+              "Disappointed",
+              "Hurt"
+            ]
+          },
+          {
+            "emotion": "Lonely",
+            "finer": [
+              "Isolated",
+              "Left out",
+              "Missing someone",
+              "Empty",
+              "Forgotten"
+            ]
+          },
+          {
+            "emotion": "Trusting",
+            "finer": [
+              "Safe",
+              "Loyal",
+              "Reassured",
+              "Faithful",
+              "Supported"
+            ]
+          },
+          {
+            "emotion": "Tired",
+            "finer": [
+              "Drained",
+              "Weary",
+              "Sleepy",
+              "Burnt out",
+              "Heavy"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Grief",
+            "finer": [
+              "Mourning",
+              "Loss",
+              "Despair",
+              "Anguish"
+            ]
+          },
+          {
+            "emotion": "Melancholy",
+            "finer": [
+              "Gloomy",
+              "Brooding",
+              "Low",
+              "Heavy"
+            ]
+          },
+          {
+            "emotion": "Loyal",
+            "finer": [
+              "Devoted",
+              "Steadfast",
+              "Dutiful",
+              "Dependable"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "indigo",
+      "name": "Indigo",
+      "hue_start": 255,
+      "hue_end": 285,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Contemplative",
+            "finer": [
+              "Pondering",
+              "Musing",
+              "Open",
+              "Quiet"
+            ]
+          },
+          {
+            "emotion": "Intuitive",
+            "finer": [
+              "Sensing",
+              "Perceptive",
+              "Insightful",
+              "Attuned"
+            ]
+          },
+          {
+            "emotion": "Unsure",
+            "finer": [
+              "Uncertain",
+              "Tentative",
+              "Fragile",
+              "Hesitant"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Reflective",
+            "finer": [
+              "Thoughtful",
+              "Introspective",
+              "Pensive",
+              "Wistful",
+              "Meditative"
+            ]
+          },
+          {
+            "emotion": "Anxious",
+            "finer": [
+              "Worried",
+              "Nervous",
+              "Uneasy",
+              "Overwhelmed",
+              "Dread"
+            ]
+          },
+          {
+            "emotion": "Mysterious",
+            "finer": [
+              "Uncertain",
+              "Intrigued",
+              "Hidden",
+              "Guarded",
+              "Unknown"
+            ]
+          },
+          {
+            "emotion": "Spiritual",
+            "finer": [
+              "Connected",
+              "Awed",
+              "Reverent",
+              "Transcendent",
+              "Humble"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Dread",
+            "finer": [
+              "Foreboding",
+              "Terror",
+              "Doom",
+              "Panic"
+            ]
+          },
+          {
+            "emotion": "Solitary",
+            "finer": [
+              "Alone",
+              "Withdrawn",
+              "Isolated",
+              "Brooding"
+            ]
+          },
+          {
+            "emotion": "Awed",
+            "finer": [
+              "Humbled",
+              "Overwhelmed",
+              "Reverent",
+              "Small"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "hue_start": 285,
+      "hue_end": 325,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Whimsical",
+            "finer": [
+              "Fanciful",
+              "Dreamy",
+              "Playful",
+              "Quirky"
+            ]
+          },
+          {
+            "emotion": "Sentimental",
+            "finer": [
+              "Fond",
+              "Wistful",
+              "Touched",
+              "Longing"
+            ]
+          },
+          {
+            "emotion": "Imaginative",
+            "finer": [
+              "Inventive",
+              "Visionary",
+              "Open",
+              "Curious"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Creative",
+            "finer": [
+              "Inspired",
+              "Imaginative",
+              "Expressive",
+              "Original",
+              "Visionary"
+            ]
+          },
+          {
+            "emotion": "Longing",
+            "finer": [
+              "Yearning",
+              "Nostalgic",
+              "Homesick",
+              "Craving",
+              "Aching"
+            ]
+          },
+          {
+            "emotion": "Dreamy",
+            "finer": [
+              "Wistful",
+              "Drifting",
+              "Romantic",
+              "Whimsical",
+              "Far away"
+            ]
+          },
+          {
+            "emotion": "Ashamed",
+            "finer": [
+              "Embarrassed",
+              "Guilty",
+              "Self-conscious",
+              "Humiliated",
+              "Regretful"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Regal",
+            "finer": [
+              "Dignified",
+              "Powerful",
+              "Commanding",
+              "Proud"
+            ]
+          },
+          {
+            "emotion": "Obsessive",
+            "finer": [
+              "Fixated",
+              "Consumed",
+              "Intense",
+              "Driven"
+            ]
+          },
+          {
+            "emotion": "Mournful",
+            "finer": [
+              "Aching",
+              "Sorrowful",
+              "Yearning",
+              "Haunted"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "pink",
+      "name": "Pink",
+      "hue_start": 325,
+      "hue_end": 345,
+      "tiers": {
+        "light": [
+          {
+            "emotion": "Sweet",
+            "finer": [
+              "Gentle",
+              "Innocent",
+              "Kind",
+              "Cute"
+            ]
+          },
+          {
+            "emotion": "Nurtured",
+            "finer": [
+              "Cared for",
+              "Safe",
+              "Soothed",
+              "Cherished"
+            ]
+          },
+          {
+            "emotion": "Shy",
+            "finer": [
+              "Bashful",
+              "Timid",
+              "Reserved",
+              "Modest"
+            ]
+          }
+        ],
+        "mid": [
+          {
+            "emotion": "Loving",
+            "finer": [
+              "Affectionate",
+              "Adoring",
+              "Caring",
+              "Devoted",
+              "Close"
+            ]
+          },
+          {
+            "emotion": "Tender",
+            "finer": [
+              "Gentle",
+              "Soft",
+              "Protective",
+              "Compassionate",
+              "Moved"
+            ]
+          },
+          {
+            "emotion": "Shy",
+            "finer": [
+              "Bashful",
+              "Timid",
+              "Reserved",
+              "Flustered",
+              "Modest"
+            ]
+          },
+          {
+            "emotion": "Hopeful romance",
+            "finer": [
+              "Infatuated",
+              "Smitten",
+              "Flirty",
+              "Butterflies",
+              "Crush"
+            ]
+          }
+        ],
+        "deep": [
+          {
+            "emotion": "Passionate",
+            "finer": [
+              "Adoring",
+              "Ardent",
+              "Infatuated",
+              "Smitten"
+            ]
+          },
+          {
+            "emotion": "Pining",
+            "finer": [
+              "Craving",
+              "Aching",
+              "Heartsick",
+              "Yearning"
+            ]
+          },
+          {
+            "emotion": "Possessive love",
+            "finer": [
+              "Insecure",
+              "Clingy",
+              "Anxious",
+              "Jealous"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "blends": [
+    {
+      "families": [
+        "Blue",
+        "Green"
+      ],
+      "names": [
+        "Gentle acceptance",
+        "Wistful peace"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Indigo"
+      ],
+      "names": [
+        "Deep melancholy",
+        "Brooding"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Lime"
+      ],
+      "names": [
+        "Tentative hope",
+        "Healing"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Orange"
+      ],
+      "names": [
+        "Warm sorrow",
+        "Comforting grief"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Pink"
+      ],
+      "names": [
+        "Tender sorrow",
+        "Compassion"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Purple"
+      ],
+      "names": [
+        "Nostalgia",
+        "Homesickness"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Red"
+      ],
+      "names": [
+        "Betrayal",
+        "Hurt anger"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Teal"
+      ],
+      "names": [
+        "Quiet sorrow",
+        "Resigned calm"
+      ]
+    },
+    {
+      "families": [
+        "Blue",
+        "Yellow"
+      ],
+      "names": [
+        "Bittersweet",
+        "Melancholy joy"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Indigo"
+      ],
+      "names": [
+        "Uneasy calm",
+        "Wary stillness"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Lime"
+      ],
+      "names": [
+        "Renewal",
+        "Quiet growth"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Orange"
+      ],
+      "names": [
+        "Homely contentment",
+        "Settled warmth"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Pink"
+      ],
+      "names": [
+        "Tender contentment",
+        "Feeling safe in love"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Purple"
+      ],
+      "names": [
+        "Reverie",
+        "Soulful stillness"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Red"
+      ],
+      "names": [
+        "Jealous rage",
+        "Resentment"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Teal"
+      ],
+      "names": [
+        "Deep serenity",
+        "Equanimity"
+      ]
+    },
+    {
+      "families": [
+        "Green",
+        "Yellow"
+      ],
+      "names": [
+        "Contentment",
+        "Gratitude"
+      ]
+    },
+    {
+      "families": [
+        "Indigo",
+        "Lime"
+      ],
+      "names": [
+        "Anxious curiosity",
+        "Apprehensive anticipation"
+      ]
+    },
+    {
+      "families": [
+        "Indigo",
+        "Orange"
+      ],
+      "names": [
+        "Nervous excitement",
+        "Stage fright"
+      ]
+    },
+    {
+      "families": [
+        "Indigo",
+        "Pink"
+      ],
+      "names": [
+        "Tender fear",
+        "Protective worry"
+      ]
+    },
+    {
+      "families": [
+        "Indigo",
+        "Purple"
+      ],
+      "names": [
+        "Mystic awe",
+        "Haunted longing"
+      ]
+    },
+    {
+      "families": [
+        "Indigo",
+        "Red"
+      ],
+      "names": [
+        "Simmering dread",
+        "Apprehension"
+      ]
+    },
+    {
+      "families": [
+        "Indigo",
+        "Teal"
+      ],
+      "names": [
+        "Cold unease",
+        "Distant wariness"
+      ]
+    },
+    {
+      "families": [
+        "Indigo",
+        "Yellow"
+      ],
+      "names": [
+        "Nervous hope",
+        "Anxious optimism"
+      ]
+    },
+    {
+      "families": [
+        "Lime",
+        "Orange"
+      ],
+      "names": [
+        "Eager anticipation",
+        "Restless curiosity"
+      ]
+    },
+    {
+      "families": [
+        "Lime",
+        "Pink"
+      ],
+      "names": [
+        "Budding tenderness",
+        "New love"
+      ]
+    },
+    {
+      "families": [
+        "Lime",
+        "Purple"
+      ],
+      "names": [
+        "Creative wonder",
+        "Inspired curiosity"
+      ]
+    },
+    {
+      "families": [
+        "Lime",
+        "Red"
+      ],
+      "names": [
+        "Hungry ambition",
+        "Impatient eagerness"
+      ]
+    },
+    {
+      "families": [
+        "Lime",
+        "Teal"
+      ],
+      "names": [
+        "Refreshed clarity",
+        "Cleansed relief"
+      ]
+    },
+    {
+      "families": [
+        "Lime",
+        "Yellow"
+      ],
+      "names": [
+        "Hopeful joy",
+        "Anticipation"
+      ]
+    },
+    {
+      "families": [
+        "Orange",
+        "Pink"
+      ],
+      "names": [
+        "Warm affection",
+        "Playful tenderness"
+      ]
+    },
+    {
+      "families": [
+        "Orange",
+        "Purple"
+      ],
+      "names": [
+        "Wanderlust",
+        "Inspired restlessness"
+      ]
+    },
+    {
+      "families": [
+        "Orange",
+        "Red"
+      ],
+      "names": [
+        "Fiery excitement",
+        "Fierce drive"
+      ]
+    },
+    {
+      "families": [
+        "Orange",
+        "Teal"
+      ],
+      "names": [
+        "Easygoing warmth",
+        "Sunny ease"
+      ]
+    },
+    {
+      "families": [
+        "Orange",
+        "Yellow"
+      ],
+      "names": [
+        "Exhilaration",
+        "Euphoria"
+      ]
+    },
+    {
+      "families": [
+        "Pink",
+        "Purple"
+      ],
+      "names": [
+        "Yearning love",
+        "Romantic nostalgia"
+      ]
+    },
+    {
+      "families": [
+        "Pink",
+        "Red"
+      ],
+      "names": [
+        "Passionate love",
+        "Burning devotion"
+      ]
+    },
+    {
+      "families": [
+        "Pink",
+        "Teal"
+      ],
+      "names": [
+        "Soft serenity",
+        "Gentle relief"
+      ]
+    },
+    {
+      "families": [
+        "Pink",
+        "Yellow"
+      ],
+      "names": [
+        "Tender joy",
+        "Adoration"
+      ]
+    },
+    {
+      "families": [
+        "Purple",
+        "Red"
+      ],
+      "names": [
+        "Humiliated fury",
+        "Burning shame"
+      ]
+    },
+    {
+      "families": [
+        "Purple",
+        "Teal"
+      ],
+      "names": [
+        "Dreamy detachment",
+        "Wistful distance"
+      ]
+    },
+    {
+      "families": [
+        "Purple",
+        "Yellow"
+      ],
+      "names": [
+        "Whimsical joy",
+        "Imaginative delight"
+      ]
+    },
+    {
+      "families": [
+        "Red",
+        "Teal"
+      ],
+      "names": [
+        "Cold anger",
+        "Controlled fury"
+      ]
+    },
+    {
+      "families": [
+        "Red",
+        "Yellow"
+      ],
+      "names": [
+        "Defiant pride",
+        "Fierce joy"
+      ]
+    },
+    {
+      "families": [
+        "Teal",
+        "Yellow"
+      ],
+      "names": [
+        "Clear-eyed optimism",
+        "Calm joy"
+      ]
+    }
+  ]
+}

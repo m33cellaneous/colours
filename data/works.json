@@ -1,0 +1,755 @@
+[
+  {
+    "id": "quote-i-am-large-i-contain-multitudes",
+    "type": "quote",
+    "text": "I am large, I contain multitudes.",
+    "creator": "Walt Whitman",
+    "title": "Song of Myself",
+    "url": "https://www.poetryfoundation.org/poems/45477",
+    "families": [],
+    "feelings": [],
+    "default_for_layered": true
+  },
+  {
+    "id": "quote-joy-and-woe-are-woven-fine",
+    "type": "quote",
+    "text": "Joy and woe are woven fine.",
+    "creator": "William Blake",
+    "title": "Auguries of Innocence",
+    "url": "https://www.poetryfoundation.org/poems/43650/auguries-of-innocence",
+    "families": [
+      "Yellow",
+      "Blue"
+    ],
+    "feelings": [
+      "bittersweet",
+      "melancholy joy"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-parting-is-such-sweet-sorrow",
+    "type": "quote",
+    "text": "Parting is such sweet sorrow.",
+    "creator": "William Shakespeare",
+    "title": "Romeo and Juliet",
+    "url": "https://shakespeare.mit.edu/romeo_juliet/full.html",
+    "families": [
+      "Blue",
+      "Pink",
+      "Purple"
+    ],
+    "feelings": [
+      "longing",
+      "tender sorrow",
+      "homesick"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-hope-is-the-thing-with-feathers",
+    "type": "quote",
+    "text": "Hope is the thing with feathers.",
+    "creator": "Emily Dickinso",
+    "title": "mily Dickinson",
+    "url": "https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314",
+    "families": [
+      "Yellow",
+      "Lime",
+      "Blue"
+    ],
+    "feelings": [
+      "hope",
+      "anticipat",
+      "optimis"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-if-winter-comes-can-spring-be-far-behind",
+    "type": "quote",
+    "text": "If Winter comes, can Spring be far behind?",
+    "creator": "Percy Bysshe Shelley",
+    "title": "Ode to the West Wind",
+    "url": "https://www.poetryfoundation.org/poems/45134/ode-to-the-west-wind",
+    "families": [
+      "Lime",
+      "Green"
+    ],
+    "feelings": [
+      "renew",
+      "fresh"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-it-was-the-best-of-times-it-was-the-wors",
+    "type": "quote",
+    "text": "It was the best of times, it was the worst of times.",
+    "creator": "Charles Dickens",
+    "title": "A Tale of Two Cities",
+    "url": "https://www.gutenberg.org/ebooks/98",
+    "families": [
+      "Orange",
+      "Indigo"
+    ],
+    "feelings": [
+      "nervous",
+      "stage fright",
+      "exhilar"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-after-great-pain-a-formal-feeling-comes",
+    "type": "quote",
+    "text": "After great pain, a formal feeling comes.",
+    "creator": "Emily Dickinso",
+    "title": "mily Dickinson",
+    "url": "https://www.poetryfoundation.org/poems/47651",
+    "families": [
+      "Blue",
+      "Teal"
+    ],
+    "feelings": [
+      "grief",
+      "numb",
+      "aloof",
+      "quiet sorrow"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-emotion-recollected-in-tranquillity",
+    "type": "quote",
+    "text": "Emotion recollected in tranquillity.",
+    "creator": "William Wordsworth",
+    "title": "Preface to Lyrical Ballads",
+    "url": "",
+    "families": [
+      "Purple",
+      "Indigo",
+      "Teal"
+    ],
+    "feelings": [
+      "nostalg",
+      "reflect"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-whatever-our-souls-are-made-of-his-and-m",
+    "type": "quote",
+    "text": "Whatever our souls are made of, his and mine are the same.",
+    "creator": "Emily Brontë",
+    "title": "Wuthering Heights",
+    "url": "https://www.gutenberg.org/ebooks/768",
+    "families": [
+      "Pink",
+      "Red",
+      "Purple"
+    ],
+    "feelings": [
+      "love",
+      "passion",
+      "adoration"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-it-is-the-green-eyed-monster",
+    "type": "quote",
+    "text": "It is the green-eyed monster.",
+    "creator": "William Shakespeare",
+    "title": "Othello",
+    "url": "https://shakespeare.mit.edu/othello/full.html",
+    "families": [
+      "Green",
+      "Lime"
+    ],
+    "feelings": [
+      "envy",
+      "jealous",
+      "possessive"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-deep-into-that-darkness-peering",
+    "type": "quote",
+    "text": "Deep into that darkness peering.",
+    "creator": "Edgar Allan Poe",
+    "title": "The Raven",
+    "url": "https://www.poetryfoundation.org/poems/48860/the-raven",
+    "families": [
+      "Indigo"
+    ],
+    "feelings": [
+      "dread",
+      "apprehension",
+      "anxious"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-i-wandered-lonely-as-a-cloud",
+    "type": "quote",
+    "text": "I wandered lonely as a cloud.",
+    "creator": "William Wordsworth",
+    "title": "Daffodils",
+    "url": "https://www.poetryfoundation.org/poems/45521",
+    "families": [
+      "Blue",
+      "Indigo"
+    ],
+    "feelings": [
+      "lonel",
+      "solit"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-uneasy-lies-the-head-that-wears-a-crown",
+    "type": "quote",
+    "text": "Uneasy lies the head that wears a crown.",
+    "creator": "William Shakespeare",
+    "title": "Henry IV, Part 2",
+    "url": "https://shakespeare.mit.edu/2henryiv/full.html",
+    "families": [
+      "Purple",
+      "Orange"
+    ],
+    "feelings": [
+      "ambiti",
+      "regal"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-into-each-life-some-rain-must-fall",
+    "type": "quote",
+    "text": "Into each life some rain must fall.",
+    "creator": "Henry Wadsworth Longfellow",
+    "title": "The Rainy Day",
+    "url": "",
+    "families": [
+      "Blue",
+      "Green"
+    ],
+    "feelings": [
+      "resilien",
+      "sorrow",
+      "heavy"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "quote-tis-better-to-have-loved-and-lost",
+    "type": "quote",
+    "text": "’Tis better to have loved and lost.",
+    "creator": "Alfred Tennyson",
+    "title": "In Memoriam",
+    "url": "",
+    "families": [
+      "Pink",
+      "Blue"
+    ],
+    "feelings": [
+      "heartbreak",
+      "hurt",
+      "compassion"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-inside-out-2015",
+    "type": "film",
+    "title": "Inside Out",
+    "year": "2015",
+    "note": "A Pixar film in which Joy, Sadness and other feelings share one mind. It argues that sadness has a job to do, and that feelings blend rather than take turns.",
+    "url": "https://en.wikipedia.org/wiki/Inside_Out_(2015_film)",
+    "families": [],
+    "feelings": [],
+    "default_for_layered": true
+  },
+  {
+    "id": "film-lost-in-translation-2003",
+    "type": "film",
+    "title": "Lost in Translation",
+    "year": "2003",
+    "note": "Two lonely strangers in Tokyo form a brief, unlabelled bond. A quiet film about jet-lagged disconnection and unexpected tenderness.",
+    "url": "https://en.wikipedia.org/wiki/Lost_in_Translation_(film)",
+    "families": [
+      "Blue",
+      "Teal",
+      "Indigo"
+    ],
+    "feelings": [
+      "lonel",
+      "bittersweet",
+      "detach"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-in-the-mood-for-love-2000",
+    "type": "film",
+    "title": "In the Mood for Love",
+    "year": "2000",
+    "note": "Hong Kong in the 1960s: two neighbours are drawn together by what their spouses are doing. Restraint and longing, told through glances and music.",
+    "url": "https://en.wikipedia.org/wiki/In_the_Mood_for_Love",
+    "families": [
+      "Pink",
+      "Purple",
+      "Red"
+    ],
+    "feelings": [
+      "longing",
+      "yearn",
+      "desire",
+      "romantic"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-spirited-away-2001",
+    "type": "film",
+    "title": "Spirited Away",
+    "year": "2001",
+    "note": "Miyazaki’s story of a girl who must find courage and her own name in a spirit bathhouse. Wonder, fear and a nostalgia for childhood, all at once.",
+    "url": "https://en.wikipedia.org/wiki/Spirited_Away",
+    "families": [
+      "Lime",
+      "Orange",
+      "Green"
+    ],
+    "feelings": [
+      "curious",
+      "adventur"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-eternal-sunshine-of-the-spotless-mind-20",
+    "type": "film",
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "year": "2004",
+    "note": "A couple erase each other from memory. It asks whether the pain is worth losing the love that came with it.",
+    "url": "https://en.wikipedia.org/wiki/Eternal_Sunshine_of_the_Spotless_Mind",
+    "families": [
+      "Blue",
+      "Pink",
+      "Purple"
+    ],
+    "feelings": [
+      "grief",
+      "heartbreak",
+      "hurt",
+      "betray"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-amelie-2001",
+    "type": "film",
+    "title": "Amélie",
+    "year": "2001",
+    "note": "A shy woman in Paris quietly arranges small joys for strangers, and slowly learns to risk her own happiness.",
+    "url": "https://en.wikipedia.org/wiki/Am%C3%A9lie",
+    "families": [
+      "Yellow",
+      "Pink",
+      "Orange"
+    ],
+    "feelings": [
+      "playful",
+      "joy"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-the-grand-budapest-hotel-2014",
+    "type": "film",
+    "title": "The Grand Budapest Hotel",
+    "year": "2014",
+    "note": "Nostalgia for a vanished world, told as stories inside stories. Comedy with loss running underneath.",
+    "url": "https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel",
+    "families": [
+      "Purple",
+      "Orange",
+      "Yellow"
+    ],
+    "feelings": [
+      "nostalg",
+      "wistful"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-wall-e-2008",
+    "type": "film",
+    "title": "Wall-E",
+    "year": "2008",
+    "note": "A lonely robot tends an abandoned Earth. Almost wordless, tender and hopeful.",
+    "url": "https://en.wikipedia.org/wiki/WALL-E",
+    "families": [
+      "Teal",
+      "Green",
+      "Lime"
+    ],
+    "feelings": [
+      "hope",
+      "aloof"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-moonlight-2016",
+    "type": "film",
+    "title": "Moonlight",
+    "year": "2016",
+    "note": "Three chapters in one man’s life, growing up in Miami. Shyness, identity and tenderness, mostly unspoken.",
+    "url": "https://en.wikipedia.org/wiki/Moonlight_(2016_film)",
+    "families": [
+      "Indigo",
+      "Blue",
+      "Purple"
+    ],
+    "feelings": [
+      "solit",
+      "shy",
+      "pining"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-whiplash-2014",
+    "type": "film",
+    "title": "Whiplash",
+    "year": "2014",
+    "note": "A young drummer and a brutal teacher. Ambition tipping into obsession, and what it costs.",
+    "url": "https://en.wikipedia.org/wiki/Whiplash_(2014_film)",
+    "families": [
+      "Red",
+      "Orange"
+    ],
+    "feelings": [
+      "ambiti",
+      "rage",
+      "obsess"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-paddington-2-2017",
+    "type": "film",
+    "title": "Paddington 2",
+    "year": "2017",
+    "note": "A kind bear is wrongly jailed and wins people over anyway. Warmth and gratitude as a form of strength.",
+    "url": "https://en.wikipedia.org/wiki/Paddington_2",
+    "families": [
+      "Orange",
+      "Yellow",
+      "Green"
+    ],
+    "feelings": [
+      "cosy",
+      "gratitude",
+      "welcom",
+      "content"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "film-arrival-2016",
+    "type": "film",
+    "title": "Arrival",
+    "year": "2016",
+    "note": "A linguist tries to talk with visitors from elsewhere. A story about grief, time, and loving someone knowing you will lose them.",
+    "url": "https://en.wikipedia.org/wiki/Arrival_(film)",
+    "families": [
+      "Indigo",
+      "Blue",
+      "Teal"
+    ],
+    "feelings": [
+      "awe",
+      "equanim"
+    ],
+    "default_for_layered": false
+  },
+  {
+    "id": "word-saudade",
+    "type": "word",
+    "title": "Saudade",
+    "language": "Portuguese",
+    "text": "a tender longing for someone or something absent, with sweetness in it",
+    "families": [
+      "Blue",
+      "Purple",
+      "Pink",
+      "Orange"
+    ],
+    "feelings": [
+      "nostalg",
+      "longing",
+      "homesick",
+      "bittersweet"
+    ]
+  },
+  {
+    "id": "word-hiraeth",
+    "type": "word",
+    "title": "Hiraeth",
+    "language": "Welsh",
+    "text": "homesickness for a home you cannot return to, or that may never have been",
+    "families": [
+      "Blue",
+      "Purple",
+      "Indigo"
+    ],
+    "feelings": [
+      "homesick",
+      "mournful"
+    ]
+  },
+  {
+    "id": "word-mono-no-aware",
+    "type": "word",
+    "title": "Mono no aware",
+    "language": "Japanese",
+    "text": "a gentle sadness at the passing of things, felt through their beauty",
+    "families": [
+      "Blue",
+      "Teal",
+      "Yellow"
+    ],
+    "feelings": [
+      "wistful",
+      "melanchol"
+    ]
+  },
+  {
+    "id": "word-sehnsucht",
+    "type": "word",
+    "title": "Sehnsucht",
+    "language": "German",
+    "text": "an intense yearning for something you cannot quite name",
+    "families": [
+      "Purple",
+      "Pink",
+      "Indigo"
+    ],
+    "feelings": [
+      "yearn",
+      "pining"
+    ]
+  },
+  {
+    "id": "word-weltschmerz",
+    "type": "word",
+    "title": "Weltschmerz",
+    "language": "German",
+    "text": "world-weariness, the ache of the gap between how things are and how they could be",
+    "families": [
+      "Blue",
+      "Indigo",
+      "Teal"
+    ],
+    "feelings": [
+      "weary",
+      "heavy"
+    ]
+  },
+  {
+    "id": "word-fernweh",
+    "type": "word",
+    "title": "Fernweh",
+    "language": "German",
+    "text": "an ache for far-off places you have not yet been",
+    "families": [
+      "Orange",
+      "Lime",
+      "Teal"
+    ],
+    "feelings": [
+      "adventur",
+      "restless",
+      "curious"
+    ]
+  },
+  {
+    "id": "word-toska",
+    "type": "word",
+    "title": "Toska",
+    "language": "Russian",
+    "text": "a dull ache of the soul, sometimes with no clear cause",
+    "families": [
+      "Blue",
+      "Indigo",
+      "Purple"
+    ],
+    "feelings": [
+      "grief",
+      "sorrow",
+      "lonel"
+    ]
+  },
+  {
+    "id": "word-hygge",
+    "type": "word",
+    "title": "Hygge",
+    "language": "Danish",
+    "text": "cosy, unhurried contentment, usually with warmth or people around you",
+    "families": [
+      "Orange",
+      "Green",
+      "Pink",
+      "Yellow"
+    ],
+    "feelings": [
+      "cosy",
+      "content",
+      "gentle",
+      "warm"
+    ]
+  },
+  {
+    "id": "word-duende",
+    "type": "word",
+    "title": "Duende",
+    "language": "Spanish",
+    "text": "a surge of raw, soulful feeling, often tied to art, passion or loss",
+    "families": [
+      "Red",
+      "Purple",
+      "Pink"
+    ],
+    "feelings": [
+      "passion",
+      "desire",
+      "intense",
+      "rage"
+    ]
+  },
+  {
+    "id": "word-forelsket",
+    "type": "word",
+    "title": "Forelsket",
+    "language": "Norwegian",
+    "text": "the giddy euphoria of beginning to fall in love",
+    "families": [
+      "Pink",
+      "Yellow",
+      "Orange"
+    ],
+    "feelings": [
+      "infatuat",
+      "smitten",
+      "joy",
+      "tender"
+    ]
+  },
+  {
+    "id": "word-kilig",
+    "type": "word",
+    "title": "Kilig",
+    "language": "Filipino",
+    "text": "the fluttery, giddy rush of romantic excitement",
+    "families": [
+      "Pink",
+      "Orange"
+    ],
+    "feelings": [
+      "flirt",
+      "butterfl",
+      "excite"
+    ]
+  },
+  {
+    "id": "word-iktsuarpok",
+    "type": "word",
+    "title": "Iktsuarpok",
+    "language": "Inuit",
+    "text": "restless anticipation that keeps you checking whether someone is arriving",
+    "families": [
+      "Lime",
+      "Yellow",
+      "Orange"
+    ],
+    "feelings": [
+      "anticipat",
+      "hopeful",
+      "expect"
+    ]
+  },
+  {
+    "id": "word-yugen",
+    "type": "word",
+    "title": "Yūgen",
+    "language": "Japanese",
+    "text": "a deep, wordless sense of the mystery and beauty of the universe",
+    "families": [
+      "Indigo",
+      "Teal",
+      "Purple"
+    ],
+    "feelings": [
+      "awe",
+      "spiritual",
+      "reflect"
+    ]
+  },
+  {
+    "id": "word-schadenfreude",
+    "type": "word",
+    "title": "Schadenfreude",
+    "language": "German",
+    "text": "pleasure at another person’s misfortune",
+    "families": [
+      "Lime",
+      "Green",
+      "Red"
+    ],
+    "feelings": [
+      "envy",
+      "resent",
+      "jealous"
+    ]
+  },
+  {
+    "id": "word-waldeinsamkeit",
+    "type": "word",
+    "title": "Waldeinsamkeit",
+    "language": "German",
+    "text": "the peaceful solitude of being alone in the woods",
+    "families": [
+      "Green",
+      "Teal",
+      "Indigo"
+    ],
+    "feelings": [
+      "solit",
+      "serene",
+      "calm",
+      "quiet"
+    ]
+  },
+  {
+    "id": "word-litost",
+    "type": "word",
+    "title": "Litost",
+    "language": "Czech",
+    "text": "sudden torment at seeing your own misery laid bare",
+    "families": [
+      "Indigo",
+      "Blue",
+      "Purple"
+    ],
+    "feelings": [
+      "shame",
+      "regret",
+      "humili"
+    ]
+  }
+]

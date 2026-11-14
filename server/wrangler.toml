@@ -1,0 +1,11 @@
+name = "emotion-api"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# Your site's address, e.g. "https://emotions.example.com" (use "*" while testing locally)
+ALLOWED_ORIGIN = "*"
+
+[[kv_namespaces]]
+binding = "DB"
+id = "PASTE_KV_NAMESPACE_ID_HERE"

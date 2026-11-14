@@ -1,0 +1,101 @@
+family,hue_start,hue_end,tier,emotion,finer_feelings
+Red,345,15,light,Eager,Keen; Spirited; Fired up; Restless
+Red,345,15,light,Flushed,Embarrassed; Bashful; Excited; Warm
+Red,345,15,light,Affectionate,Fond; Caring; Warm; Cuddly
+Red,345,15,mid,Angry,Irritated; Furious; Resentful; Bitter; Indignant
+Red,345,15,mid,Frustrated,Blocked; Impatient; Fed up; Exasperated; Stuck
+Red,345,15,mid,Passionate,Intense; Driven; Fiery; Eager; Devoted
+Red,345,15,mid,Determined,Resolute; Bold; Courageous; Stubborn; Fierce
+Red,345,15,deep,Rage,Seething; Vengeful; Wrathful; Explosive
+Red,345,15,deep,Desire,Lust; Hunger; Obsession; Craving
+Red,345,15,deep,Resentment,Grudging; Bitter; Simmering; Hostile
+Orange,15,45,light,Cheerful,Sunny; Friendly; Bubbly; Chatty
+Orange,15,45,light,Cosy,Snug; Homey; Warm; Comforted
+Orange,15,45,light,Welcoming,Open; Inviting; Kind; Generous
+Orange,15,45,mid,Excited,Thrilled; Pumped; Giddy; Anticipating; Buzzing
+Orange,15,45,mid,Energetic,Lively; Restless; Spirited; Active; Charged
+Orange,15,45,mid,Adventurous,Daring; Curious; Free; Spontaneous; Restless
+Orange,15,45,mid,Warm,Welcoming; Friendly; Generous; Cosy; Sociable
+Orange,15,45,deep,Ambitious,Driven; Hungry; Competitive; Striving
+Orange,15,45,deep,Agitated,Impatient; Fidgety; Unsettled; On edge
+Orange,15,45,deep,Nostalgic,Reminiscent; Sentimental; Fond of the past; Longing
+Yellow,45,75,light,Gentle joy,Content; Sweet; Pleased; Amused
+Yellow,45,75,light,Hopeful,Expectant; Bright; Looking up; Eager
+Yellow,45,75,light,Innocent,Naive; Playful; Carefree; Trusting
+Yellow,45,75,mid,Joyful,Delighted; Elated; Grateful; Amused; Radiant
+Yellow,45,75,mid,Optimistic,Hopeful; Confident; Encouraged; Bright; Upbeat
+Yellow,45,75,mid,Playful,Silly; Mischievous; Light-hearted; Carefree; Cheeky
+Yellow,45,75,mid,Proud,Accomplished; Satisfied; Worthy; Triumphant; Fulfilled
+Yellow,45,75,deep,Triumphant,Victorious; Proud; Glorious; Radiant
+Yellow,45,75,deep,Wary,Cautious; Suspicious; On edge; Doubtful
+Yellow,45,75,deep,Ecstatic,Euphoric; Overjoyed; Exalted; Blissful
+Lime,75,105,light,Refreshed,Cleansed; Invigorated; Crisp; Awake
+Lime,75,105,light,Budding,Tentative; New; Beginning; Sprouting
+Lime,75,105,light,Curious,Wondering; Playful; Open; Exploring
+Lime,75,105,mid,Fresh,Renewed; Awake; Revived; Clean; Open
+Lime,75,105,mid,Curious,Intrigued; Inquisitive; Wondering; Absorbed; Interested
+Lime,75,105,mid,Growing,Learning; Changing; Developing; Emerging; Stretching
+Lime,75,105,mid,Hopeful,Expectant; Looking forward; Trusting; Aspiring; Patient
+Lime,75,105,deep,Envious,Jealous; Covetous; Begrudging; Sour
+Lime,75,105,deep,Queasy,Sick; Uneasy; Disgusted; Nauseated
+Lime,75,105,deep,Stagnant,Stuck; Dull; Weary; Unchanging
+Green,105,165,light,Soothed,Eased; Relieved; Comforted; Soft
+Green,105,165,light,Gentle,Mild; Kind; Tender; Patient
+Green,105,165,light,Harmonious,In tune; Balanced; Connected; Agreeable
+Green,105,165,mid,Calm,Peaceful; Relaxed; Settled; Easy; Still
+Green,105,165,mid,Content,Comfortable; Satisfied; At home; Secure; Fine
+Green,105,165,mid,Balanced,Grounded; Steady; Centred; Even; Stable
+Green,105,165,mid,Envious,Jealous; Covetous; Wanting; Comparing; Resentful
+Green,105,165,deep,Grounded,Rooted; Secure; Steady; Stable
+Green,105,165,deep,Possessive,Greedy; Territorial; Guarded; Clinging
+Green,105,165,deep,Resilient,Enduring; Sturdy; Persistent; Strong
+Teal,165,205,light,Airy,Light; Free; Weightless; Open
+Teal,165,205,light,Clear-headed,Sharp; Calm; Focused; Rational
+Teal,165,205,light,Breezy,Easy; Cool; Relaxed; Unbothered
+Teal,165,205,mid,Serene,Tranquil; Soothed; Quiet; Gentle; Floating
+Teal,165,205,mid,Clear,Focused; Lucid; Sharp; Certain; Open-minded
+Teal,165,205,mid,Refreshed,Cleansed; Relieved; Lighter; Restored; Released
+Teal,165,205,mid,Detached,Distant; Numb; Aloof; Neutral; Disconnected
+Teal,165,205,deep,Composed,Poised; Controlled; Cool; Dignified
+Teal,165,205,deep,Introspective,Inward; Searching; Private; Quiet
+Teal,165,205,deep,Aloof,Remote; Cold; Reserved; Detached
+Blue,205,255,light,Peaceful,Tranquil; Calm; Easy; Restful
+Blue,205,255,light,Optimistic,Dreaming; Open; Trusting; Hopeful
+Blue,205,255,light,Wistful,Pensive; Soft sadness; Longing; Gentle
+Blue,205,255,mid,Sad,Down; Heartbroken; Grieving; Disappointed; Hurt
+Blue,205,255,mid,Lonely,Isolated; Left out; Missing someone; Empty; Forgotten
+Blue,205,255,mid,Trusting,Safe; Loyal; Reassured; Faithful; Supported
+Blue,205,255,mid,Tired,Drained; Weary; Sleepy; Burnt out; Heavy
+Blue,205,255,deep,Grief,Mourning; Loss; Despair; Anguish
+Blue,205,255,deep,Melancholy,Gloomy; Brooding; Low; Heavy
+Blue,205,255,deep,Loyal,Devoted; Steadfast; Dutiful; Dependable
+Indigo,255,285,light,Contemplative,Pondering; Musing; Open; Quiet
+Indigo,255,285,light,Intuitive,Sensing; Perceptive; Insightful; Attuned
+Indigo,255,285,light,Unsure,Uncertain; Tentative; Fragile; Hesitant
+Indigo,255,285,mid,Reflective,Thoughtful; Introspective; Pensive; Wistful; Meditative
+Indigo,255,285,mid,Anxious,Worried; Nervous; Uneasy; Overwhelmed; Dread
+Indigo,255,285,mid,Mysterious,Uncertain; Intrigued; Hidden; Guarded; Unknown
+Indigo,255,285,mid,Spiritual,Connected; Awed; Reverent; Transcendent; Humble
+Indigo,255,285,deep,Dread,Foreboding; Terror; Doom; Panic
+Indigo,255,285,deep,Solitary,Alone; Withdrawn; Isolated; Brooding
+Indigo,255,285,deep,Awed,Humbled; Overwhelmed; Reverent; Small
+Purple,285,325,light,Whimsical,Fanciful; Dreamy; Playful; Quirky
+Purple,285,325,light,Sentimental,Fond; Wistful; Touched; Longing
+Purple,285,325,light,Imaginative,Inventive; Visionary; Open; Curious
+Purple,285,325,mid,Creative,Inspired; Imaginative; Expressive; Original; Visionary
+Purple,285,325,mid,Longing,Yearning; Nostalgic; Homesick; Craving; Aching
+Purple,285,325,mid,Dreamy,Wistful; Drifting; Romantic; Whimsical; Far away
+Purple,285,325,mid,Ashamed,Embarrassed; Guilty; Self-conscious; Humiliated; Regretful
+Purple,285,325,deep,Regal,Dignified; Powerful; Commanding; Proud
+Purple,285,325,deep,Obsessive,Fixated; Consumed; Intense; Driven
+Purple,285,325,deep,Mournful,Aching; Sorrowful; Yearning; Haunted
+Pink,325,345,light,Sweet,Gentle; Innocent; Kind; Cute
+Pink,325,345,light,Nurtured,Cared for; Safe; Soothed; Cherished
+Pink,325,345,light,Shy,Bashful; Timid; Reserved; Modest
+Pink,325,345,mid,Loving,Affectionate; Adoring; Caring; Devoted; Close
+Pink,325,345,mid,Tender,Gentle; Soft; Protective; Compassionate; Moved
+Pink,325,345,mid,Shy,Bashful; Timid; Reserved; Flustered; Modest
+Pink,325,345,mid,Hopeful romance,Infatuated; Smitten; Flirty; Butterflies; Crush
+Pink,325,345,deep,Passionate,Adoring; Ardent; Infatuated; Smitten
+Pink,325,345,deep,Pining,Craving; Aching; Heartsick; Yearning
+Pink,325,345,deep,Possessive love,Insecure; Clingy; Anxious; Jealous
