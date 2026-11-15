@@ -45,9 +45,9 @@ export default {
       const eff = role === 'admin' && ['visitor', 'trusted'].includes(body.as) ? body.as : role; // lets the reviewer test other roles
       const e = {
         id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6),
-        type: ['quote', 'book', 'film'].includes(body.type) ? body.type : 'quote',
-        title: s(body.title, 120), creator: s(body.creator, 80), text: s(body.text, 160),
-        url: /^https?:\/\//.test(body.url || '') ? s(body.url, 300) : '',
+        type: ['book', 'film', 'poem', 'other'].includes(body.type) ? body.type : 'other',
+        title: s(body.title, 120), creator: s(body.creator, 80), quote: s(body.quote, 220), why: s(body.why, 220),
+        year: s(body.year, 4), src: s(body.src, 80),
         tags: arr(body.tags, 8).map(t => s(t, 30).toLowerCase()), fams: arr(body.fams, 6).map(t => s(t, 20)),
         status: eff === 'visitor' ? 'pending' : 'approved', by: s(body.by, 40), at: Date.now(),
       };

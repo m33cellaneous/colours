@@ -12,12 +12,16 @@ Upload `index.html`, `config.js`, `robots.txt` and the `data/` folder to any hos
 Local test: `python3 -m http.server 8000` in this folder, then open http://localhost:8000 (double-clicking index.html will not work).
 
 ### Suggestions and flags without the server
-Suggestions and flags are sent straight to your inbox (no email app opens) through a form-to-email service. Each email arrives with labelled fields (kind, type, title, creator, text, url, families, tags, feeling), so it is already sorted, and a Gmail filter or a script can pick out the subject lines starting `[emotion-app suggestion]` or `[emotion-app flag]`.
-1. Create a free account with a form-to-email service, for example Web3Forms (it emails you an access key) or Formspree (it gives you a form address). Check their current free limits and spam protection.
-2. Put the address in `config.js` as `submitEndpoint` (and the key as `submitKey` if the service gives one). Re-upload `config.js`.
-3. The key is visible to anyone who views the site's code. That is normal for these services, but it means the service's own spam filtering matters, and a hidden trap field in the form already catches simple bots.
-Until `submitEndpoint` is set, the + and flag icons show a "not switched on yet" message.
-Good suggestions: add a row to `source/works.csv` (types: quote, film, book, word), run `python3 build_data.py`, upload `data/works.json`.
+Suggestions and flags are emailed straight to howarehue.app@gmail.com (no email app opens) through FormSubmit, set in `config.js` as `submitEndpoint`.
+1. **One-time activation:** the first submission makes FormSubmit email that address a confirmation link. Click it, and delivery starts. I could not test this live, so send one test suggestion yourself first.
+2. Each email arrives with labelled fields and a subject starting `[emotion-app suggestion]` or `[emotion-app flag]`:
+   kind, type (book, film, poem, other), title, creator, quote (up to 220 characters), why (up to 220), year, source_detail (page, scene or timestamp), families, tags, feeling.
+   Quote and reason are separate fields on purpose: the quote can be checked against its page, scene or year, and the reason is judged on whether it fits. A quote is only accepted with a year or a page/scene.
+3. The address is visible to anyone who views the site's code, so it can attract spam. A hidden trap field in the form stops simple bots. If spam becomes a problem, switch to a service that hides the address (FormSubmit offers an alias; Web3Forms and Formspree use a key or form id instead) and change `submitEndpoint`.
+Good suggestions: add a row to `source/works.csv`, run `python3 build_data.py`, upload `data/works.json`.
+
+### works.csv columns
+`type` is book, film, poem or other (quote and word also work). `text` is the line, `note` is why it fits, `source_detail` is the page, scene or timestamp, `cores` are the core feelings it carries (joy, trust, fear, surprise, sadness, disgust, anger, anticipation), first one being the main one. A work is shown only if its main core feeling matches the mood the person built, so rows without `cores` only appear when a `feelings` keyword matches.
 
 ## Where the content comes from
 Written by me from general knowledge, not checked against the original papers, so treat it as an informed starting point:

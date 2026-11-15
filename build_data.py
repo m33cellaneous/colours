@@ -9,12 +9,11 @@ works = []
 for r in rows('works.csv'):
     t = r['type'].strip()
     w = {'id': r['id'].strip(), 'type': t}
-    if t == 'quote': w.update(text=r['text'], creator=r['creator'], title=r['title'], url=r['url'])
-    elif t == 'film': w.update(title=r['title'], year=r['year'], note=r['note'], url=r['url'])
-    elif t == 'word': w.update(title=r['title'], language=r['language'], text=r['text'])
-    elif t == 'book': w.update(title=r['title'], creator=r['creator'], text=r['text'], url=r['url'])
-    else: raise SystemExit('Unknown type "%s" for %s (use quote, film, book or word)' % (t, r['id']))
-    w['families'] = lst(r['families']); w['feelings'] = lst(r['feelings'])
+    if t == 'word': w.update(title=r['title'], language=r['language'], text=r['text'])
+    elif t in ('quote', 'poem', 'book', 'film', 'other'):
+        w.update(title=r['title'], creator=r['creator'], year=r['year'], text=r['text'], note=r['note'], url=r['url'], source_detail=r.get('source_detail', ''))
+    else: raise SystemExit('Unknown type "%s" for %s (use book, film, poem, quote, other or word)' % (t, r['id']))
+    w['families'] = lst(r['families']); w['feelings'] = lst(r['feelings']); w['cores'] = lst(r.get('cores', ''))
     if t != 'word': w['default_for_layered'] = r['default_for_layered'].strip().lower() == 'true'
     works.append(w)
 
@@ -38,6 +37,9 @@ cores = {'joy', 'trust', 'fear', 'surprise', 'sadness', 'disgust', 'anger', 'ant
 for w in works:
     for x in w['families']:
         if x not in fam_names: warn.append('works.csv: %s uses unknown family "%s"' % (w['id'], x))
+for w in works:
+    for x in w['cores']:
+        if x not in cores: warn.append('works.csv: %s has unknown core feeling "%s"' % (w['id'], x))
 ids = [w['id'] for w in works]
 warn += ['works.csv: duplicate id "%s"' % i for i in sorted(set(ids)) if ids.count(i) > 1]
 for f in fams.values():

@@ -1,44 +1,75 @@
-id,type,title,creator,year,language,text,note,url,families,feelings,default_for_layered
-quote-i-am-large-i-contain-multitudes,quote,Song of Myself,Walt Whitman,,,"I am large, I contain multitudes.",,https://www.poetryfoundation.org/poems/45477,,,true
-quote-joy-and-woe-are-woven-fine,quote,Auguries of Innocence,William Blake,,,Joy and woe are woven fine.,,https://www.poetryfoundation.org/poems/43650/auguries-of-innocence,Yellow; Blue,bittersweet; melancholy joy,false
-quote-parting-is-such-sweet-sorrow,quote,Romeo and Juliet,William Shakespeare,,,Parting is such sweet sorrow.,,https://shakespeare.mit.edu/romeo_juliet/full.html,Blue; Pink; Purple,longing; tender sorrow; homesick,false
-quote-hope-is-the-thing-with-feathers,quote,mily Dickinson,Emily Dickinso,,,Hope is the thing with feathers.,,https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314,Yellow; Lime; Blue,hope; anticipat; optimis,false
-quote-if-winter-comes-can-spring-be-far-behind,quote,Ode to the West Wind,Percy Bysshe Shelley,,,"If Winter comes, can Spring be far behind?",,https://www.poetryfoundation.org/poems/45134/ode-to-the-west-wind,Lime; Green,renew; fresh,false
-quote-it-was-the-best-of-times-it-was-the-wors,quote,A Tale of Two Cities,Charles Dickens,,,"It was the best of times, it was the worst of times.",,https://www.gutenberg.org/ebooks/98,Orange; Indigo,nervous; stage fright; exhilar,false
-quote-after-great-pain-a-formal-feeling-comes,quote,mily Dickinson,Emily Dickinso,,,"After great pain, a formal feeling comes.",,https://www.poetryfoundation.org/poems/47651,Blue; Teal,grief; numb; aloof; quiet sorrow,false
-quote-emotion-recollected-in-tranquillity,quote,Preface to Lyrical Ballads,William Wordsworth,,,Emotion recollected in tranquillity.,,,Purple; Indigo; Teal,nostalg; reflect,false
-quote-whatever-our-souls-are-made-of-his-and-m,quote,Wuthering Heights,Emily Brontë,,,"Whatever our souls are made of, his and mine are the same.",,https://www.gutenberg.org/ebooks/768,Pink; Red; Purple,love; passion; adoration,false
-quote-it-is-the-green-eyed-monster,quote,Othello,William Shakespeare,,,It is the green-eyed monster.,,https://shakespeare.mit.edu/othello/full.html,Green; Lime,envy; jealous; possessive,false
-quote-deep-into-that-darkness-peering,quote,The Raven,Edgar Allan Poe,,,Deep into that darkness peering.,,https://www.poetryfoundation.org/poems/48860/the-raven,Indigo,dread; apprehension; anxious,false
-quote-i-wandered-lonely-as-a-cloud,quote,Daffodils,William Wordsworth,,,I wandered lonely as a cloud.,,https://www.poetryfoundation.org/poems/45521,Blue; Indigo,lonel; solit,false
-quote-uneasy-lies-the-head-that-wears-a-crown,quote,"Henry IV, Part 2",William Shakespeare,,,Uneasy lies the head that wears a crown.,,https://shakespeare.mit.edu/2henryiv/full.html,Purple; Orange,ambiti; regal,false
-quote-into-each-life-some-rain-must-fall,quote,The Rainy Day,Henry Wadsworth Longfellow,,,Into each life some rain must fall.,,,Blue; Green,resilien; sorrow; heavy,false
-quote-tis-better-to-have-loved-and-lost,quote,In Memoriam,Alfred Tennyson,,,’Tis better to have loved and lost.,,,Pink; Blue,heartbreak; hurt; compassion,false
-film-inside-out-2015,film,Inside Out,,2015,,,"A Pixar film in which Joy, Sadness and other feelings share one mind. It argues that sadness has a job to do, and that feelings blend rather than take turns.",https://en.wikipedia.org/wiki/Inside_Out_(2015_film),,,true
-film-lost-in-translation-2003,film,Lost in Translation,,2003,,,"Two lonely strangers in Tokyo form a brief, unlabelled bond. A quiet film about jet-lagged disconnection and unexpected tenderness.",https://en.wikipedia.org/wiki/Lost_in_Translation_(film),Blue; Teal; Indigo,lonel; bittersweet; detach,false
-film-in-the-mood-for-love-2000,film,In the Mood for Love,,2000,,,"Hong Kong in the 1960s: two neighbours are drawn together by what their spouses are doing. Restraint and longing, told through glances and music.",https://en.wikipedia.org/wiki/In_the_Mood_for_Love,Pink; Purple; Red,longing; yearn; desire; romantic,false
-film-spirited-away-2001,film,Spirited Away,,2001,,,"Miyazaki’s story of a girl who must find courage and her own name in a spirit bathhouse. Wonder, fear and a nostalgia for childhood, all at once.",https://en.wikipedia.org/wiki/Spirited_Away,Lime; Orange; Green,curious; adventur,false
-film-eternal-sunshine-of-the-spotless-mind-20,film,Eternal Sunshine of the Spotless Mind,,2004,,,A couple erase each other from memory. It asks whether the pain is worth losing the love that came with it.,https://en.wikipedia.org/wiki/Eternal_Sunshine_of_the_Spotless_Mind,Blue; Pink; Purple,grief; heartbreak; hurt; betray,false
-film-amelie-2001,film,Amélie,,2001,,,"A shy woman in Paris quietly arranges small joys for strangers, and slowly learns to risk her own happiness.",https://en.wikipedia.org/wiki/Am%C3%A9lie,Yellow; Pink; Orange,playful; joy,false
-film-the-grand-budapest-hotel-2014,film,The Grand Budapest Hotel,,2014,,,"Nostalgia for a vanished world, told as stories inside stories. Comedy with loss running underneath.",https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel,Purple; Orange; Yellow,nostalg; wistful,false
-film-wall-e-2008,film,Wall-E,,2008,,,"A lonely robot tends an abandoned Earth. Almost wordless, tender and hopeful.",https://en.wikipedia.org/wiki/WALL-E,Teal; Green; Lime,hope; aloof,false
-film-moonlight-2016,film,Moonlight,,2016,,,"Three chapters in one man’s life, growing up in Miami. Shyness, identity and tenderness, mostly unspoken.",https://en.wikipedia.org/wiki/Moonlight_(2016_film),Indigo; Blue; Purple,solit; shy; pining,false
-film-whiplash-2014,film,Whiplash,,2014,,,"A young drummer and a brutal teacher. Ambition tipping into obsession, and what it costs.",https://en.wikipedia.org/wiki/Whiplash_(2014_film),Red; Orange,ambiti; rage; obsess,false
-film-paddington-2-2017,film,Paddington 2,,2017,,,A kind bear is wrongly jailed and wins people over anyway. Warmth and gratitude as a form of strength.,https://en.wikipedia.org/wiki/Paddington_2,Orange; Yellow; Green,cosy; gratitude; welcom; content,false
-film-arrival-2016,film,Arrival,,2016,,,"A linguist tries to talk with visitors from elsewhere. A story about grief, time, and loving someone knowing you will lose them.",https://en.wikipedia.org/wiki/Arrival_(film),Indigo; Blue; Teal,awe; equanim,false
-word-saudade,word,Saudade,,,Portuguese,"a tender longing for someone or something absent, with sweetness in it",,,Blue; Purple; Pink; Orange,nostalg; longing; homesick; bittersweet,
-word-hiraeth,word,Hiraeth,,,Welsh,"homesickness for a home you cannot return to, or that may never have been",,,Blue; Purple; Indigo,homesick; mournful,
-word-mono-no-aware,word,Mono no aware,,,Japanese,"a gentle sadness at the passing of things, felt through their beauty",,,Blue; Teal; Yellow,wistful; melanchol,
-word-sehnsucht,word,Sehnsucht,,,German,an intense yearning for something you cannot quite name,,,Purple; Pink; Indigo,yearn; pining,
-word-weltschmerz,word,Weltschmerz,,,German,"world-weariness, the ache of the gap between how things are and how they could be",,,Blue; Indigo; Teal,weary; heavy,
-word-fernweh,word,Fernweh,,,German,an ache for far-off places you have not yet been,,,Orange; Lime; Teal,adventur; restless; curious,
-word-toska,word,Toska,,,Russian,"a dull ache of the soul, sometimes with no clear cause",,,Blue; Indigo; Purple,grief; sorrow; lonel,
-word-hygge,word,Hygge,,,Danish,"cosy, unhurried contentment, usually with warmth or people around you",,,Orange; Green; Pink; Yellow,cosy; content; gentle; warm,
-word-duende,word,Duende,,,Spanish,"a surge of raw, soulful feeling, often tied to art, passion or loss",,,Red; Purple; Pink,passion; desire; intense; rage,
-word-forelsket,word,Forelsket,,,Norwegian,the giddy euphoria of beginning to fall in love,,,Pink; Yellow; Orange,infatuat; smitten; joy; tender,
-word-kilig,word,Kilig,,,Filipino,"the fluttery, giddy rush of romantic excitement",,,Pink; Orange,flirt; butterfl; excite,
-word-iktsuarpok,word,Iktsuarpok,,,Inuit,restless anticipation that keeps you checking whether someone is arriving,,,Lime; Yellow; Orange,anticipat; hopeful; expect,
-word-yugen,word,Yūgen,,,Japanese,"a deep, wordless sense of the mystery and beauty of the universe",,,Indigo; Teal; Purple,awe; spiritual; reflect,
-word-schadenfreude,word,Schadenfreude,,,German,pleasure at another person’s misfortune,,,Lime; Green; Red,envy; resent; jealous,
-word-waldeinsamkeit,word,Waldeinsamkeit,,,German,the peaceful solitude of being alone in the woods,,,Green; Teal; Indigo,solit; serene; calm; quiet,
-word-litost,word,Litost,,,Czech,sudden torment at seeing your own misery laid bare,,,Indigo; Blue; Purple,shame; regret; humili,
+id,type,title,creator,year,language,text,note,url,source_detail,families,feelings,cores,default_for_layered
+quote-i-am-large-i-contain-multitudes,quote,Song of Myself,Walt Whitman,,,"I am large, I contain multitudes.",,https://www.poetryfoundation.org/poems/45477,,,,joy;trust;surprise,true
+quote-joy-and-woe-are-woven-fine,quote,Auguries of Innocence,William Blake,,,Joy and woe are woven fine.,,https://www.poetryfoundation.org/poems/43650/auguries-of-innocence,,Yellow; Blue,bittersweet; melancholy joy,joy;sadness,false
+quote-parting-is-such-sweet-sorrow,quote,Romeo and Juliet,William Shakespeare,,,Parting is such sweet sorrow.,,https://shakespeare.mit.edu/romeo_juliet/full.html,,Blue; Pink; Purple,longing; tender sorrow; homesick,sadness;joy,false
+quote-hope-is-the-thing-with-feathers,quote,mily Dickinson,Emily Dickinso,,,Hope is the thing with feathers.,,https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314,,Yellow; Lime; Blue,hope; anticipat; optimis,anticipation;trust,false
+quote-if-winter-comes-can-spring-be-far-behind,quote,Ode to the West Wind,Percy Bysshe Shelley,,,"If Winter comes, can Spring be far behind?",,https://www.poetryfoundation.org/poems/45134/ode-to-the-west-wind,,Lime; Green,renew; fresh,anticipation;trust,false
+quote-it-was-the-best-of-times-it-was-the-wors,quote,A Tale of Two Cities,Charles Dickens,,,"It was the best of times, it was the worst of times.",,https://www.gutenberg.org/ebooks/98,,Orange; Indigo,nervous; stage fright; exhilar,joy;sadness,false
+quote-after-great-pain-a-formal-feeling-comes,quote,mily Dickinson,Emily Dickinso,,,"After great pain, a formal feeling comes.",,https://www.poetryfoundation.org/poems/47651,,Blue; Teal,grief; numb; aloof; quiet sorrow,sadness;fear,false
+quote-emotion-recollected-in-tranquillity,quote,Preface to Lyrical Ballads,William Wordsworth,,,Emotion recollected in tranquillity.,,,,Purple; Indigo; Teal,nostalg; reflect,sadness;trust,false
+quote-whatever-our-souls-are-made-of-his-and-m,quote,Wuthering Heights,Emily Brontë,,,"Whatever our souls are made of, his and mine are the same.",,https://www.gutenberg.org/ebooks/768,,Pink; Red; Purple,love; passion; adoration,trust;joy,false
+quote-it-is-the-green-eyed-monster,quote,Othello,William Shakespeare,,,It is the green-eyed monster.,,https://shakespeare.mit.edu/othello/full.html,,Green; Lime,envy; jealous; possessive,anger;sadness,false
+quote-deep-into-that-darkness-peering,quote,The Raven,Edgar Allan Poe,,,Deep into that darkness peering.,,https://www.poetryfoundation.org/poems/48860/the-raven,,Indigo,dread; apprehension; anxious,fear;anticipation,false
+quote-i-wandered-lonely-as-a-cloud,quote,Daffodils,William Wordsworth,,,I wandered lonely as a cloud.,,https://www.poetryfoundation.org/poems/45521,,Blue; Indigo,lonel; solit,sadness;joy,false
+quote-uneasy-lies-the-head-that-wears-a-crown,quote,"Henry IV, Part 2",William Shakespeare,,,Uneasy lies the head that wears a crown.,,https://shakespeare.mit.edu/2henryiv/full.html,,Purple; Orange,ambiti; regal,fear;anger,false
+quote-into-each-life-some-rain-must-fall,quote,The Rainy Day,Henry Wadsworth Longfellow,,,Into each life some rain must fall.,,,,Blue; Green,resilien; sorrow; heavy,sadness;trust,false
+quote-tis-better-to-have-loved-and-lost,quote,In Memoriam,Alfred Tennyson,,,’Tis better to have loved and lost.,,,,Pink; Blue,heartbreak; hurt; compassion,sadness;joy;trust,false
+film-inside-out-2015,film,Inside Out,,2015,,,"A Pixar film in which Joy, Sadness and other feelings share one mind. It argues that sadness has a job to do, and that feelings blend rather than take turns.",https://en.wikipedia.org/wiki/Inside_Out_(2015_film),,,,,true
+film-lost-in-translation-2003,film,Lost in Translation,,2003,,,"Two lonely strangers in Tokyo form a brief, unlabelled bond. A quiet film about jet-lagged disconnection and unexpected tenderness.",https://en.wikipedia.org/wiki/Lost_in_Translation_(film),,Blue; Teal; Indigo,lonel; bittersweet; detach,sadness;trust,false
+film-in-the-mood-for-love-2000,film,In the Mood for Love,,2000,,,"Hong Kong in the 1960s: two neighbours are drawn together by what their spouses are doing. Restraint and longing, told through glances and music.",https://en.wikipedia.org/wiki/In_the_Mood_for_Love,,Pink; Purple; Red,longing; yearn; desire; romantic,sadness;anticipation,false
+film-spirited-away-2001,film,Spirited Away,,2001,,,"Miyazaki’s story of a girl who must find courage and her own name in a spirit bathhouse. Wonder, fear and a nostalgia for childhood, all at once.",https://en.wikipedia.org/wiki/Spirited_Away,,Lime; Orange; Green,curious; adventur,fear;surprise;anticipation,false
+film-eternal-sunshine-of-the-spotless-mind-20,film,Eternal Sunshine of the Spotless Mind,,2004,,,A couple erase each other from memory. It asks whether the pain is worth losing the love that came with it.,https://en.wikipedia.org/wiki/Eternal_Sunshine_of_the_Spotless_Mind,,Blue; Pink; Purple,grief; heartbreak; hurt; betray,sadness;joy,false
+film-amelie-2001,film,Amélie,,2001,,,"A shy woman in Paris quietly arranges small joys for strangers, and slowly learns to risk her own happiness.",https://en.wikipedia.org/wiki/Am%C3%A9lie,,Yellow; Pink; Orange,playful; joy,joy;trust,false
+film-the-grand-budapest-hotel-2014,film,The Grand Budapest Hotel,,2014,,,"Nostalgia for a vanished world, told as stories inside stories. Comedy with loss running underneath.",https://en.wikipedia.org/wiki/The_Grand_Budapest_Hotel,,Purple; Orange; Yellow,nostalg; wistful,sadness;joy,false
+film-wall-e-2008,film,Wall-E,,2008,,,"A lonely robot tends an abandoned Earth. Almost wordless, tender and hopeful.",https://en.wikipedia.org/wiki/WALL-E,,Teal; Green; Lime,hope; aloof,trust;joy;sadness,false
+film-moonlight-2016,film,Moonlight,,2016,,,"Three chapters in one man’s life, growing up in Miami. Shyness, identity and tenderness, mostly unspoken.",https://en.wikipedia.org/wiki/Moonlight_(2016_film),,Indigo; Blue; Purple,solit; shy; pining,fear;trust;sadness,false
+film-whiplash-2014,film,Whiplash,,2014,,,"A young drummer and a brutal teacher. Ambition tipping into obsession, and what it costs.",https://en.wikipedia.org/wiki/Whiplash_(2014_film),,Red; Orange,ambiti; rage; obsess,anger;anticipation;fear,false
+film-paddington-2-2017,film,Paddington 2,,2017,,,A kind bear is wrongly jailed and wins people over anyway. Warmth and gratitude as a form of strength.,https://en.wikipedia.org/wiki/Paddington_2,,Orange; Yellow; Green,cosy; gratitude; welcom; content,joy;trust,false
+film-arrival-2016,film,Arrival,,2016,,,"A linguist tries to talk with visitors from elsewhere. A story about grief, time, and loving someone knowing you will lose them.",https://en.wikipedia.org/wiki/Arrival_(film),,Indigo; Blue; Teal,awe; equanim,sadness;surprise;trust,false
+word-saudade,word,Saudade,,,Portuguese,"a tender longing for someone or something absent, with sweetness in it",,,,Blue; Purple; Pink; Orange,nostalg; longing; homesick; bittersweet,,
+word-hiraeth,word,Hiraeth,,,Welsh,"homesickness for a home you cannot return to, or that may never have been",,,,Blue; Purple; Indigo,homesick; mournful,,
+word-mono-no-aware,word,Mono no aware,,,Japanese,"a gentle sadness at the passing of things, felt through their beauty",,,,Blue; Teal; Yellow,wistful; melanchol,,
+word-sehnsucht,word,Sehnsucht,,,German,an intense yearning for something you cannot quite name,,,,Purple; Pink; Indigo,yearn; pining,,
+word-weltschmerz,word,Weltschmerz,,,German,"world-weariness, the ache of the gap between how things are and how they could be",,,,Blue; Indigo; Teal,weary; heavy,,
+word-fernweh,word,Fernweh,,,German,an ache for far-off places you have not yet been,,,,Orange; Lime; Teal,adventur; restless; curious,,
+word-toska,word,Toska,,,Russian,"a dull ache of the soul, sometimes with no clear cause",,,,Blue; Indigo; Purple,grief; sorrow; lonel,,
+word-hygge,word,Hygge,,,Danish,"cosy, unhurried contentment, usually with warmth or people around you",,,,Orange; Green; Pink; Yellow,cosy; content; gentle; warm,,
+word-duende,word,Duende,,,Spanish,"a surge of raw, soulful feeling, often tied to art, passion or loss",,,,Red; Purple; Pink,passion; desire; intense; rage,,
+word-forelsket,word,Forelsket,,,Norwegian,the giddy euphoria of beginning to fall in love,,,,Pink; Yellow; Orange,infatuat; smitten; joy; tender,,
+word-kilig,word,Kilig,,,Filipino,"the fluttery, giddy rush of romantic excitement",,,,Pink; Orange,flirt; butterfl; excite,,
+word-iktsuarpok,word,Iktsuarpok,,,Inuit,restless anticipation that keeps you checking whether someone is arriving,,,,Lime; Yellow; Orange,anticipat; hopeful; expect,,
+word-yugen,word,Yūgen,,,Japanese,"a deep, wordless sense of the mystery and beauty of the universe",,,,Indigo; Teal; Purple,awe; spiritual; reflect,,
+word-schadenfreude,word,Schadenfreude,,,German,pleasure at another person’s misfortune,,,,Lime; Green; Red,envy; resent; jealous,,
+word-waldeinsamkeit,word,Waldeinsamkeit,,,German,the peaceful solitude of being alone in the woods,,,,Green; Teal; Indigo,solit; serene; calm; quiet,,
+word-litost,word,Litost,,,Czech,sudden torment at seeing your own misery laid bare,,,,Indigo; Blue; Purple,shame; regret; humili,,
+poem-ode-on-a-grecian-urn-heard-melodi,poem,Ode on a Grecian Urn,John Keats,1819,,"Heard melodies are sweet, but those unheard are sweeter.",,,,Blue; Purple,longing; yearning,sadness;anticipation,false
+poem-endymion-a-thing-of-b,poem,Endymion,John Keats,1818,,A thing of beauty is a joy for ever.,,,,Yellow; Pink,joy; delight,joy;trust,false
+other-hamlet-there-is-not,other,Hamlet,William Shakespeare,,,"There is nothing either good or bad, but thinking makes it so.",,,,Indigo; Blue,anxious; reflect,fear;sadness,false
+other-macbeth-out-damned-s,other,Macbeth,William Shakespeare,,,"Out, damned spot!",,,,Purple; Indigo,shame; guilty; remorse,fear;disgust,false
+other-twelfth-night-if-music-be-,other,Twelfth Night,William Shakespeare,,,"If music be the food of love, play on.",,,,Pink; Orange,love; romantic,joy;anticipation,false
+other-henry-v-we-few-we-ha,other,Henry V,William Shakespeare,,,"We few, we happy few, we band of brothers.",,,,Green; Orange,loyal; proud,trust;joy,false
+other-romeo-and-juliet-my-bounty-is,other,Romeo and Juliet,William Shakespeare,,,"My bounty is as boundless as the sea, my love as deep.",,,,Pink; Yellow,love; adoration,joy;trust,false
+poem-remember-remember-me-,poem,Remember,Christina Rossetti,1862,,Remember me when I am gone away.,,,,Blue; Pink,grief; longing,sadness;trust,false
+poem-sonnets-from-the-portuguese-how-do-i-lov,poem,Sonnets from the Portuguese,Elizabeth Barrett Browning,1850,,How do I love thee? Let me count the ways.,,,,Pink; Yellow,love; adoration,joy;trust,false
+poem-she-walks-in-beauty-she-walks-in,poem,She Walks in Beauty,Lord Byron,1814,,"She walks in beauty, like the night.",,,,Purple; Indigo,awe; adoration,joy;surprise;trust,false
+poem-auguries-of-innocence-to-see-a-wor,poem,Auguries of Innocence,William Blake,1863,,To see a world in a grain of sand.,,,,Teal; Lime,awe; wonder,surprise;joy,false
+book-persuasion-you-pierce-m,book,Persuasion,Jane Austen,1817,,"You pierce my soul. I am half agony, half hope.",,,,Pink; Blue,hopeful; longing,sadness;anticipation,false
+book-pride-and-prejudice-you-must-all,book,Pride and Prejudice,Jane Austen,1813,,You must allow me to tell you how ardently I admire and love you.,,,,Pink; Red,love; ardent,joy;trust;anticipation,false
+book-jane-eyre-i-am-no-bird,book,Jane Eyre,Charlotte Brontë,1847,,I am no bird; and no net ensnares me.,,,,Red; Orange,determined; free,anger;anticipation,false
+book-frankenstein-beware-for-i,book,Frankenstein,Mary Shelley,1818,,"Beware; for I am fearless, and therefore powerful.",,,,Red; Indigo,fierce; defiant,anger;fear,false
+other-walden-the-mass-of-,other,Walden,Henry David Thoreau,1854,,The mass of men lead lives of quiet desperation.,,,,Blue; Indigo,lonely; despair,sadness;fear,false
+poem-he-wishes-for-the-cloths-of-heaven-tread-softly,poem,He Wishes for the Cloths of Heaven,W. B. Yeats,1899,,Tread softly because you tread on my dreams.,,,,Purple; Pink,vulnerable; shy,fear;trust,false
+film-her,film,Her,Spike Jonze,2013,,,"A lonely man falls for an AI voice: love, longing and letting go.",,,Blue; Pink,lonely; longing,sadness;trust;joy,false
+film-up,film,Up,Pete Docter,2009,,,Grief softened by one last adventure.,,,Blue; Yellow,grief; bittersweet,sadness;joy;trust,false
+film-coco,film,Coco,Lee Unkrich,2017,,,"Memory, family and grief held with warmth.",,,Orange; Blue,nostalg; grief,sadness;trust;joy,false
+film-get-out,film,Get Out,Jordan Peele,2017,,,"Unease that builds into fear, with anger at being used.",,,Indigo; Red,dread; outrage,fear;disgust;anger,false
+film-spotlight,film,Spotlight,Tom McCarthy,2015,,,"Quiet, stubborn anger at harm that was ignored.",,,Red; Blue,outrage; resolve,anger;sadness;trust,false
+film-little-miss-sunshine,film,Little Miss Sunshine,Jonathan Dayton and Valerie Faris,2006,,,"Embarrassment, loss and joy riding together in one van.",,,Yellow; Orange,embarrass; joy,joy;sadness;surprise,false
+film-roma,film,Roma,Alfonso Cuarón,2018,,,Quiet sorrow and tenderness within an ordinary life.,,,Blue; Teal,quiet sorrow; tender,sadness;trust,false
+film-perfect-days,film,Perfect Days,Wim Wenders,2023,,,"Contentment found in small, repeated moments.",,,Green; Teal,content; calm,trust;joy,false
+book-the-remains-of-the-day,book,The Remains of the Day,Kazuo Ishiguro,1989,,,Regret and restraint: a life spent holding feelings back.,,,Blue; Indigo,regret; longing,sadness;fear,false
+book-norwegian-wood,book,Norwegian Wood,Haruki Murakami,1987,,,Grief and longing in the aftermath of loss.,,,Blue; Purple,grief; longing,sadness;anticipation,false
+book-wild,book,Wild,Cheryl Strayed,2012,,,"Grief, courage and slowly rebuilding yourself.",,,Blue; Lime,grief; resilient,sadness;anticipation;anger,false
+book-the-little-prince,book,The Little Prince,Antoine de Saint-Exupéry,1943,,,"Love, loss and seeing what matters.",,,Yellow; Pink; Blue,love; wistful,sadness;trust;joy,false
+book-a-man-called-ove,book,A Man Called Ove,Fredrik Backman,2012,,,Grief and gruffness slowly opened by connection.,,,Blue; Green,grief; tender,sadness;trust;anger,false
+book-station-eleven,book,Station Eleven,Emily St. John Mandel,2014,,,"Nostalgia, awe and hope after everything is lost.",,,Purple; Teal,nostalg; hopeful,sadness;surprise;anticipation,false

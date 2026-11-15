@@ -46,7 +46,9 @@ tr:last-child td{border-bottom:0}
 .layer small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
 .layer b{font-size:18px;display:block}.layer span{color:var(--muted);font-size:14px}
 #own{width:100%;font:inherit;padding:13px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--fg)}
-#s3,#s4,#s5{text-align:center}
+#s3,#s4,#s5{text-align:center}#s4{position:relative}
+#find{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;z-index:20}#find:not([hidden]){animation:fi .3s ease backwards}
+#fres{margin:4px 0 12px}#fres p{text-align:left;color:var(--muted);font-size:14px;margin:6px 0}.row.hl{background:var(--tint)}
 textarea{width:100%;min-height:70px;font:inherit;padding:11px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--fg);margin:4px 0 14px;text-align:left}
 .pl{display:block;text-align:left;font-weight:600;font-size:15px;margin-top:6px}
 .rng{display:block;margin:6px 0 14px;text-align:left}.rng input{width:100%;accent-color:var(--acc)}
@@ -102,7 +104,7 @@ section.out{opacity:0}
 <main>
 <section id="s1">
   <h1>How does it feel?</h1>
-  <p class="sub">Tap or drag around the wheel to find your colour.<br>Near the centre feelings are lighter and softer; towards the edge they get deeper and richer.</p>
+  <p class="sub">Drag around the wheel to find your colour.<br>Near the centre feelings are lighter and softer; towards the edge they get deeper and richer.</p>
   <div class="strip" id="strip" hidden></div>
   <div id="wheel" role="slider" aria-label="Colour hue" aria-valuemin="0" aria-valuemax="359" tabindex="0"><div id="knob"></div></div>
   <div id="result" hidden>
@@ -127,7 +129,7 @@ section.out{opacity:0}
   <button class="back" id="reset" style="margin:0 auto">Start over</button>
 </section>
 <section id="s4" hidden>
-  <button class="back" id="back3">← Back to layers</button>
+  <button class="back" id="back3">← Back to layers</button><button class="back" id="so4" hidden style="position:absolute;right:0;top:0">Start over →</button>
   <div id="pick"><h1>What does it add up to?</h1>
   <p class="sub">Pick the closest name, or write your own.</p>
   <p class="sub" id="aiState" hidden></p><div id="ai"></div><p id="cxh" hidden></p><div class="chips" id="cx"></div>
@@ -135,8 +137,8 @@ section.out{opacity:0}
   <div class="big" id="final" hidden></div>
   <div id="extras" hidden>
     
-    <div class="layer"><small>A line to sit with</small><span class="ics"><button class="ico" id="fq" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="aq" title="Suggest a line or book" aria-label="Suggest a line or book"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><i id="xq"></i><span id="xs"></span><div class="acts"><a class="mini" id="qlink" target="_blank" rel="noopener">Read the source ↗</a></div><div class="cons" id="qc"></div></div>
-    <div class="layer"><small>A film in this mood</small><span class="ics"><button class="ico" id="fm" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="am" title="Suggest a film" aria-label="Suggest a film"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><b id="xf"></b><p id="fnote" hidden></p><div class="acts"><button class="mini" id="fwhy">Read more</button></div><div class="cons" id="mc"></div></div>
+    <div class="layer"><small id="xql">A line to sit with</small><span class="ics"><button class="ico" id="fq" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="aq" title="Suggest a line or book" aria-label="Suggest a line or book"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><i id="xq"></i><span id="xs"></span><div class="acts"><a class="mini" id="qlink" target="_blank" rel="noopener">Read the source ↗</a></div><div class="cons" id="qc"></div></div>
+    <div class="layer"><small id="xml">A film or book in this mood</small><span class="ics"><button class="ico" id="fm" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="am" title="Suggest a film" aria-label="Suggest a film"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><b id="xf"></b><p id="fnote" hidden></p><div class="acts"><button class="mini" id="fwhy">Read more</button></div><div class="cons" id="mc"></div></div>
     <button class="btn" id="toJournal">Journal about this</button>
   </div>
 </section>
@@ -153,14 +155,17 @@ section.out{opacity:0}
 </section>
 <section id="s6" hidden><button class="back" id="back6">← Back</button><h1>Review queue</h1><div id="rq"></div><h1 style="font-size:18px;margin-top:26px">Flagged matches</h1><div id="rf"></div></section>
 <div id="subm" hidden><div class="panel"><h2>Suggest an entry</h2>
-<label>Type<select id="stype"><option value="quote">Quote or poem line</option><option value="book">Book</option><option value="film">Film</option></select></label>
+<label>What is it?<select id="stype"><option value="book">Book</option><option value="film">Film</option><option value="poem">Poem</option><option value="other">Other (play, speech, song…)</option></select></label>
 <label>Title<input id="stitle"></label>
 <label>Author or director<input id="screator"></label>
-<label><span id="stlt"></span><textarea id="stext" maxlength="160"></textarea></label>
-<label>Link to the source (optional)<input id="surl" placeholder="https://"></label>
+<label>A line from it (optional, up to 220 characters)<textarea id="sline" maxlength="220"></textarea></label>
+<label>Why it fits the feeling (optional, up to 220 characters)<textarea id="swhy" maxlength="220"></textarea></label>
+<label>Year (optional)<input id="syear" inputmode="numeric" maxlength="4"></label>
+<label>Page, scene or timestamp (optional, helps us check a line)<input id="ssrc"></label>
 <label>Feelings it fits (hashtags)<input id="stags"></label><input id="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
 <button class="btn" id="ssend">Submit</button><button class="btn ghost" id="scancel">Cancel</button></div></div>
 <div id="toast" hidden></div>
+<div id="find" hidden><div class="panel"><h2>Find a feeling</h2><label>Type a feeling<input id="fq2" autocomplete="off" placeholder="e.g. furious, wistful, overwhelmed"></label><div id="fres"></div><button class="btn ghost" id="fclose">Close</button></div></div>
 <button class="mini" id="acc" style="position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:15;opacity:.75;background:var(--card);color:var(--fg);font-size:12px;padding:6px 10px">Access code</button>
 <div id="admin" hidden><button class="mini" id="openRq">Review queue <span id="rqn"></span></button><select class="mini" id="asRole" aria-label="Viewing as"><option value="">Viewing as: myself</option><option value="trusted">Test: trusted contributor</option><option value="visitor">Test: visitor</option></select></div>
 </main>
@@ -220,10 +225,9 @@ function blendNames(a,b){
   return out;
 }
 const Q=[],M=[],FD={},QU={};
-WJ.forEach(w=>{const n=(w.feelings||[]).concat(w.default_for_layered?[' + ']:[]);
-  if(w.type==='quote'){Q.push({t:w.text,s:w.creator+', '+w.title,f:w.families,n});if(w.url)QU[w.text]=w.url;}
-  else if(w.type==='film'){const t=w.title+(w.year?' ('+w.year+')':'');M.push({t,f:w.families,n});if(w.note)FD[t]=w.note;}
-  else if(w.type==='book'){Q.push({t:w.title,s:w.creator||'Book',f:w.families,n,book:true});if(w.url)QU[w.title]=w.url;}});
+WJ.forEach(w=>{const n=(w.feelings||[]).concat(w.default_for_layered?[' + ']:[]),c=w.cores||[],who=w.creator||'',lab=w.title+(w.year?' ('+w.year+')':'');
+  if(w.text&&w.type!=='word'){Q.push({t:w.text,s:(who?who+', ':'')+w.title,f:w.families,n,c,d:!!w.default_for_layered,sd:w.source_detail||''});if(w.url)QU[w.text]=w.url;}
+  if((w.type==='film'||w.type==='book')&&w.note){M.push({t:lab,f:w.families,n,c,kind:w.type,by:who});FD[lab]=w.note;}});
 // Hue families: [start°, end°, name, {emotion: [finer feelings]}]
 
 // Light (inner, pale) and deep (outer, dark) tiers per family; the original lists are the true-colour middle.
@@ -258,6 +262,7 @@ function showTable(){
     b.onclick=()=>openEmotion(name,list);
     td.appendChild(b);tr.appendChild(td);tb.appendChild(tr);
   });
+  {const r2=document.createElement('tr'),d2=document.createElement('td'),b2=document.createElement('button');b2.className='row';b2.innerHTML='<b></b><span></span>';b2.children[0].textContent='Can\u2019t find the feeling?';b2.children[1].textContent='search';b2.onclick=openFind;d2.appendChild(b2);r2.appendChild(d2);tb.appendChild(r2);}
   $('result').hidden=false;
 }
 wheel.addEventListener('pointerdown',e=>{dragging=true;wheel.setPointerCapture(e.pointerId);pick(e);});
@@ -306,7 +311,8 @@ let finalName='',jdone=false;const NL=String.fromCharCode(10),KEY='ce-journal';
 function best(a,nm){const lc=nm.toLowerCase();let b=a[0],bs=-1;a.forEach(x=>{const s=layers.filter(l=>x.f.includes(l.fam)).length+(x.n.some(k=>lc.includes(k))?3:0);if(s>bs){bs=s;b=x;}});return b;}
 let ql=[],ml=[],qi=0,mi=0;
 
-function rank(a,nm){const lc=nm.toLowerCase();return a.filter(x=>fcount(x,nm)<3).map((x,i)=>({x,i,s:layers.filter(l=>x.f.includes(l.fam)).length+(x.n.some(k=>lc.includes(k))?3:0)-2*fcount(x,nm)})).sort((a,b)=>b.s-a.s||a.i-b.i).map(o=>o.x);}
+function fit(x,nm){const lc=nm.toLowerCase(),P=new Set(),S=new Set();layers.forEach(l=>(AFF[l.fam+'|'+l.emo]||[]).forEach((p,i)=>(i?S:P).add(p)));const c=x.c||[],kw=x.n.some(k=>k.trim()&&lc.includes(k));if(c.length&&!P.has(c[0])&&!kw)return 0;return 2*c.filter(k=>P.has(k)).length+c.filter(k=>S.has(k)&&!P.has(k)).length+(kw?3:0)-2*fcount(x,nm);}
+function rank(a,nm){return a.map((x,i)=>({x,i,s:fit(x,nm)})).filter(o=>o.s>=3).sort((p,q)=>q.s-p.s||p.i-q.i).map(o=>o.x);}
 const sl=q=>'https://duckduckgo.com/?q='+encodeURIComponent(q);
 let cq=null,cm=null;
 // Community layer: submissions and flags live in the shared db; each work carries feeling tags (colour families plus hashtags).
@@ -326,10 +332,9 @@ async function toggleFlag(x){
 }
 function mergeComm(){
   Q.length=NQ;M.length=NM;
-  comm.filter(c=>(c.status||'approved')==='approved').forEach(c=>{const f=c.fams||[],n=c.tags||[],key='c:'+c.id,u=(c.url||'').startsWith('http')?c.url:'';
-    if(c.type==='film')M.push({t:c.title,f,n,key,note:c.text});
-    else if(c.type==='book'&&!c.text)Q.push({t:c.title,s:c.creator||'Book',f,n,key,book:true,u});
-    else Q.push({t:c.text,s:(c.creator?c.creator+', ':'')+c.title,f,n,key,u});});
+  comm.filter(c=>(c.status||'approved')==='approved').forEach(c=>{const f=c.fams||[],n=c.tags||[],key='c:'+c.id,q=c.quote||c.text||'',w=c.why||'',lab=c.title+(c.year?' ('+c.year+')':'');
+    if(q)Q.push({t:q,s:(c.creator?c.creator+', ':'')+c.title,f,n,c:[],key});
+    if(w&&(c.type==='film'||c.type==='book'))M.push({t:lab,f,n,c:[],key,note:w,kind:c.type,by:c.creator||''});});
 }
 async function initDb(){
   if(!(window.claude&&claude.use))return;
@@ -339,40 +344,40 @@ async function initDb(){
   db.collection('flags').onSnapshot(s=>{flags=s.docs.map(d=>d.data());updFlags();renderRq();},()=>{});
   db.collection('trusted').onSnapshot(s=>{trusted=new Set(s.docs.map(d=>d.id));updAdmin();},()=>{});updAdmin();
 }
-function setL(){const t=$('stype').value;$('stlt').textContent=t==='film'?'Why it fits (max 160 characters)':t==='book'?'A short line from it, or why it fits (optional)':'The line (short, max 160 characters)';}
 function openSub(kind){
   if(!db&&!noApi){note('Enter your access code (bottom right) to suggest entries.');return;}
-  $('stype').value=kind;setL();
+  $('stype').value=kind==='film'?'film':'book';
   $('stags').value=finalName.toLowerCase().split(/[^a-z]+/).filter(Boolean).map(w=>'#'+w).join(' ');
   $('subm').hidden=false;
 }
-$('stype').onchange=setL;
 $('scancel').onclick=()=>{$('subm').hidden=true;};
+const FIELDS=['stitle','screator','sline','swhy','syear','ssrc'];
 $('ssend').onclick=async()=>{
-  const type=$('stype').value,title=$('stitle').value.trim(),creator=$('screator').value.trim(),text=$('stext').value.trim().slice(0,160),url=$('surl').value.trim();
-  const tags=[...new Set($('stags').value.toLowerCase().split(/[ ,#]+/).filter(Boolean))].slice(0,8);
-  if(!title||(type==='quote'&&!text)){note(type==='quote'?'Please add the title and the line.':'Please add a title.');return;}
-  if(url&&!url.startsWith('http')){note('The link should start with http.');return;}
-  if(!db){if(($('hp')||{}).value)return;const ok=await send('[emotion-app suggestion] '+title,{kind:'suggestion',type,title,creator,text,url,families:[...new Set(layers.map(l=>l.fam))].join('; '),tags:tags.join('; '),feeling:finalName});if(ok){$('subm').hidden=true;['stitle','screator','stext','surl'].forEach(i=>{$(i).value='';});}return;}
+  const type=$('stype').value,title=$('stitle').value.trim(),creator=$('screator').value.trim(),quote=$('sline').value.trim().slice(0,220),why=$('swhy').value.trim().slice(0,220),year=$('syear').value.trim().slice(0,4),src=$('ssrc').value.trim().slice(0,80);
+  const tags=[...new Set($('stags').value.toLowerCase().split(/[ ,#]+/).filter(Boolean))].slice(0,8),fams=[...new Set(layers.map(l=>l.fam))];
+  if(!title||(!quote&&!why)){note('Please add a title, and a line or a reason.');return;}
+  if(quote&&!src&&!year){note('Please add the year or the page/scene so the line can be checked.');return;}
+  if(($('hp')||{}).value)return;
+  const clear=()=>{$('subm').hidden=true;FIELDS.forEach(i=>{$(i).value='';});};
+  if(!db){const ok=await send('[emotion-app suggestion] '+title,{kind:'suggestion',type,title,creator,quote,why,year,source_detail:src,families:fams.join('; '),tags:tags.join('; '),feeling:finalName});if(ok)clear();return;}
   const live=eff()!=='visitor';
-  try{await db.collection('submissions').add({type,title,creator,text,url,tags,fams:[...new Set(layers.map(l=>l.fam))],status:live?'approved':'pending',hp:($('hp')||{}).value||'',as:asRole||'',by:uid||'',at:Date.now()});
-    $('subm').hidden=true;['stitle','screator','stext','surl'].forEach(i=>{$(i).value='';});note(live?'Thanks — it’s live.':'Thanks — it will appear once a reviewer approves it.');}
-  catch(e){note('Couldn’t save. You may need contributor access.');}
+  try{await db.collection('submissions').add({type,title,creator,quote,why,year,src,tags,fams,status:live?'approved':'pending',hp:'',as:asRole||'',by:uid||'',at:Date.now()});clear();note(live?'Thanks \u2014 it\u2019s live.':'Thanks \u2014 it will appear once a reviewer approves it.');}
+  catch(e){note('Couldn\u2019t save. You may need contributor access.');}
 };
 const noApi=!(window.CONFIG||{}).apiUrl,CFG=window.CONFIG||{};
 // Without a server, entries and flags go straight to your inbox through a form-to-email service (submitEndpoint).
 // Fields are sent labelled (kind, type, title, creator, text, url, families, tags, feeling), so each email arrives already sorted.
 async function send(subject,fields){
   if(!CFG.submitEndpoint){note('Suggestions and flags are not switched on in this test version yet.');return false;}
-  try{const r=await fetch(CFG.submitEndpoint,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(Object.assign({access_key:CFG.submitKey||undefined,subject,from_name:'Emotion app'},fields))});
+  try{const r=await fetch(CFG.submitEndpoint,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(Object.assign({access_key:CFG.submitKey||undefined,subject,_subject:subject,_template:'table',_captcha:'false',from_name:'Emotion app'},fields))});
     if(!r.ok)throw new Error(r.status);note('Thanks \u2014 sent.');return true;}
   catch(e){note('Couldn\u2019t send just now. Please try again later.');return false;}
 }
 const flagSend=x=>send('[emotion-app flag] '+x.t,{kind:'flag',item:x.t,feeling:finalName});
 $('fq').onclick=noApi?()=>flagSend(cq):()=>toggleFlag(cq);$('fm').onclick=noApi?()=>flagSend(cm):()=>toggleFlag(cm);
 $('aq').onclick=()=>openSub('quote');$('am').onclick=()=>openSub('film');
-function hidePick(){const p=$('pick');p.classList.add('out');setTimeout(()=>{p.hidden=true;p.classList.remove('out');$('again').hidden=false;},600);window.scrollTo({top:0,behavior:'smooth'});}
-$('again').onclick=()=>{$('pick').hidden=false;$('again').hidden=true;$('final').hidden=true;$('extras').hidden=true;};
+function hidePick(){const p=$('pick');p.classList.add('out');setTimeout(()=>{p.hidden=true;p.classList.remove('out');$('again').hidden=false;$('so4').hidden=false;},600);window.scrollTo({top:0,behavior:'smooth'});}
+$('again').onclick=()=>{$('pick').hidden=false;$('again').hidden=true;$('so4').hidden=true;$('final').hidden=true;$('extras').hidden=true;};
 // Roles: visitor (entries wait for review), trusted contributor (entries go live), reviewer (owner/editor: approves, rejects, trusts).
 const eff=()=>asRole||(isRev?'reviewer':(uid&&trusted.has(uid)?'trusted':'visitor'));
 function updAdmin(){$('admin').hidden=!isRev;$('openRq').hidden=!!asRole;const n=comm.filter(c=>c.status==='pending').length;$('rqn').textContent=n?'('+n+')':'';}
@@ -384,7 +389,7 @@ function renderRq(){
   const rq=$('rq'),rf=$('rf');if(!rq||!rf)return;rq.innerHTML='';rf.innerHTML='';
   const pend=comm.filter(c=>c.status==='pending');
   if(!pend.length)rq.innerHTML='<p class="sub">Nothing is waiting.</p>';
-  pend.forEach(c=>{const d=card(c.type+' · '+(c.fams||[]).join(', '),c.title+(c.creator?' — '+c.creator:''),[c.text,(c.tags||[]).map(t=>'#'+t).join(' '),c.url].filter(Boolean).join('  '));
+  pend.forEach(c=>{const d=card(c.type+' · '+(c.fams||[]).join(', '),c.title+(c.creator?' — '+c.creator:''),[c.quote||c.text,c.why,c.year,c.src,(c.tags||[]).map(t=>'#'+t).join(' '),c.url].filter(Boolean).join('  '));
     abtn(d,'Approve',()=>setStatus(c,'approved'));abtn(d,'Reject',()=>setStatus(c,'rejected'));rq.appendChild(d);});
   const g={};flags.forEach(f=>{const k=f.key+'|'+f.feeling;(g[k]=g[k]||{key:f.key,feeling:f.feeling,n:0}).n++;});
   const L=Object.values(g).sort((a,b)=>b.n-a.n);
@@ -403,7 +408,7 @@ const qlab=x=>sh(x.s.includes(',')?x.s.slice(x.s.indexOf(',')+2):x.t.split(' ').
 const mlab=x=>sh(x.t.replace(/ \(\d{4}\)$/,''));
 // A big dot (current choice) joined by lines to smaller dots (nearest neighbours); tapping one makes it the new big dot.
 function cons(el,items,cur,pick,lab){
-  el.innerHTML='';
+  el.innerHTML='';if(items.length<2)return;
   const P=[[84,62],[256,62],[66,104],[274,104],[170,130]];
   const nb=items.filter(x=>x!==cur).map((x,i)=>({x,i,s:sim(cur,x)})).sort((a,b)=>b.s-a.s||a.i-b.i).slice(0,5).map(o=>o.x);
   const svg=document.createElementNS(NS,'svg');svg.setAttribute('viewBox','0 0 340 154');
@@ -439,13 +444,17 @@ async function aiNames(){
 
 
 
-function showQ(){const q=cq;$('xq').textContent=q.book?q.t:'“'+q.t+'”';$('xs').textContent=q.s;const u=q.u||QU[q.t];$('qlink').href=u||sl(q.s+' full text');$('qlink').textContent=u?'Read the source ↗':'Find the source ↗';cons($('qc'),Q,q,x=>{cq=x;showQ();},qlab);updFlags();}
-function showM(){const m=cm;$('xf').textContent=m.t;$('fnote').textContent=FD[m.t]||m.note||'';$('fnote').hidden=true;cons($('mc'),M,m,x=>{cm=x;showM();},mlab);updFlags();}
+function showQ(){const q=cq;$('xq').textContent='“'+q.t+'”';$('xql').textContent=qph?'A placeholder line \u2014 we\u2019re still collecting lines for this feeling':'A line to sit with';$('xs').textContent=q.s+(q.sd?' ('+q.sd+')':'');const u=q.u||QU[q.t];$('qlink').href=u||sl(q.s+' full text');$('qlink').textContent=u?'Read the source ↗':'Find the source ↗';cons($('qc'),qph?[]:QF,q,x=>{cq=x;showQ();},qlab);updFlags();}
+function showM(){const m=cm;
+  if(!m){$('xml').textContent='A film or book in this mood';$('xf').textContent='We don\u2019t have one for this feeling yet.';$('fnote').textContent='Know a film or book that fits? Tap + to suggest it.';$('fnote').hidden=false;$('fwhy').hidden=true;$('fm').hidden=true;$('mc').innerHTML='';return;}
+  $('fwhy').hidden=false;$('fm').hidden=false;$('xml').textContent=m.kind==='book'?'A book in this mood':'A film in this mood';
+  $('xf').textContent=m.t+(m.by?' \u2014 '+m.by:'');$('fnote').textContent=FD[m.t]||m.note||'';$('fnote').hidden=true;cons($('mc'),MF,m,x=>{cm=x;showM();},mlab);updFlags();}
 
 
 $('fwhy').onclick=()=>{$('fnote').hidden=!$('fnote').hidden;};
+let QF=[],MF=[],qph=false;
 function renderExtras(name){
-  cq=rank(Q,name)[0]||Q[0];cm=rank(M,name)[0]||M[0];showQ();showM();
+  QF=rank(Q,name);MF=rank(M,name);qph=!QF.length;cq=QF[0]||Q.find(x=>x.d)||Q[0];cm=MF[0]||null;showQ();showM();
   
   
   $('extras').hidden=false;
@@ -500,12 +509,35 @@ $('refine').onclick=()=>{
   const s=new Set();
   for(let i=0;i<layers.length;i++)for(let j=i+1;j<layers.length;j++){const a=layers[i],b=layers[j];
     blendNames(a,b).forEach(x=>s.add(x));}
-  for(let i=0;i<layers.length;i++)for(let j=i+1;j<layers.length;j++){const a=layers[i].words[0],b=layers[j].words[0];if(a&&b)s.add(a+' and '+b.toLowerCase());}
-  s.add(layers.map(l=>l.emo).join(' + '));
   const c=$('cx');c.hidden=false;c.innerHTML='';
-  s.forEach(x=>{const b=document.createElement('button');if(GL[x]){b.className='sug';const n=document.createElement('b'),g=document.createElement('span');n.textContent=x;g.textContent=GL[x];b.appendChild(n);b.appendChild(g);b.onclick=()=>finish(x,GL[x]);}else{b.className='chip';b.textContent=x;b.onclick=()=>finish(x);}c.appendChild(b);});
-  $('final').hidden=true;$('extras').hidden=true;$('pick').hidden=false;$('again').hidden=true;$('own').value='';$('ai').innerHTML='';$('aiState').hidden=true;$('cxh').hidden=true;show('s4');aiNames();
+  (()=>{const nm=[...s].slice(0,6);if(!nm.length)nm.push(layers.map(l=>l.emo).join(' + '));return nm;})().forEach(x=>{const b=document.createElement('button');if(GL[x]){b.className='sug';const n=document.createElement('b'),g=document.createElement('span');n.textContent=x;g.textContent=GL[x];b.appendChild(n);b.appendChild(g);b.onclick=()=>finish(x,GL[x]);}else{b.className='chip';b.textContent=x;b.onclick=()=>finish(x);}c.appendChild(b);});
+  $('final').hidden=true;$('extras').hidden=true;$('pick').hidden=false;$('again').hidden=true;$('so4').hidden=true;$('own').value='';$('ai').innerHTML='';$('aiState').hidden=true;$('cxh').hidden=true;show('s4');aiNames();
 };
+// ---- Search: find a feeling (or a word close to it) and move the wheel to its colour ----
+const ALL=[];FJ.families.forEach(f=>['light','mid','deep'].forEach(k=>f.tiers[k].forEach(e=>{[e.emotion,...e.finer].forEach(w=>ALL.push({word:w,emo:e.emotion,fam:f,tier:k}));})));
+const tg=s=>{s=' '+s.toLowerCase()+' ';const o=new Set();for(let i=0;i<s.length-2;i++)o.add(s.slice(i,i+3));return o;};
+const tsim=(a,b)=>{const A=tg(a),B=tg(b);let n=0;A.forEach(x=>{if(B.has(x))n++;});return 2*n/((A.size+B.size)||1);};
+function goTo(it){
+  const s=it.fam.hue_start,e=it.fam.hue_end<=s?it.fam.hue_end+360:it.fam.hue_end;
+  hue=((s+e)/2)%360;depth={light:.25,mid:.55,deep:.86}[it.tier];
+  const R=wheel.getBoundingClientRect().width/2,a=hue*Math.PI/180;
+  knob.style.left=(R+Math.sin(a)*R*depth)+'px';knob.style.top=(R-Math.cos(a)*R*depth)+'px';knob.style.opacity=1;
+  wheel.setAttribute('aria-valuenow',Math.round(hue));setAcc(hue);fam=null;showTable();$('find').hidden=true;
+  const row=[...document.querySelectorAll('#rows .row')].find(b=>b.firstElementChild.textContent===it.emo);
+  if(row){row.classList.add('hl');if(row.scrollIntoView)row.scrollIntoView({block:'center',behavior:'smooth'});setTimeout(()=>row.classList.remove('hl'),2500);}
+}
+function openFind(){$('fq2').value='';$('fres').innerHTML='';$('find').hidden=false;setTimeout(()=>$('fq2').focus(),50);}
+$('fclose').onclick=()=>{$('find').hidden=true;};
+$('fq2').oninput=()=>{
+  const q=$('fq2').value.trim().toLowerCase(),box=$('fres');box.innerHTML='';if(!q)return;
+  const line=(it,sub)=>{const b=document.createElement('button');b.className='row';b.innerHTML='<b></b><span></span>';b.children[0].textContent=it.word;b.children[1].textContent=sub;b.onclick=()=>goTo(it);box.appendChild(b);};
+  const info=m=>{const p=document.createElement('p');p.textContent=m;box.appendChild(p);};
+  const seen=new Set(),hit=ALL.filter(x=>x.word.toLowerCase().includes(q)).filter(x=>{const k=x.word+x.emo;if(seen.has(k))return false;seen.add(k);return true;}).slice(0,8);
+  if(hit.length){hit.forEach(x=>line(x,x.word===x.emo?x.fam.name+' \u00b7 '+x.tier:'in '+x.emo+' \u00b7 '+x.fam.name));return;}
+  const near=ALL.map(x=>({x,s:tsim(q,x.word)})).sort((a,b)=>b.s-a.s).filter((o,i,a)=>a.findIndex(z=>z.x.word===o.x.word)===i).slice(0,3);
+  info('We don\u2019t have \u201c'+$('fq2').value.trim()+'\u201d yet. Here are the closest feelings:');near.forEach(o=>line(o.x,'in '+o.x.emo+' \u00b7 '+o.x.fam.name));
+};
+$('so4').onclick=()=>{$('so4').hidden=true;$('reset').onclick();};
 })().catch(e=>{document.body.insertAdjacentHTML('afterbegin','<p style="padding:20px">Could not load the data files. Open this page through a web server, not by double-clicking the file.</p>');console.error(e);});
 </script>
 </body>
