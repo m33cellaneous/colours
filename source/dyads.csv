@@ -1,0 +1,37 @@
+feeling_a,feeling_b,gentle_name,gentle_description,intense_name,intense_description
+joy,joy,Serenity,"Calm, quiet happiness.",Ecstasy,"Overflowing, almost unbearable happiness."
+trust,trust,Acceptance,"Open, easy willingness to take things as they are.",Admiration,Deep trust joined with respect for someone.
+fear,fear,Apprehension,A low hum of worry about what might happen.,Terror,Overwhelming fear that floods everything.
+surprise,surprise,Bewilderment,"Thrown off balance, unsure what to make of things.",Amazement,Stunned by something beyond what you expected.
+sadness,sadness,Pensiveness,"Quiet, thoughtful sadness.",Grief,Deep sorrow over a loss.
+disgust,disgust,Distaste,A mild recoil from something unpleasant.,Loathing,Strong revulsion and rejection.
+anger,anger,Annoyance,Irritation that builds slowly.,Rage,"Hot, overwhelming anger."
+anticipation,anticipation,Interest,Attention drawn toward what comes next.,Vigilance,"Keen watchfulness, ready for what is coming."
+joy,trust,Affection,Warm fondness and ease with someone.,Love,Joy and trust together: deep care for another.
+joy,fear,Nervous delight,Pleasure laced with butterflies.,Thrill,Fear and joy fused into a rush.
+joy,surprise,Pleasant surprise,Unexpected good news that lights you up.,Delight,"Sudden, bright joy at something unexpected."
+joy,sadness,Wistful happiness,"Glad, with a soft ache underneath.",Bittersweetness,Joy and loss held in the same moment.
+joy,disgust,Dark humour,Finding amusement in what is uncomfortable.,Morbid fascination,"Drawn to what repels you, and enjoying it."
+joy,anger,Satisfaction,Pleasure in having stood your ground.,Pride,"Joy in yourself, with a readiness to defend it."
+joy,anticipation,Cheerful anticipation,Looking forward to something good.,Optimism,Confident that good things are coming.
+trust,fear,Respectful caution,"Trusting, but careful not to overstep.",Reverence,Respect mixed with awe and humility.
+trust,surprise,Open-minded interest,Willing to be pleasantly surprised.,Curiosity,Drawn to explore what is new and unfamiliar.
+trust,sadness,Tender sadness,Sorrow shared with someone safe.,Poignancy,"A sweet, piercing tenderness about what has passed."
+trust,disgust,Guarded trust,"Willing to rely on someone, but not fully.",Disillusionment,Trust broken by seeing the truth of someone.
+trust,anger,Assertive confidence,Calmly standing your ground.,Protective anger,Anger on behalf of someone you care for.
+trust,anticipation,Hope,Trusting that things can turn out well.,Faith,Steady confidence in what is to come.
+fear,surprise,Startlement,Jolted and momentarily unsettled.,Awe,Wonder with a trace of fear at something vast.
+fear,sadness,Helplessness,Feeling unable to change what is happening.,Despair,Fear and sorrow with no way out in sight.
+fear,disgust,Embarrassment,Wanting to hide from being seen.,Shame,Feeling fundamentally flawed in others’ eyes.
+fear,anger,Defensiveness,Bristling to protect yourself.,Cornered fury,Fear turned into fighting back.
+fear,anticipation,Nervous anticipation,Looking ahead with jitters.,Anxiety,Dreading what might come.
+surprise,sadness,Disappointment,Hope let down by what actually happened.,Dismay,Shocked sadness at an unwelcome turn.
+surprise,disgust,Disbelief,Unable to accept what you are seeing.,Aghast,Stunned and repelled at once.
+surprise,anger,Indignation,Offended by something you did not expect.,Outrage,Shocked anger at something that feels wrong.
+surprise,anticipation,Expectant surprise,"Alert, waiting for something unexpected.",Suspense,Tense waiting for what comes next.
+sadness,disgust,Regret,Wishing you had acted differently.,Remorse,Deep sorrow and self-reproach over what you did.
+sadness,anger,Bitterness,Sorrow soured into grudge.,Envy,Hurt and anger at what others have.
+sadness,anticipation,Wistful anticipation,Looking ahead with a touch of loss.,Longing,Sadness that reaches toward something not yet here.
+disgust,anger,Disdain,Looking down on something you reject.,Contempt,Anger and revulsion toward someone you see as beneath you.
+disgust,anticipation,Skepticism,Doubting what is promised.,Cynicism,Expecting the worst of people and plans.
+anger,anticipation,Resolve,Quiet determination with an edge.,Fierce determination,Anger turned into drive toward a goal.

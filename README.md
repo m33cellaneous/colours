@@ -11,11 +11,20 @@ server/                             the API (worker.js, wrangler.toml): AI names
 Upload `index.html`, `config.js`, `robots.txt` and the `data/` folder to any host. Without an API address the app runs fully offline: no AI names; combined-feeling names come from `blends.csv` (each with a one-line description).
 Local test: `python3 -m http.server 8000` in this folder, then open http://localhost:8000 (double-clicking index.html will not work).
 
-### Suggest and flag icons without the server
-The + and flag icons are always shown. With no server they open a form of your choice:
-1. Make a Google Form (or any form) with fields like: type, title, author or director, short line or why it fits, link, feeling.
-2. Put its link in `config.js` as `formUrl`, then re-upload `config.js`.
-Until `formUrl` is set, tapping an icon just shows a short "not switched on yet" message. You add good suggestions yourself in `source/works.csv`.
+### Suggestions and flags without the server
+Suggestions and flags are sent straight to your inbox (no email app opens) through a form-to-email service. Each email arrives with labelled fields (kind, type, title, creator, text, url, families, tags, feeling), so it is already sorted, and a Gmail filter or a script can pick out the subject lines starting `[emotion-app suggestion]` or `[emotion-app flag]`.
+1. Create a free account with a form-to-email service, for example Web3Forms (it emails you an access key) or Formspree (it gives you a form address). Check their current free limits and spam protection.
+2. Put the address in `config.js` as `submitEndpoint` (and the key as `submitKey` if the service gives one). Re-upload `config.js`.
+3. The key is visible to anyone who views the site's code. That is normal for these services, but it means the service's own spam filtering matters, and a hidden trap field in the form already catches simple bots.
+Until `submitEndpoint` is set, the + and flag icons show a "not switched on yet" message.
+Good suggestions: add a row to `source/works.csv` (types: quote, film, book, word), run `python3 build_data.py`, upload `data/works.json`.
+
+## Where the content comes from
+Written by me from general knowledge, not checked against the original papers, so treat it as an informed starting point:
+- **Core feelings and blends:** Plutchik's wheel (joy, trust, fear, surprise, sadness, disgust, anger, anticipation) and his blended emotions, with gentler and stronger versions of each. See `source/dyads.csv`.
+- **Emotion vocabulary:** the 27 categories in Cowen and Keltner's work, and the vocabulary in Brené Brown's *Atlas of the Heart*.
+- **Pale, true and deep tones:** the common finding that lighter, softer colours go with gentler feelings and darker, more saturated ones with heavier, more intense feelings (Valdez and Mehrabian's colour work), plus everyday colour associations.
+- **Specific pairs** (`source/overrides.csv`): hand-picked names for common combinations such as Sad + Hopeful.
 
 ## 2. Turn on AI names, submissions and the review queue (Cloudflare, free plan)
 1. `cd server`, then `npx wrangler login` (creates/uses a free Cloudflare account).

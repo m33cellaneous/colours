@@ -102,7 +102,7 @@ section.out{opacity:0}
 <main>
 <section id="s1">
   <h1>How does it feel?</h1>
-  <p class="sub">Tap or drag around the wheel to find your colour. Near the centre feelings are lighter and softer; towards the edge they get deeper and richer.</p>
+  <p class="sub">Tap or drag around the wheel to find your colour.<br>Near the centre feelings are lighter and softer; towards the edge they get deeper and richer.</p>
   <div class="strip" id="strip" hidden></div>
   <div id="wheel" role="slider" aria-label="Colour hue" aria-valuemin="0" aria-valuemax="359" tabindex="0"><div id="knob"></div></div>
   <div id="result" hidden>
@@ -205,11 +205,25 @@ const [FJ,WJ]=await Promise.all(['data/feelings.json','data/works.json'].map(u=>
 const F=FJ.families.map(f=>[f.hue_start,f.hue_end<=f.hue_start?f.hue_end+360:f.hue_end,f.name,Object.fromEntries(f.tiers.mid.map(e=>[e.emotion,e.finer]))]);
 const LT={},DK={};
 FJ.families.forEach(f=>{LT[f.name]=Object.fromEntries(f.tiers.light.map(e=>[e.emotion,e.finer]));DK[f.name]=Object.fromEntries(f.tiers.deep.map(e=>[e.emotion,e.finer]));});
-const C={},GL={};FJ.blends.forEach(b=>{C[b.families.slice().sort().join('+')]=b.names;Object.assign(GL,b.glosses||{});});
+// Blended names: each emotion is tied to core feelings (data), and pairs of core feelings give the names (data/dyads).
+const GL={},AFF={},DY={},TI={light:0,mid:1,deep:2};
+FJ.families.forEach(f=>['light','mid','deep'].forEach(k=>f.tiers[k].forEach(e=>{AFF[f.name+'|'+e.emotion]=e.affect||[];})));
+FJ.dyads.forEach(d=>{DY[[d.a,d.b].sort().join('|')]=d;GL[d.gentle]=d.gentle_gloss;GL[d.intense]=d.intense_gloss;});
+const OV={};(FJ.overrides||[]).forEach(o=>{OV[[o.a,o.b].map(x=>x.toLowerCase()).sort().join('|')]=o;GL[o.name]=o.description;});
+function blendNames(a,b){
+  const ov=OV[[a.emo,b.emo].map(x=>x.toLowerCase()).sort().join('|')];
+  const pa=AFF[a.fam+'|'+a.emo]||[],pb=AFF[b.fam+'|'+b.emo]||[],hi=((TI[a.tone]??1)+(TI[b.tone]??1))/2,cand=[];
+  pa.forEach((p,i)=>pb.forEach((q,j)=>{const d=DY[[p,q].sort().join('|')];if(d)cand.push({d,w:(i?.6:1)*(j?.6:1)*(p===q?.5:1)});}));
+  cand.sort((x,y)=>y.w-x.w);const top=cand.filter(c=>c.w>=cand[0].w*.85);
+  const out=ov?[ov.name]:[];
+  top.slice(0,2).forEach((c,k)=>{const o=hi<1?[c.d.gentle,c.d.intense]:[c.d.intense,c.d.gentle];(k?o.slice(0,1):o).forEach(n=>{if(!out.includes(n))out.push(n);});});
+  return out;
+}
 const Q=[],M=[],FD={},QU={};
 WJ.forEach(w=>{const n=(w.feelings||[]).concat(w.default_for_layered?[' + ']:[]);
   if(w.type==='quote'){Q.push({t:w.text,s:w.creator+', '+w.title,f:w.families,n});if(w.url)QU[w.text]=w.url;}
-  else if(w.type==='film'){const t=w.title+(w.year?' ('+w.year+')':'');M.push({t,f:w.families,n});if(w.note)FD[t]=w.note;}});
+  else if(w.type==='film'){const t=w.title+(w.year?' ('+w.year+')':'');M.push({t,f:w.families,n});if(w.note)FD[t]=w.note;}
+  else if(w.type==='book'){Q.push({t:w.title,s:w.creator||'Book',f:w.families,n,book:true});if(w.url)QU[w.title]=w.url;}});
 // Hue families: [start°, end°, name, {emotion: [finer feelings]}]
 
 // Light (inner, pale) and deep (outer, dark) tiers per family; the original lists are the true-colour middle.
@@ -283,7 +297,7 @@ function renderLayers(){
 $('more').onclick=()=>{fam=null;$('result').hidden=true;knob.style.opacity=0;show('s1');};
 $('reset').onclick=()=>{layers=[];renderLayers();$('more').onclick();};
 $('back3').onclick=()=>show('s3');
-let finalName='';const NL=String.fromCharCode(10),KEY='ce-journal';
+let finalName='',jdone=false;const NL=String.fromCharCode(10),KEY='ce-journal';
 // Concepts from other languages (f = colour families, n = name keywords). First item of each list is the default.
 
 // Short public-domain lines (author, work). Film suggestions are titles only.
@@ -327,7 +341,7 @@ async function initDb(){
 }
 function setL(){const t=$('stype').value;$('stlt').textContent=t==='film'?'Why it fits (max 160 characters)':t==='book'?'A short line from it, or why it fits (optional)':'The line (short, max 160 characters)';}
 function openSub(kind){
-  if(!db){note('Enter your access code (bottom right) to suggest entries.');return;}
+  if(!db&&!noApi){note('Enter your access code (bottom right) to suggest entries.');return;}
   $('stype').value=kind;setL();
   $('stags').value=finalName.toLowerCase().split(/[^a-z]+/).filter(Boolean).map(w=>'#'+w).join(' ');
   $('subm').hidden=false;
@@ -339,14 +353,24 @@ $('ssend').onclick=async()=>{
   const tags=[...new Set($('stags').value.toLowerCase().split(/[ ,#]+/).filter(Boolean))].slice(0,8);
   if(!title||(type==='quote'&&!text)){note(type==='quote'?'Please add the title and the line.':'Please add a title.');return;}
   if(url&&!url.startsWith('http')){note('The link should start with http.');return;}
+  if(!db){if(($('hp')||{}).value)return;const ok=await send('[emotion-app suggestion] '+title,{kind:'suggestion',type,title,creator,text,url,families:[...new Set(layers.map(l=>l.fam))].join('; '),tags:tags.join('; '),feeling:finalName});if(ok){$('subm').hidden=true;['stitle','screator','stext','surl'].forEach(i=>{$(i).value='';});}return;}
   const live=eff()!=='visitor';
   try{await db.collection('submissions').add({type,title,creator,text,url,tags,fams:[...new Set(layers.map(l=>l.fam))],status:live?'approved':'pending',hp:($('hp')||{}).value||'',as:asRole||'',by:uid||'',at:Date.now()});
     $('subm').hidden=true;['stitle','screator','stext','surl'].forEach(i=>{$(i).value='';});note(live?'Thanks — it’s live.':'Thanks — it will appear once a reviewer approves it.');}
   catch(e){note('Couldn’t save. You may need contributor access.');}
 };
-const noApi=!(window.CONFIG||{}).apiUrl,FU=(window.CONFIG||{}).formUrl||'',viaForm=()=>{if(FU)window.open(FU,'_blank','noopener');else note('Suggestions and flags are not switched on in this test version yet.');};
-$('fq').onclick=noApi?viaForm:()=>toggleFlag(cq);$('fm').onclick=noApi?viaForm:()=>toggleFlag(cm);
-$('aq').onclick=noApi?viaForm:()=>openSub('quote');$('am').onclick=noApi?viaForm:()=>openSub('film');
+const noApi=!(window.CONFIG||{}).apiUrl,CFG=window.CONFIG||{};
+// Without a server, entries and flags go straight to your inbox through a form-to-email service (submitEndpoint).
+// Fields are sent labelled (kind, type, title, creator, text, url, families, tags, feeling), so each email arrives already sorted.
+async function send(subject,fields){
+  if(!CFG.submitEndpoint){note('Suggestions and flags are not switched on in this test version yet.');return false;}
+  try{const r=await fetch(CFG.submitEndpoint,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(Object.assign({access_key:CFG.submitKey||undefined,subject,from_name:'Emotion app'},fields))});
+    if(!r.ok)throw new Error(r.status);note('Thanks \u2014 sent.');return true;}
+  catch(e){note('Couldn\u2019t send just now. Please try again later.');return false;}
+}
+const flagSend=x=>send('[emotion-app flag] '+x.t,{kind:'flag',item:x.t,feeling:finalName});
+$('fq').onclick=noApi?()=>flagSend(cq):()=>toggleFlag(cq);$('fm').onclick=noApi?()=>flagSend(cm):()=>toggleFlag(cm);
+$('aq').onclick=()=>openSub('quote');$('am').onclick=()=>openSub('film');
 function hidePick(){const p=$('pick');p.classList.add('out');setTimeout(()=>{p.hidden=true;p.classList.remove('out');$('again').hidden=false;},600);window.scrollTo({top:0,behavior:'smooth'});}
 $('again').onclick=()=>{$('pick').hidden=false;$('again').hidden=true;$('final').hidden=true;$('extras').hidden=true;};
 // Roles: visitor (entries wait for review), trusted contributor (entries go live), reviewer (owner/editor: approves, rejects, trusts).
@@ -433,7 +457,7 @@ function jText(){
   return o.join(NL);
 }
 const TRASH='<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>';
-function delEntry(id,el){try{const a=JSON.parse(localStorage.getItem(KEY)||'[]').filter(x=>x.d!==id);localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}el.style.transition='opacity .5s ease';el.style.opacity=0;setTimeout(()=>{el.remove();if(!$('saved').children.length){$('jbar').hidden=true;$('jform').hidden=false;}},500);}
+function delEntry(id,el){try{const a=JSON.parse(localStorage.getItem(KEY)||'[]').filter(x=>x.d!==id);localStorage.setItem(KEY,JSON.stringify(a));}catch(e){}el.style.transition='opacity .5s ease';el.style.opacity=0;setTimeout(()=>{el.remove();if(!$('saved').children.length){$('jbar').hidden=true;jdone=false;$('back4').textContent='← Back';$('jform').hidden=false;}},500);}
 function renderSaved(){
   const box=$('saved');box.innerHTML='';let a=[];
   try{a=JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){}
@@ -448,11 +472,11 @@ $('toJournal').onclick=()=>{
   const P=['Where do I feel this?','What happened just before it arrived?','What happens when I make this feeling bigger?','What happens when I make this feeling smaller?','Where do these thoughts lead me?'];
   const pr=$('prompts');pr.innerHTML='';
   const h=document.createElement('p');h.className='pl';h.textContent='Questions to explore, if they help:';const ul=document.createElement('ul');ul.className='qs';P.forEach(p=>{const li=document.createElement('li');li.textContent=p;ul.appendChild(li);});const ta=document.createElement('textarea');ta.placeholder='Write whatever comes…';ta.style.minHeight='180px';pr.appendChild(h);pr.appendChild(ul);pr.appendChild(ta);
-  $('jform').hidden=false;$('rng').value=5;$('rv').textContent=5;$('save').textContent='Save to this device';renderSaved();show('s5');
+  jdone=false;$('back4').textContent='← Back';$('jform').hidden=false;$('rng').value=5;$('rv').textContent=5;$('save').textContent='Save to this device';renderSaved();show('s5');
 };
 $('rng').oninput=()=>{$('rv').textContent=$('rng').value;};
-$('back4').onclick=()=>show('s4');
-$('newEntry').onclick=()=>{$('rng').value=5;$('rv').textContent=5;const t=$('prompts').querySelector('textarea');if(t)t.value='';$('jform').hidden=false;$('save').textContent='Save to this device';$('newEntry').hidden=true;window.scrollTo({top:0,behavior:'smooth'});};
+$('back4').onclick=()=>{if(jdone){jdone=false;$('back4').textContent='← Back';$('reset').onclick();}else show('s4');};
+$('newEntry').onclick=()=>{$('rng').value=5;$('rv').textContent=5;const t=$('prompts').querySelector('textarea');if(t)t.value='';jdone=true;$('back4').textContent='Start over';$('jform').hidden=false;$('save').textContent='Save to this device';$('newEntry').hidden=true;window.scrollTo({top:0,behavior:'smooth'});};
 $('export').onclick=async()=>{
   let a=[];try{a=JSON.parse(localStorage.getItem(KEY)||'[]');}catch(e){}
   if(!a.length)return;
@@ -462,7 +486,7 @@ $('export').onclick=async()=>{
   else{try{await navigator.clipboard.writeText(md);note('Export isn’t available here, so it was copied instead.');}catch(e){note('Export isn’t available here.');}}
 };
 $('save').onclick=()=>{
-  try{const a=JSON.parse(localStorage.getItem(KEY)||'[]');a.unshift({d:Date.now(),n:finalName,t:jText()});localStorage.setItem(KEY,JSON.stringify(a.slice(0,30)));const jf=$('jform');jf.classList.add('out');setTimeout(()=>{jf.hidden=true;jf.classList.remove('out');$('newEntry').hidden=false;},600);window.scrollTo({top:0,behavior:'smooth'});}catch(e){$('save').textContent='Could not save here — use Copy';}
+  try{const a=JSON.parse(localStorage.getItem(KEY)||'[]');a.unshift({d:Date.now(),n:finalName,t:jText()});localStorage.setItem(KEY,JSON.stringify(a.slice(0,30)));const jf=$('jform');jf.classList.add('out');setTimeout(()=>{jf.hidden=true;jf.classList.remove('out');$('newEntry').hidden=false;jdone=true;$('back4').textContent='Start over';},600);window.scrollTo({top:0,behavior:'smooth'});}catch(e){$('save').textContent='Could not save here — use Copy';}
   renderSaved();
 };
 $('copy').onclick=async()=>{
@@ -475,7 +499,7 @@ $('own').onkeydown=e=>{if(e.key==='Enter'&&e.target.value.trim())finish(e.target
 $('refine').onclick=()=>{
   const s=new Set();
   for(let i=0;i<layers.length;i++)for(let j=i+1;j<layers.length;j++){const a=layers[i],b=layers[j];
-    if(a.fam===b.fam)s.add('Deeply '+a.emo.toLowerCase());else(C[[a.fam,b.fam].sort().join('+')]||[]).forEach(x=>s.add(x));}
+    blendNames(a,b).forEach(x=>s.add(x));}
   for(let i=0;i<layers.length;i++)for(let j=i+1;j<layers.length;j++){const a=layers[i].words[0],b=layers[j].words[0];if(a&&b)s.add(a+' and '+b.toLowerCase());}
   s.add(layers.map(l=>l.emo).join(' + '));
   const c=$('cx');c.hidden=false;c.innerHTML='';

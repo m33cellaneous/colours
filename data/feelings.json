@@ -14,6 +14,10 @@
               "Spirited",
               "Fired up",
               "Restless"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           },
           {
@@ -23,6 +27,10 @@
               "Bashful",
               "Excited",
               "Warm"
+            ],
+            "affect": [
+              "surprise",
+              "joy"
             ]
           },
           {
@@ -32,6 +40,34 @@
               "Caring",
               "Warm",
               "Cuddly"
+            ],
+            "affect": [
+              "trust",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Flirtatious",
+            "finer": [
+              "Teasing",
+              "Coy",
+              "Playful"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
+            ]
+          },
+          {
+            "emotion": "Zealous",
+            "finer": [
+              "Ardent",
+              "Fervent",
+              "Keen"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           }
         ],
@@ -44,6 +80,9 @@
               "Resentful",
               "Bitter",
               "Indignant"
+            ],
+            "affect": [
+              "anger"
             ]
           },
           {
@@ -54,6 +93,10 @@
               "Fed up",
               "Exasperated",
               "Stuck"
+            ],
+            "affect": [
+              "anger",
+              "sadness"
             ]
           },
           {
@@ -64,6 +107,10 @@
               "Fiery",
               "Eager",
               "Devoted"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           },
           {
@@ -74,6 +121,34 @@
               "Courageous",
               "Stubborn",
               "Fierce"
+            ],
+            "affect": [
+              "anticipation",
+              "anger"
+            ]
+          },
+          {
+            "emotion": "Indignant",
+            "finer": [
+              "Offended",
+              "Affronted",
+              "Incensed"
+            ],
+            "affect": [
+              "anger",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Fierce",
+            "finer": [
+              "Bold",
+              "Intense",
+              "Unyielding"
+            ],
+            "affect": [
+              "anger",
+              "anticipation"
             ]
           }
         ],
@@ -85,6 +160,9 @@
               "Vengeful",
               "Wrathful",
               "Explosive"
+            ],
+            "affect": [
+              "anger"
             ]
           },
           {
@@ -94,6 +172,10 @@
               "Hunger",
               "Obsession",
               "Craving"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           },
           {
@@ -103,6 +185,34 @@
               "Bitter",
               "Simmering",
               "Hostile"
+            ],
+            "affect": [
+              "anger",
+              "disgust"
+            ]
+          },
+          {
+            "emotion": "Vengeful",
+            "finer": [
+              "Spiteful",
+              "Vindictive",
+              "Grudging"
+            ],
+            "affect": [
+              "anger",
+              "disgust"
+            ]
+          },
+          {
+            "emotion": "Craving",
+            "finer": [
+              "Hungry",
+              "Aching",
+              "Needing"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           }
         ]
@@ -122,6 +232,9 @@
               "Friendly",
               "Bubbly",
               "Chatty"
+            ],
+            "affect": [
+              "joy"
             ]
           },
           {
@@ -131,6 +244,10 @@
               "Homey",
               "Warm",
               "Comforted"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           },
           {
@@ -140,6 +257,34 @@
               "Inviting",
               "Kind",
               "Generous"
+            ],
+            "affect": [
+              "trust",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Amused",
+            "finer": [
+              "Tickled",
+              "Entertained",
+              "Chuckling"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Sociable",
+            "finer": [
+              "Chatty",
+              "Friendly",
+              "Outgoing"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           }
         ],
@@ -152,6 +297,10 @@
               "Giddy",
               "Anticipating",
               "Buzzing"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
             ]
           },
           {
@@ -162,6 +311,10 @@
               "Spirited",
               "Active",
               "Charged"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
             ]
           },
           {
@@ -172,6 +325,10 @@
               "Free",
               "Spontaneous",
               "Restless"
+            ],
+            "affect": [
+              "anticipation",
+              "surprise"
             ]
           },
           {
@@ -182,6 +339,34 @@
               "Generous",
               "Cosy",
               "Sociable"
+            ],
+            "affect": [
+              "trust",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Enthusiastic",
+            "finer": [
+              "Keen",
+              "Fired up",
+              "Lively"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
+            ]
+          },
+          {
+            "emotion": "Confident",
+            "finer": [
+              "Assured",
+              "Bold",
+              "Self-assured"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           }
         ],
@@ -193,6 +378,10 @@
               "Hungry",
               "Competitive",
               "Striving"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           },
           {
@@ -202,6 +391,10 @@
               "Fidgety",
               "Unsettled",
               "On edge"
+            ],
+            "affect": [
+              "fear",
+              "anger"
             ]
           },
           {
@@ -211,6 +404,34 @@
               "Sentimental",
               "Fond of the past",
               "Longing"
+            ],
+            "affect": [
+              "sadness",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Restless",
+            "finer": [
+              "Itchy",
+              "Fidgety",
+              "Unsettled"
+            ],
+            "affect": [
+              "anticipation",
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Impatient",
+            "finer": [
+              "Chafing",
+              "Antsy",
+              "Short-fused"
+            ],
+            "affect": [
+              "anticipation",
+              "anger"
             ]
           }
         ]
@@ -230,6 +451,10 @@
               "Sweet",
               "Pleased",
               "Amused"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           },
           {
@@ -239,6 +464,10 @@
               "Bright",
               "Looking up",
               "Eager"
+            ],
+            "affect": [
+              "anticipation",
+              "trust"
             ]
           },
           {
@@ -248,6 +477,34 @@
               "Playful",
               "Carefree",
               "Trusting"
+            ],
+            "affect": [
+              "trust",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Pleased",
+            "finer": [
+              "Glad",
+              "Satisfied",
+              "Happy"
+            ],
+            "affect": [
+              "joy",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Giddy",
+            "finer": [
+              "Silly",
+              "Lightheaded",
+              "Bubbly"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
             ]
           }
         ],
@@ -260,6 +517,9 @@
               "Grateful",
               "Amused",
               "Radiant"
+            ],
+            "affect": [
+              "joy"
             ]
           },
           {
@@ -270,6 +530,10 @@
               "Encouraged",
               "Bright",
               "Upbeat"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           },
           {
@@ -280,6 +544,10 @@
               "Light-hearted",
               "Carefree",
               "Cheeky"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
             ]
           },
           {
@@ -290,6 +558,34 @@
               "Worthy",
               "Triumphant",
               "Fulfilled"
+            ],
+            "affect": [
+              "joy",
+              "anger"
+            ]
+          },
+          {
+            "emotion": "Grateful",
+            "finer": [
+              "Thankful",
+              "Appreciative",
+              "Blessed"
+            ],
+            "affect": [
+              "joy",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Inspired",
+            "finer": [
+              "Uplifted",
+              "Moved",
+              "Sparked"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
             ]
           }
         ],
@@ -301,6 +597,10 @@
               "Proud",
               "Glorious",
               "Radiant"
+            ],
+            "affect": [
+              "joy",
+              "anger"
             ]
           },
           {
@@ -310,6 +610,10 @@
               "Suspicious",
               "On edge",
               "Doubtful"
+            ],
+            "affect": [
+              "fear",
+              "anticipation"
             ]
           },
           {
@@ -319,6 +623,34 @@
               "Overjoyed",
               "Exalted",
               "Blissful"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Overjoyed",
+            "finer": [
+              "Elated",
+              "Thrilled",
+              "Jubilant"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Jittery",
+            "finer": [
+              "On edge",
+              "Frazzled",
+              "Nervy"
+            ],
+            "affect": [
+              "fear",
+              "anticipation"
             ]
           }
         ]
@@ -338,6 +670,10 @@
               "Invigorated",
               "Crisp",
               "Awake"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           },
           {
@@ -347,6 +683,10 @@
               "New",
               "Beginning",
               "Sprouting"
+            ],
+            "affect": [
+              "anticipation",
+              "trust"
             ]
           },
           {
@@ -356,6 +696,34 @@
               "Playful",
               "Open",
               "Exploring"
+            ],
+            "affect": [
+              "surprise",
+              "anticipation"
+            ]
+          },
+          {
+            "emotion": "Open-minded",
+            "finer": [
+              "Receptive",
+              "Flexible",
+              "Willing"
+            ],
+            "affect": [
+              "trust",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Awake",
+            "finer": [
+              "Alert",
+              "Alive",
+              "Present"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
             ]
           }
         ],
@@ -368,6 +736,10 @@
               "Revived",
               "Clean",
               "Open"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
             ]
           },
           {
@@ -378,6 +750,10 @@
               "Wondering",
               "Absorbed",
               "Interested"
+            ],
+            "affect": [
+              "surprise",
+              "anticipation"
             ]
           },
           {
@@ -388,6 +764,10 @@
               "Developing",
               "Emerging",
               "Stretching"
+            ],
+            "affect": [
+              "anticipation",
+              "trust"
             ]
           },
           {
@@ -398,6 +778,34 @@
               "Trusting",
               "Aspiring",
               "Patient"
+            ],
+            "affect": [
+              "anticipation",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Inquisitive",
+            "finer": [
+              "Questioning",
+              "Probing",
+              "Wondering"
+            ],
+            "affect": [
+              "surprise",
+              "anticipation"
+            ]
+          },
+          {
+            "emotion": "Restored",
+            "finer": [
+              "Renewed",
+              "Revived",
+              "Recovered"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           }
         ],
@@ -409,6 +817,10 @@
               "Covetous",
               "Begrudging",
               "Sour"
+            ],
+            "affect": [
+              "sadness",
+              "anger"
             ]
           },
           {
@@ -418,6 +830,10 @@
               "Uneasy",
               "Disgusted",
               "Nauseated"
+            ],
+            "affect": [
+              "disgust",
+              "fear"
             ]
           },
           {
@@ -427,6 +843,34 @@
               "Dull",
               "Weary",
               "Unchanging"
+            ],
+            "affect": [
+              "sadness",
+              "disgust"
+            ]
+          },
+          {
+            "emotion": "Jealous",
+            "finer": [
+              "Covetous",
+              "Suspicious",
+              "Possessive"
+            ],
+            "affect": [
+              "anger",
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Bored",
+            "finer": [
+              "Flat",
+              "Uninterested",
+              "Weary"
+            ],
+            "affect": [
+              "sadness",
+              "disgust"
             ]
           }
         ]
@@ -446,6 +890,10 @@
               "Relieved",
               "Comforted",
               "Soft"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           },
           {
@@ -455,6 +903,9 @@
               "Kind",
               "Tender",
               "Patient"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -464,6 +915,34 @@
               "Balanced",
               "Connected",
               "Agreeable"
+            ],
+            "affect": [
+              "trust",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Relieved",
+            "finer": [
+              "Eased",
+              "Unburdened",
+              "Exhaling"
+            ],
+            "affect": [
+              "joy",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Mellow",
+            "finer": [
+              "Easygoing",
+              "Laid-back",
+              "Soft"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           }
         ],
@@ -476,6 +955,9 @@
               "Settled",
               "Easy",
               "Still"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -486,6 +968,10 @@
               "At home",
               "Secure",
               "Fine"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           },
           {
@@ -496,6 +982,9 @@
               "Centred",
               "Even",
               "Stable"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -506,6 +995,33 @@
               "Wanting",
               "Comparing",
               "Resentful"
+            ],
+            "affect": [
+              "sadness",
+              "anger"
+            ]
+          },
+          {
+            "emotion": "Satisfied",
+            "finer": [
+              "Fulfilled",
+              "Sated",
+              "Pleased"
+            ],
+            "affect": [
+              "joy",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Secure",
+            "finer": [
+              "Safe",
+              "Protected",
+              "Anchored"
+            ],
+            "affect": [
+              "trust"
             ]
           }
         ],
@@ -517,6 +1033,9 @@
               "Secure",
               "Steady",
               "Stable"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -526,6 +1045,10 @@
               "Territorial",
               "Guarded",
               "Clinging"
+            ],
+            "affect": [
+              "anger",
+              "fear"
             ]
           },
           {
@@ -535,6 +1058,34 @@
               "Sturdy",
               "Persistent",
               "Strong"
+            ],
+            "affect": [
+              "trust",
+              "anger"
+            ]
+          },
+          {
+            "emotion": "Stubborn",
+            "finer": [
+              "Dug in",
+              "Immovable",
+              "Obstinate"
+            ],
+            "affect": [
+              "anger",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Protective",
+            "finer": [
+              "Guarding",
+              "Watchful",
+              "Shielding"
+            ],
+            "affect": [
+              "trust",
+              "anger"
             ]
           }
         ]
@@ -554,6 +1105,9 @@
               "Free",
               "Weightless",
               "Open"
+            ],
+            "affect": [
+              "joy"
             ]
           },
           {
@@ -563,6 +1117,9 @@
               "Calm",
               "Focused",
               "Rational"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -572,6 +1129,33 @@
               "Cool",
               "Relaxed",
               "Unbothered"
+            ],
+            "affect": [
+              "joy",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Lucid",
+            "finer": [
+              "Sharp",
+              "Aware",
+              "Clear-eyed"
+            ],
+            "affect": [
+              "trust",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Cool",
+            "finer": [
+              "Collected",
+              "Unruffled",
+              "Chilled"
+            ],
+            "affect": [
+              "trust"
             ]
           }
         ],
@@ -584,6 +1168,10 @@
               "Quiet",
               "Gentle",
               "Floating"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           },
           {
@@ -594,6 +1182,9 @@
               "Sharp",
               "Certain",
               "Open-minded"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -604,6 +1195,10 @@
               "Lighter",
               "Restored",
               "Released"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           },
           {
@@ -614,6 +1209,34 @@
               "Aloof",
               "Neutral",
               "Disconnected"
+            ],
+            "affect": [
+              "sadness",
+              "disgust"
+            ]
+          },
+          {
+            "emotion": "Focused",
+            "finer": [
+              "Absorbed",
+              "Locked in",
+              "Attentive"
+            ],
+            "affect": [
+              "anticipation",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Numb",
+            "finer": [
+              "Blank",
+              "Flat",
+              "Muted"
+            ],
+            "affect": [
+              "sadness",
+              "disgust"
             ]
           }
         ],
@@ -625,6 +1248,9 @@
               "Controlled",
               "Cool",
               "Dignified"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -634,6 +1260,10 @@
               "Searching",
               "Private",
               "Quiet"
+            ],
+            "affect": [
+              "sadness",
+              "anticipation"
             ]
           },
           {
@@ -643,6 +1273,33 @@
               "Cold",
               "Reserved",
               "Detached"
+            ],
+            "affect": [
+              "disgust",
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Withdrawn",
+            "finer": [
+              "Closed off",
+              "Distant",
+              "Reserved"
+            ],
+            "affect": [
+              "sadness",
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Stoic",
+            "finer": [
+              "Unflinching",
+              "Enduring",
+              "Impassive"
+            ],
+            "affect": [
+              "trust"
             ]
           }
         ]
@@ -662,6 +1319,10 @@
               "Calm",
               "Easy",
               "Restful"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           },
           {
@@ -671,6 +1332,10 @@
               "Open",
               "Trusting",
               "Hopeful"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           },
           {
@@ -680,6 +1345,33 @@
               "Soft sadness",
               "Longing",
               "Gentle"
+            ],
+            "affect": [
+              "sadness",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Sympathetic",
+            "finer": [
+              "Caring",
+              "Understanding",
+              "Compassionate"
+            ],
+            "affect": [
+              "trust",
+              "sadness"
+            ]
+          },
+          {
+            "emotion": "Restful",
+            "finer": [
+              "Easy",
+              "Slowed",
+              "Quiet"
+            ],
+            "affect": [
+              "trust"
             ]
           }
         ],
@@ -692,6 +1384,9 @@
               "Grieving",
               "Disappointed",
               "Hurt"
+            ],
+            "affect": [
+              "sadness"
             ]
           },
           {
@@ -702,6 +1397,10 @@
               "Missing someone",
               "Empty",
               "Forgotten"
+            ],
+            "affect": [
+              "sadness",
+              "fear"
             ]
           },
           {
@@ -712,6 +1411,9 @@
               "Reassured",
               "Faithful",
               "Supported"
+            ],
+            "affect": [
+              "trust"
             ]
           },
           {
@@ -722,6 +1424,33 @@
               "Sleepy",
               "Burnt out",
               "Heavy"
+            ],
+            "affect": [
+              "sadness"
+            ]
+          },
+          {
+            "emotion": "Disappointed",
+            "finer": [
+              "Let down",
+              "Deflated",
+              "Crestfallen"
+            ],
+            "affect": [
+              "sadness",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Homesick",
+            "finer": [
+              "Missing",
+              "Yearning",
+              "Displaced"
+            ],
+            "affect": [
+              "sadness",
+              "anticipation"
             ]
           }
         ],
@@ -733,6 +1462,9 @@
               "Loss",
               "Despair",
               "Anguish"
+            ],
+            "affect": [
+              "sadness"
             ]
           },
           {
@@ -742,6 +1474,9 @@
               "Brooding",
               "Low",
               "Heavy"
+            ],
+            "affect": [
+              "sadness"
             ]
           },
           {
@@ -751,6 +1486,32 @@
               "Steadfast",
               "Dutiful",
               "Dependable"
+            ],
+            "affect": [
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Heartbroken",
+            "finer": [
+              "Devastated",
+              "Crushed",
+              "Shattered"
+            ],
+            "affect": [
+              "sadness"
+            ]
+          },
+          {
+            "emotion": "Hopeless",
+            "finer": [
+              "Defeated",
+              "Resigned",
+              "Empty"
+            ],
+            "affect": [
+              "sadness",
+              "fear"
             ]
           }
         ]
@@ -770,6 +1531,10 @@
               "Musing",
               "Open",
               "Quiet"
+            ],
+            "affect": [
+              "anticipation",
+              "trust"
             ]
           },
           {
@@ -779,6 +1544,10 @@
               "Perceptive",
               "Insightful",
               "Attuned"
+            ],
+            "affect": [
+              "trust",
+              "surprise"
             ]
           },
           {
@@ -788,6 +1557,34 @@
               "Tentative",
               "Fragile",
               "Hesitant"
+            ],
+            "affect": [
+              "fear",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Pensive",
+            "finer": [
+              "Thoughtful",
+              "Musing",
+              "Mulling"
+            ],
+            "affect": [
+              "sadness",
+              "anticipation"
+            ]
+          },
+          {
+            "emotion": "Wondering",
+            "finer": [
+              "Marvelling",
+              "Questioning",
+              "Open"
+            ],
+            "affect": [
+              "surprise",
+              "trust"
             ]
           }
         ],
@@ -800,6 +1597,10 @@
               "Pensive",
               "Wistful",
               "Meditative"
+            ],
+            "affect": [
+              "anticipation",
+              "sadness"
             ]
           },
           {
@@ -810,6 +1611,10 @@
               "Uneasy",
               "Overwhelmed",
               "Dread"
+            ],
+            "affect": [
+              "fear",
+              "anticipation"
             ]
           },
           {
@@ -820,6 +1625,10 @@
               "Hidden",
               "Guarded",
               "Unknown"
+            ],
+            "affect": [
+              "surprise",
+              "fear"
             ]
           },
           {
@@ -830,6 +1639,34 @@
               "Reverent",
               "Transcendent",
               "Humble"
+            ],
+            "affect": [
+              "trust",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Confused",
+            "finer": [
+              "Muddled",
+              "Puzzled",
+              "Adrift"
+            ],
+            "affect": [
+              "surprise",
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Vulnerable",
+            "finer": [
+              "Exposed",
+              "Open",
+              "Raw"
+            ],
+            "affect": [
+              "fear",
+              "trust"
             ]
           }
         ],
@@ -841,6 +1678,9 @@
               "Terror",
               "Doom",
               "Panic"
+            ],
+            "affect": [
+              "fear"
             ]
           },
           {
@@ -850,6 +1690,10 @@
               "Withdrawn",
               "Isolated",
               "Brooding"
+            ],
+            "affect": [
+              "sadness",
+              "fear"
             ]
           },
           {
@@ -859,6 +1703,33 @@
               "Overwhelmed",
               "Reverent",
               "Small"
+            ],
+            "affect": [
+              "surprise",
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Terrified",
+            "finer": [
+              "Petrified",
+              "Panicked",
+              "Frozen"
+            ],
+            "affect": [
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Haunted",
+            "finer": [
+              "Preoccupied",
+              "Shadowed",
+              "Tormented"
+            ],
+            "affect": [
+              "fear",
+              "sadness"
             ]
           }
         ]
@@ -878,6 +1749,10 @@
               "Dreamy",
               "Playful",
               "Quirky"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
             ]
           },
           {
@@ -887,6 +1762,10 @@
               "Wistful",
               "Touched",
               "Longing"
+            ],
+            "affect": [
+              "trust",
+              "sadness"
             ]
           },
           {
@@ -896,6 +1775,34 @@
               "Visionary",
               "Open",
               "Curious"
+            ],
+            "affect": [
+              "surprise",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Enchanted",
+            "finer": [
+              "Spellbound",
+              "Charmed",
+              "Taken"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
+            ]
+          },
+          {
+            "emotion": "Entranced",
+            "finer": [
+              "Absorbed",
+              "Rapt",
+              "Captivated"
+            ],
+            "affect": [
+              "surprise",
+              "joy"
             ]
           }
         ],
@@ -908,6 +1815,10 @@
               "Expressive",
               "Original",
               "Visionary"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
             ]
           },
           {
@@ -918,6 +1829,10 @@
               "Homesick",
               "Craving",
               "Aching"
+            ],
+            "affect": [
+              "sadness",
+              "anticipation"
             ]
           },
           {
@@ -928,6 +1843,10 @@
               "Romantic",
               "Whimsical",
               "Far away"
+            ],
+            "affect": [
+              "joy",
+              "surprise"
             ]
           },
           {
@@ -938,6 +1857,34 @@
               "Self-conscious",
               "Humiliated",
               "Regretful"
+            ],
+            "affect": [
+              "fear",
+              "disgust"
+            ]
+          },
+          {
+            "emotion": "Awkward",
+            "finer": [
+              "Self-conscious",
+              "Flustered",
+              "Out of place"
+            ],
+            "affect": [
+              "fear",
+              "disgust"
+            ]
+          },
+          {
+            "emotion": "Embarrassed",
+            "finer": [
+              "Mortified",
+              "Red-faced",
+              "Exposed"
+            ],
+            "affect": [
+              "fear",
+              "disgust"
             ]
           }
         ],
@@ -949,6 +1896,10 @@
               "Powerful",
               "Commanding",
               "Proud"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           },
           {
@@ -958,6 +1909,10 @@
               "Consumed",
               "Intense",
               "Driven"
+            ],
+            "affect": [
+              "anticipation",
+              "anger"
             ]
           },
           {
@@ -967,6 +1922,33 @@
               "Sorrowful",
               "Yearning",
               "Haunted"
+            ],
+            "affect": [
+              "sadness"
+            ]
+          },
+          {
+            "emotion": "Humiliated",
+            "finer": [
+              "Degraded",
+              "Shamed",
+              "Belittled"
+            ],
+            "affect": [
+              "fear",
+              "anger"
+            ]
+          },
+          {
+            "emotion": "Guilty",
+            "finer": [
+              "Remorseful",
+              "Culpable",
+              "Sorry"
+            ],
+            "affect": [
+              "sadness",
+              "fear"
             ]
           }
         ]
@@ -986,6 +1968,10 @@
               "Innocent",
               "Kind",
               "Cute"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           },
           {
@@ -995,6 +1981,10 @@
               "Safe",
               "Soothed",
               "Cherished"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           },
           {
@@ -1004,6 +1994,34 @@
               "Timid",
               "Reserved",
               "Modest"
+            ],
+            "affect": [
+              "fear",
+              "trust"
+            ]
+          },
+          {
+            "emotion": "Fond",
+            "finer": [
+              "Warm",
+              "Endeared",
+              "Charmed"
+            ],
+            "affect": [
+              "trust",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Charmed",
+            "finer": [
+              "Delighted",
+              "Taken",
+              "Won over"
+            ],
+            "affect": [
+              "joy",
+              "trust"
             ]
           }
         ],
@@ -1016,6 +2034,10 @@
               "Caring",
               "Devoted",
               "Close"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           },
           {
@@ -1026,6 +2048,10 @@
               "Protective",
               "Compassionate",
               "Moved"
+            ],
+            "affect": [
+              "trust",
+              "joy"
             ]
           },
           {
@@ -1036,6 +2062,10 @@
               "Reserved",
               "Flustered",
               "Modest"
+            ],
+            "affect": [
+              "fear",
+              "trust"
             ]
           },
           {
@@ -1046,6 +2076,34 @@
               "Flirty",
               "Butterflies",
               "Crush"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
+            ]
+          },
+          {
+            "emotion": "Compassionate",
+            "finer": [
+              "Caring",
+              "Kind",
+              "Moved"
+            ],
+            "affect": [
+              "trust",
+              "sadness"
+            ]
+          },
+          {
+            "emotion": "Romantic",
+            "finer": [
+              "Dreamy",
+              "Swept up",
+              "Wooing"
+            ],
+            "affect": [
+              "joy",
+              "anticipation"
             ]
           }
         ],
@@ -1057,6 +2115,10 @@
               "Ardent",
               "Infatuated",
               "Smitten"
+            ],
+            "affect": [
+              "anticipation",
+              "joy"
             ]
           },
           {
@@ -1066,6 +2128,10 @@
               "Aching",
               "Heartsick",
               "Yearning"
+            ],
+            "affect": [
+              "sadness",
+              "anticipation"
             ]
           },
           {
@@ -1075,642 +2141,642 @@
               "Clingy",
               "Anxious",
               "Jealous"
+            ],
+            "affect": [
+              "trust",
+              "fear"
+            ]
+          },
+          {
+            "emotion": "Heartsick",
+            "finer": [
+              "Lovesick",
+              "Aching",
+              "Bereft"
+            ],
+            "affect": [
+              "sadness",
+              "anticipation"
+            ]
+          },
+          {
+            "emotion": "Insecure",
+            "finer": [
+              "Doubting",
+              "Clingy",
+              "Unsure of being loved"
+            ],
+            "affect": [
+              "fear",
+              "sadness"
             ]
           }
         ]
       }
     }
   ],
-  "blends": [
+  "dyads": [
     {
-      "families": [
-        "Blue",
-        "Green"
-      ],
-      "names": [
-        "Gentle acceptance",
-        "Wistful peace"
-      ],
-      "glosses": {
-        "Gentle acceptance": "Letting a sorrow be, and finding some peace beside it.",
-        "Wistful peace": "Calm that still carries a trace of what was lost."
-      }
+      "a": "joy",
+      "b": "joy",
+      "gentle": "Serenity",
+      "gentle_gloss": "Calm, quiet happiness.",
+      "intense": "Ecstasy",
+      "intense_gloss": "Overflowing, almost unbearable happiness."
     },
     {
-      "families": [
-        "Blue",
-        "Indigo"
-      ],
-      "names": [
-        "Deep melancholy",
-        "Brooding"
-      ],
-      "glosses": {
-        "Deep melancholy": "Heavy, reflective sadness that settles in.",
-        "Brooding": "Turning dark thoughts over and over in quiet."
-      }
+      "a": "trust",
+      "b": "trust",
+      "gentle": "Acceptance",
+      "gentle_gloss": "Open, easy willingness to take things as they are.",
+      "intense": "Admiration",
+      "intense_gloss": "Deep trust joined with respect for someone."
     },
     {
-      "families": [
-        "Blue",
-        "Lime"
-      ],
-      "names": [
-        "Tentative hope",
-        "Healing"
-      ],
-      "glosses": {
-        "Tentative hope": "Cautious light after sadness, not yet trusting it.",
-        "Healing": "Pain easing as something new slowly grows."
-      }
+      "a": "fear",
+      "b": "fear",
+      "gentle": "Apprehension",
+      "gentle_gloss": "A low hum of worry about what might happen.",
+      "intense": "Terror",
+      "intense_gloss": "Overwhelming fear that floods everything."
     },
     {
-      "families": [
-        "Blue",
-        "Orange"
-      ],
-      "names": [
-        "Warm sorrow",
-        "Comforting grief"
-      ],
-      "glosses": {
-        "Warm sorrow": "Sadness softened by remembered comfort.",
-        "Comforting grief": "Mourning that feels held, even loved."
-      }
+      "a": "surprise",
+      "b": "surprise",
+      "gentle": "Bewilderment",
+      "gentle_gloss": "Thrown off balance, unsure what to make of things.",
+      "intense": "Amazement",
+      "intense_gloss": "Stunned by something beyond what you expected."
     },
     {
-      "families": [
-        "Blue",
-        "Pink"
-      ],
-      "names": [
-        "Tender sorrow",
-        "Compassion"
-      ],
-      "glosses": {
-        "Tender sorrow": "Sadness softened by care, grieving gently with someone or for them.",
-        "Compassion": "Feeling another’s pain and wanting to ease it."
-      }
+      "a": "sadness",
+      "b": "sadness",
+      "gentle": "Pensiveness",
+      "gentle_gloss": "Quiet, thoughtful sadness.",
+      "intense": "Grief",
+      "intense_gloss": "Deep sorrow over a loss."
     },
     {
-      "families": [
-        "Blue",
-        "Purple"
-      ],
-      "names": [
-        "Nostalgia",
-        "Homesickness"
-      ],
-      "glosses": {
-        "Nostalgia": "A warm ache for a time or place that is gone.",
-        "Homesickness": "Longing for the place or people where you belong."
-      }
+      "a": "disgust",
+      "b": "disgust",
+      "gentle": "Distaste",
+      "gentle_gloss": "A mild recoil from something unpleasant.",
+      "intense": "Loathing",
+      "intense_gloss": "Strong revulsion and rejection."
     },
     {
-      "families": [
-        "Blue",
-        "Red"
-      ],
-      "names": [
-        "Betrayal",
-        "Hurt anger"
-      ],
-      "glosses": {
-        "Betrayal": "Hurt and anger at trust broken by someone close.",
-        "Hurt anger": "Anger that is really pain wearing armour."
-      }
+      "a": "anger",
+      "b": "anger",
+      "gentle": "Annoyance",
+      "gentle_gloss": "Irritation that builds slowly.",
+      "intense": "Rage",
+      "intense_gloss": "Hot, overwhelming anger."
     },
     {
-      "families": [
-        "Blue",
-        "Teal"
-      ],
-      "names": [
-        "Quiet sorrow",
-        "Resigned calm"
-      ],
-      "glosses": {
-        "Quiet sorrow": "Sadness held still, without drama or tears.",
-        "Resigned calm": "Peace that comes from accepting what cannot be changed."
-      }
+      "a": "anticipation",
+      "b": "anticipation",
+      "gentle": "Interest",
+      "gentle_gloss": "Attention drawn toward what comes next.",
+      "intense": "Vigilance",
+      "intense_gloss": "Keen watchfulness, ready for what is coming."
     },
     {
-      "families": [
-        "Blue",
-        "Yellow"
-      ],
-      "names": [
-        "Bittersweet",
-        "Melancholy joy"
-      ],
-      "glosses": {
-        "Bittersweet": "Joy and loss in the same moment, neither cancelling the other.",
-        "Melancholy joy": "A gentle happiness shadowed by knowing it will pass."
-      }
+      "a": "joy",
+      "b": "trust",
+      "gentle": "Affection",
+      "gentle_gloss": "Warm fondness and ease with someone.",
+      "intense": "Love",
+      "intense_gloss": "Joy and trust together: deep care for another."
     },
     {
-      "families": [
-        "Green",
-        "Indigo"
-      ],
-      "names": [
-        "Uneasy calm",
-        "Wary stillness"
-      ],
-      "glosses": {
-        "Uneasy calm": "Stillness on the surface with unrest beneath.",
-        "Wary stillness": "Staying quiet and alert, waiting to see."
-      }
+      "a": "joy",
+      "b": "fear",
+      "gentle": "Nervous delight",
+      "gentle_gloss": "Pleasure laced with butterflies.",
+      "intense": "Thrill",
+      "intense_gloss": "Fear and joy fused into a rush."
     },
     {
-      "families": [
-        "Green",
-        "Lime"
-      ],
-      "names": [
-        "Renewal",
-        "Quiet growth"
-      ],
-      "glosses": {
-        "Renewal": "Feeling fresh and restored after a hard stretch.",
-        "Quiet growth": "Slow, steady change you feel more than see."
-      }
+      "a": "joy",
+      "b": "surprise",
+      "gentle": "Pleasant surprise",
+      "gentle_gloss": "Unexpected good news that lights you up.",
+      "intense": "Delight",
+      "intense_gloss": "Sudden, bright joy at something unexpected."
     },
     {
-      "families": [
-        "Green",
-        "Orange"
-      ],
-      "names": [
-        "Homely contentment",
-        "Settled warmth"
-      ],
-      "glosses": {
-        "Homely contentment": "Easy happiness in familiar, comfortable surroundings.",
-        "Settled warmth": "Feeling at home and quietly cared for."
-      }
+      "a": "joy",
+      "b": "sadness",
+      "gentle": "Wistful happiness",
+      "gentle_gloss": "Glad, with a soft ache underneath.",
+      "intense": "Bittersweetness",
+      "intense_gloss": "Joy and loss held in the same moment."
     },
     {
-      "families": [
-        "Green",
-        "Pink"
-      ],
-      "names": [
-        "Tender contentment",
-        "Feeling safe in love"
-      ],
-      "glosses": {
-        "Tender contentment": "Peaceful satisfaction, softened by affection.",
-        "Feeling safe in love": "Relaxing completely because you trust who is beside you."
-      }
+      "a": "joy",
+      "b": "disgust",
+      "gentle": "Dark humour",
+      "gentle_gloss": "Finding amusement in what is uncomfortable.",
+      "intense": "Morbid fascination",
+      "intense_gloss": "Drawn to what repels you, and enjoying it."
     },
     {
-      "families": [
-        "Green",
-        "Purple"
-      ],
-      "names": [
-        "Reverie",
-        "Soulful stillness"
-      ],
-      "glosses": {
-        "Reverie": "Pleasant, absorbed daydreaming.",
-        "Soulful stillness": "Deep quiet in which feeling and imagination move freely."
-      }
+      "a": "joy",
+      "b": "anger",
+      "gentle": "Satisfaction",
+      "gentle_gloss": "Pleasure in having stood your ground.",
+      "intense": "Pride",
+      "intense_gloss": "Joy in yourself, with a readiness to defend it."
     },
     {
-      "families": [
-        "Green",
-        "Red"
-      ],
-      "names": [
-        "Jealous rage",
-        "Resentment"
-      ],
-      "glosses": {
-        "Jealous rage": "Anger at someone who has what you want or fear losing.",
-        "Resentment": "Bitterness held against someone over a perceived unfairness."
-      }
+      "a": "joy",
+      "b": "anticipation",
+      "gentle": "Cheerful anticipation",
+      "gentle_gloss": "Looking forward to something good.",
+      "intense": "Optimism",
+      "intense_gloss": "Confident that good things are coming."
     },
     {
-      "families": [
-        "Green",
-        "Teal"
-      ],
-      "names": [
-        "Deep serenity",
-        "Equanimity"
-      ],
-      "glosses": {
-        "Deep serenity": "A still, clear peace that runs below the surface.",
-        "Equanimity": "Staying steady and balanced whatever happens."
-      }
+      "a": "trust",
+      "b": "fear",
+      "gentle": "Respectful caution",
+      "gentle_gloss": "Trusting, but careful not to overstep.",
+      "intense": "Reverence",
+      "intense_gloss": "Respect mixed with awe and humility."
     },
     {
-      "families": [
-        "Green",
-        "Yellow"
-      ],
-      "names": [
-        "Contentment",
-        "Gratitude"
-      ],
-      "glosses": {
-        "Contentment": "Quietly feeling that what you have is enough.",
-        "Gratitude": "Warm appreciation for something good you were given."
-      }
+      "a": "trust",
+      "b": "surprise",
+      "gentle": "Open-minded interest",
+      "gentle_gloss": "Willing to be pleasantly surprised.",
+      "intense": "Curiosity",
+      "intense_gloss": "Drawn to explore what is new and unfamiliar."
     },
     {
-      "families": [
-        "Indigo",
-        "Lime"
-      ],
-      "names": [
-        "Anxious curiosity",
-        "Apprehensive anticipation"
-      ],
-      "glosses": {
-        "Anxious curiosity": "Wanting to know, while fearing what you will find.",
-        "Apprehensive anticipation": "Looking ahead with interest and worry together."
-      }
+      "a": "trust",
+      "b": "sadness",
+      "gentle": "Tender sadness",
+      "gentle_gloss": "Sorrow shared with someone safe.",
+      "intense": "Poignancy",
+      "intense_gloss": "A sweet, piercing tenderness about what has passed."
     },
     {
-      "families": [
-        "Indigo",
-        "Orange"
-      ],
-      "names": [
-        "Nervous excitement",
-        "Stage fright"
-      ],
-      "glosses": {
-        "Nervous excitement": "Wanting something badly and feeling jittery about it.",
-        "Stage fright": "Dread before being watched, mixed with the urge to perform."
-      }
+      "a": "trust",
+      "b": "disgust",
+      "gentle": "Guarded trust",
+      "gentle_gloss": "Willing to rely on someone, but not fully.",
+      "intense": "Disillusionment",
+      "intense_gloss": "Trust broken by seeing the truth of someone."
     },
     {
-      "families": [
-        "Indigo",
-        "Pink"
-      ],
-      "names": [
-        "Tender fear",
-        "Protective worry"
-      ],
-      "glosses": {
-        "Tender fear": "Being afraid for someone or something you care about.",
-        "Protective worry": "Anxiety that comes from wanting to keep another safe."
-      }
+      "a": "trust",
+      "b": "anger",
+      "gentle": "Assertive confidence",
+      "gentle_gloss": "Calmly standing your ground.",
+      "intense": "Protective anger",
+      "intense_gloss": "Anger on behalf of someone you care for."
     },
     {
-      "families": [
-        "Indigo",
-        "Purple"
-      ],
-      "names": [
-        "Mystic awe",
-        "Haunted longing"
-      ],
-      "glosses": {
-        "Mystic awe": "Wonder at something vast, tinged with the unknown.",
-        "Haunted longing": "Yearning that lingers like a presence."
-      }
+      "a": "trust",
+      "b": "anticipation",
+      "gentle": "Hope",
+      "gentle_gloss": "Trusting that things can turn out well.",
+      "intense": "Faith",
+      "intense_gloss": "Steady confidence in what is to come."
     },
     {
-      "families": [
-        "Indigo",
-        "Red"
-      ],
-      "names": [
-        "Simmering dread",
-        "Apprehension"
-      ],
-      "glosses": {
-        "Simmering dread": "Slow-building fear with anger underneath.",
-        "Apprehension": "Uneasy anticipation of something that might go wrong."
-      }
+      "a": "fear",
+      "b": "surprise",
+      "gentle": "Startlement",
+      "gentle_gloss": "Jolted and momentarily unsettled.",
+      "intense": "Awe",
+      "intense_gloss": "Wonder with a trace of fear at something vast."
     },
     {
-      "families": [
-        "Indigo",
-        "Teal"
-      ],
-      "names": [
-        "Cold unease",
-        "Distant wariness"
-      ],
-      "glosses": {
-        "Cold unease": "A distant, chilly sense that something is wrong.",
-        "Distant wariness": "Keeping your guard up from a safe remove."
-      }
+      "a": "fear",
+      "b": "sadness",
+      "gentle": "Helplessness",
+      "gentle_gloss": "Feeling unable to change what is happening.",
+      "intense": "Despair",
+      "intense_gloss": "Fear and sorrow with no way out in sight."
     },
     {
-      "families": [
-        "Indigo",
-        "Yellow"
-      ],
-      "names": [
-        "Nervous hope",
-        "Anxious optimism"
-      ],
-      "glosses": {
-        "Nervous hope": "Wanting good news and bracing in case it does not come.",
-        "Anxious optimism": "Expecting things to go well while fretting they will not."
-      }
+      "a": "fear",
+      "b": "disgust",
+      "gentle": "Embarrassment",
+      "gentle_gloss": "Wanting to hide from being seen.",
+      "intense": "Shame",
+      "intense_gloss": "Feeling fundamentally flawed in others’ eyes."
     },
     {
-      "families": [
-        "Lime",
-        "Orange"
-      ],
-      "names": [
-        "Eager anticipation",
-        "Restless curiosity"
-      ],
-      "glosses": {
-        "Eager anticipation": "Impatient excitement for what is coming.",
-        "Restless curiosity": "A need to explore that will not let you sit still."
-      }
+      "a": "fear",
+      "b": "anger",
+      "gentle": "Defensiveness",
+      "gentle_gloss": "Bristling to protect yourself.",
+      "intense": "Cornered fury",
+      "intense_gloss": "Fear turned into fighting back."
     },
     {
-      "families": [
-        "Lime",
-        "Pink"
-      ],
-      "names": [
-        "Budding tenderness",
-        "New love"
-      ],
-      "glosses": {
-        "Budding tenderness": "Early, shy affection beginning to grow.",
-        "New love": "The fresh, giddy start of caring for someone."
-      }
+      "a": "fear",
+      "b": "anticipation",
+      "gentle": "Nervous anticipation",
+      "gentle_gloss": "Looking ahead with jitters.",
+      "intense": "Anxiety",
+      "intense_gloss": "Dreading what might come."
     },
     {
-      "families": [
-        "Lime",
-        "Purple"
-      ],
-      "names": [
-        "Creative wonder",
-        "Inspired curiosity"
-      ],
-      "glosses": {
-        "Creative wonder": "Awe that sparks the urge to make something.",
-        "Inspired curiosity": "Wanting to know more because something has lit you up."
-      }
+      "a": "surprise",
+      "b": "sadness",
+      "gentle": "Disappointment",
+      "gentle_gloss": "Hope let down by what actually happened.",
+      "intense": "Dismay",
+      "intense_gloss": "Shocked sadness at an unwelcome turn."
     },
     {
-      "families": [
-        "Lime",
-        "Red"
-      ],
-      "names": [
-        "Hungry ambition",
-        "Impatient eagerness"
-      ],
-      "glosses": {
-        "Hungry ambition": "A strong drive to achieve, with impatience to begin.",
-        "Impatient eagerness": "Wanting it now and finding the waiting hard."
-      }
+      "a": "surprise",
+      "b": "disgust",
+      "gentle": "Disbelief",
+      "gentle_gloss": "Unable to accept what you are seeing.",
+      "intense": "Aghast",
+      "intense_gloss": "Stunned and repelled at once."
     },
     {
-      "families": [
-        "Lime",
-        "Teal"
-      ],
-      "names": [
-        "Refreshed clarity",
-        "Cleansed relief"
-      ],
-      "glosses": {
-        "Refreshed clarity": "A clean, clear mind after a weight lifts.",
-        "Cleansed relief": "Feeling lighter after letting something go."
-      }
+      "a": "surprise",
+      "b": "anger",
+      "gentle": "Indignation",
+      "gentle_gloss": "Offended by something you did not expect.",
+      "intense": "Outrage",
+      "intense_gloss": "Shocked anger at something that feels wrong."
     },
     {
-      "families": [
-        "Lime",
-        "Yellow"
-      ],
-      "names": [
-        "Hopeful joy",
-        "Anticipation"
-      ],
-      "glosses": {
-        "Hopeful joy": "Gladness that looks ahead and expects good things.",
-        "Anticipation": "Eager waiting for something about to happen."
-      }
+      "a": "surprise",
+      "b": "anticipation",
+      "gentle": "Expectant surprise",
+      "gentle_gloss": "Alert, waiting for something unexpected.",
+      "intense": "Suspense",
+      "intense_gloss": "Tense waiting for what comes next."
     },
     {
-      "families": [
-        "Orange",
-        "Pink"
-      ],
-      "names": [
-        "Warm affection",
-        "Playful tenderness"
-      ],
-      "glosses": {
-        "Warm affection": "Friendly, glowing fondness.",
-        "Playful tenderness": "Fondness expressed through teasing and lightness."
-      }
+      "a": "sadness",
+      "b": "disgust",
+      "gentle": "Regret",
+      "gentle_gloss": "Wishing you had acted differently.",
+      "intense": "Remorse",
+      "intense_gloss": "Deep sorrow and self-reproach over what you did."
     },
     {
-      "families": [
-        "Orange",
-        "Purple"
-      ],
-      "names": [
-        "Wanderlust",
-        "Inspired restlessness"
-      ],
-      "glosses": {
-        "Wanderlust": "A strong pull toward travel and new places.",
-        "Inspired restlessness": "Creative energy that needs somewhere to go."
-      }
+      "a": "sadness",
+      "b": "anger",
+      "gentle": "Bitterness",
+      "gentle_gloss": "Sorrow soured into grudge.",
+      "intense": "Envy",
+      "intense_gloss": "Hurt and anger at what others have."
     },
     {
-      "families": [
-        "Orange",
-        "Red"
-      ],
-      "names": [
-        "Fiery excitement",
-        "Fierce drive"
-      ],
-      "glosses": {
-        "Fiery excitement": "Intense, hot enthusiasm.",
-        "Fierce drive": "Determination with real force behind it."
-      }
+      "a": "sadness",
+      "b": "anticipation",
+      "gentle": "Wistful anticipation",
+      "gentle_gloss": "Looking ahead with a touch of loss.",
+      "intense": "Longing",
+      "intense_gloss": "Sadness that reaches toward something not yet here."
     },
     {
-      "families": [
-        "Orange",
-        "Teal"
-      ],
-      "names": [
-        "Easygoing warmth",
-        "Sunny ease"
-      ],
-      "glosses": {
-        "Easygoing warmth": "Relaxed friendliness with no strain in it.",
-        "Sunny ease": "Light, carefree comfort."
-      }
+      "a": "disgust",
+      "b": "anger",
+      "gentle": "Disdain",
+      "gentle_gloss": "Looking down on something you reject.",
+      "intense": "Contempt",
+      "intense_gloss": "Anger and revulsion toward someone you see as beneath you."
     },
     {
-      "families": [
-        "Orange",
-        "Yellow"
-      ],
-      "names": [
-        "Exhilaration",
-        "Euphoria"
-      ],
-      "glosses": {
-        "Exhilaration": "A rush of excitement and delight.",
-        "Euphoria": "Intense, soaring happiness."
-      }
+      "a": "disgust",
+      "b": "anticipation",
+      "gentle": "Skepticism",
+      "gentle_gloss": "Doubting what is promised.",
+      "intense": "Cynicism",
+      "intense_gloss": "Expecting the worst of people and plans."
     },
     {
-      "families": [
-        "Pink",
-        "Purple"
-      ],
-      "names": [
-        "Yearning love",
-        "Romantic nostalgia"
-      ],
-      "glosses": {
-        "Yearning love": "Love that aches because the person is out of reach.",
-        "Romantic nostalgia": "Missing a love, or the idea of one, with sweetness."
-      }
+      "a": "anger",
+      "b": "anticipation",
+      "gentle": "Resolve",
+      "gentle_gloss": "Quiet determination with an edge.",
+      "intense": "Fierce determination",
+      "intense_gloss": "Anger turned into drive toward a goal."
+    }
+  ],
+  "overrides": [
+    {
+      "a": "Loving",
+      "b": "Dread",
+      "name": "Tender fear",
+      "description": "Being afraid for someone or something you love."
     },
     {
-      "families": [
-        "Pink",
-        "Red"
-      ],
-      "names": [
-        "Passionate love",
-        "Burning devotion"
-      ],
-      "glosses": {
-        "Passionate love": "Love with heat, intensity and devotion.",
-        "Burning devotion": "Total, ardent commitment to someone or something."
-      }
+      "a": "Calm",
+      "b": "Anxious",
+      "name": "Uneasy calm",
+      "description": "Stillness on the surface with unrest underneath."
     },
     {
-      "families": [
-        "Pink",
-        "Teal"
-      ],
-      "names": [
-        "Soft serenity",
-        "Gentle relief"
-      ],
-      "glosses": {
-        "Soft serenity": "Gentle, tender calm.",
-        "Gentle relief": "Quiet ease after worry lifts."
-      }
+      "a": "Grief",
+      "b": "Hopeful",
+      "name": "Hope within grief",
+      "description": "Holding on to a light while mourning."
     },
     {
-      "families": [
-        "Pink",
-        "Yellow"
-      ],
-      "names": [
-        "Tender joy",
-        "Adoration"
-      ],
-      "glosses": {
-        "Tender joy": "Happiness gentled by affection.",
-        "Adoration": "Deep delight in someone you love and admire."
-      }
+      "a": "Sad",
+      "b": "Hopeful",
+      "name": "Tentative hope",
+      "description": "Cautious light after sadness that does not yet trust itself."
     },
     {
-      "families": [
-        "Purple",
-        "Red"
-      ],
-      "names": [
-        "Humiliated fury",
-        "Burning shame"
-      ],
-      "glosses": {
-        "Humiliated fury": "Rage born from being shamed in front of others.",
-        "Burning shame": "Shame so hot it feels physical, with anger at yourself."
-      }
+      "a": "Lonely",
+      "b": "Longing",
+      "name": "Aching solitude",
+      "description": "Missing connection so much it hurts."
     },
     {
-      "families": [
-        "Purple",
-        "Teal"
-      ],
-      "names": [
-        "Dreamy detachment",
-        "Wistful distance"
-      ],
-      "glosses": {
-        "Dreamy detachment": "Floating slightly apart from the world, imagining.",
-        "Wistful distance": "Gentle longing felt from far away."
-      }
+      "a": "Angry",
+      "b": "Sad",
+      "name": "Hurt anger",
+      "description": "Anger that is really pain wearing armour."
     },
     {
-      "families": [
-        "Purple",
-        "Yellow"
-      ],
-      "names": [
-        "Whimsical joy",
-        "Imaginative delight"
-      ],
-      "glosses": {
-        "Whimsical joy": "Playful happiness with an imaginative streak.",
-        "Imaginative delight": "Pleasure in ideas, stories and what could be."
-      }
+      "a": "Excited",
+      "b": "Anxious",
+      "name": "Nervous excitement",
+      "description": "Wanting something badly and feeling jittery about it."
     },
     {
-      "families": [
-        "Red",
-        "Teal"
-      ],
-      "names": [
-        "Cold anger",
-        "Controlled fury"
-      ],
-      "glosses": {
-        "Cold anger": "Anger that is controlled, quiet and unforgiving.",
-        "Controlled fury": "Strong rage held tightly in check."
-      }
+      "a": "Proud",
+      "b": "Ashamed",
+      "name": "Conflicted pride",
+      "description": "Pride tangled up with shame about the same thing."
     },
     {
-      "families": [
-        "Red",
-        "Yellow"
-      ],
-      "names": [
-        "Defiant pride",
-        "Fierce joy"
-      ],
-      "glosses": {
-        "Defiant pride": "Standing tall against pressure to shrink.",
-        "Fierce joy": "Happiness with fire and force in it."
-      }
+      "a": "Joyful",
+      "b": "Anxious",
+      "name": "Nervous delight",
+      "description": "Pleasure laced with butterflies."
     },
     {
-      "families": [
-        "Teal",
-        "Yellow"
-      ],
-      "names": [
-        "Clear-eyed optimism",
-        "Calm joy"
-      ],
-      "glosses": {
-        "Clear-eyed optimism": "Hope that sees the situation as it is.",
-        "Calm joy": "Happiness without agitation, quietly full."
-      }
+      "a": "Joyful",
+      "b": "Sad",
+      "name": "Bittersweetness",
+      "description": "Joy and sadness at once, neither cancelling the other."
+    },
+    {
+      "a": "Sad",
+      "b": "Content",
+      "name": "Gentle acceptance",
+      "description": "Peace sitting alongside sorrow."
+    },
+    {
+      "a": "Nostalgic",
+      "b": "Content",
+      "name": "Fond remembering",
+      "description": "Warm gladness about a time that has passed."
+    },
+    {
+      "a": "Lonely",
+      "b": "Calm",
+      "name": "Peaceful solitude",
+      "description": "Being alone without minding it."
+    },
+    {
+      "a": "Angry",
+      "b": "Ashamed",
+      "name": "Defensive shame",
+      "description": "Anger flaring to cover a feeling of being found wanting."
+    },
+    {
+      "a": "Hopeful",
+      "b": "Anxious",
+      "name": "Nervous hope",
+      "description": "Wanting good news and bracing in case it does not come."
+    },
+    {
+      "a": "Proud",
+      "b": "Sad",
+      "name": "Bittersweet pride",
+      "description": "Pride tinged with loss."
+    },
+    {
+      "a": "Grief",
+      "b": "Loving",
+      "name": "Grieving love",
+      "description": "Love that has lost the person it was meant for."
+    },
+    {
+      "a": "Envious",
+      "b": "Loving",
+      "name": "Insecure love",
+      "description": "Caring deeply while fearing someone is slipping away."
+    },
+    {
+      "a": "Curious",
+      "b": "Anxious",
+      "name": "Anxious curiosity",
+      "description": "Wanting to know, while fearing what you will find."
+    },
+    {
+      "a": "Calm",
+      "b": "Sad",
+      "name": "Quiet sorrow",
+      "description": "Sadness held still, without drama or tears."
+    },
+    {
+      "a": "Angry",
+      "b": "Loving",
+      "name": "Frustrated love",
+      "description": "Caring for someone and being exasperated by them at once."
+    },
+    {
+      "a": "Longing",
+      "b": "Hopeful",
+      "name": "Wistful hope",
+      "description": "Hope that carries an ache for what is missing."
+    },
+    {
+      "a": "Joyful",
+      "b": "Nostalgic",
+      "name": "Fond joy",
+      "description": "Happiness warmed by remembering."
+    },
+    {
+      "a": "Anxious",
+      "b": "Tired",
+      "name": "Overwhelm",
+      "description": "Too much for too long, with no room left."
+    },
+    {
+      "a": "Shy",
+      "b": "Excited",
+      "name": "Giddy shyness",
+      "description": "Wanting to join in while feeling bashful."
+    },
+    {
+      "a": "Ashamed",
+      "b": "Sad",
+      "name": "Regret",
+      "description": "Sadness and self-blame over what you did or did not do."
+    },
+    {
+      "a": "Amused",
+      "b": "Sad",
+      "name": "Tearful laughter",
+      "description": "Humour and sadness in the same breath."
+    },
+    {
+      "a": "Nostalgic",
+      "b": "Sad",
+      "name": "Wistful ache",
+      "description": "Missing what was, gently."
+    },
+    {
+      "a": "Relieved",
+      "b": "Tired",
+      "name": "Exhausted relief",
+      "description": "Spent, but finally safe."
+    },
+    {
+      "a": "Embarrassed",
+      "b": "Amused",
+      "name": "Sheepish laughter",
+      "description": "Laughing at yourself, a little red-faced."
+    },
+    {
+      "a": "Compassionate",
+      "b": "Tired",
+      "name": "Compassion fatigue",
+      "description": "Caring worn thin by caring too much."
+    },
+    {
+      "a": "Grateful",
+      "b": "Sad",
+      "name": "Tender gratitude",
+      "description": "Thankful for what was, aching that it is over."
+    },
+    {
+      "a": "Heartbroken",
+      "b": "Relieved",
+      "name": "Painful relief",
+      "description": "The end of something hard, and the loss that comes with it."
+    },
+    {
+      "a": "Lonely",
+      "b": "Angry",
+      "name": "Lonely anger",
+      "description": "Anger hiding a need for company."
+    },
+    {
+      "a": "Confused",
+      "b": "Curious",
+      "name": "Intrigue",
+      "description": "Puzzled, and drawn to find out more."
+    },
+    {
+      "a": "Hopeful",
+      "b": "Tired",
+      "name": "Weary hope",
+      "description": "Hope kept going on very little."
+    },
+    {
+      "a": "Determined",
+      "b": "Tired",
+      "name": "Grit",
+      "description": "Carrying on when the energy has gone."
+    },
+    {
+      "a": "Angry",
+      "b": "Tired",
+      "name": "Frayed nerves",
+      "description": "Short-tempered because there is nothing left in reserve."
+    },
+    {
+      "a": "Guilty",
+      "b": "Relieved",
+      "name": "Guilty relief",
+      "description": "Glad it is over, and uneasy about being glad."
+    },
+    {
+      "a": "Jealous",
+      "b": "Loving",
+      "name": "Insecure love",
+      "description": "Caring deeply while fearing someone is slipping away."
+    },
+    {
+      "a": "Awed",
+      "b": "Grateful",
+      "name": "Humbled gratitude",
+      "description": "Thankful in the presence of something bigger than you."
+    },
+    {
+      "a": "Shy",
+      "b": "Loving",
+      "name": "Tender shyness",
+      "description": "Wanting to show love and not quite daring."
+    },
+    {
+      "a": "Playful",
+      "b": "Anxious",
+      "name": "Nervous laughter",
+      "description": "Laughter that covers the jitters."
+    },
+    {
+      "a": "Calm",
+      "b": "Excited",
+      "name": "Steady excitement",
+      "description": "Looking forward without losing your footing."
+    },
+    {
+      "a": "Bored",
+      "b": "Anxious",
+      "name": "Restless unease",
+      "description": "Nothing to do and nowhere to put the worry."
+    },
+    {
+      "a": "Heartsick",
+      "b": "Hopeful",
+      "name": "Hopeful heartache",
+      "description": "Aching for someone and still hoping."
+    },
+    {
+      "a": "Withdrawn",
+      "b": "Lonely",
+      "name": "Isolation",
+      "description": "Pulling away while wishing someone would come close."
+    },
+    {
+      "a": "Triumphant",
+      "b": "Sad",
+      "name": "Hollow victory",
+      "description": "Winning, and finding it does not fill the gap."
+    },
+    {
+      "a": "Proud",
+      "b": "Grateful",
+      "name": "Humble pride",
+      "description": "Pleased with yourself, and aware of who helped."
+    },
+    {
+      "a": "Vulnerable",
+      "b": "Trusting",
+      "name": "Open-hearted courage",
+      "description": "Letting yourself be seen."
+    },
+    {
+      "a": "Overjoyed",
+      "b": "Anxious",
+      "name": "Fearful joy",
+      "description": "Happiness so big it is frightening to lose."
+    },
+    {
+      "a": "Stoic",
+      "b": "Sad",
+      "name": "Dignified grief",
+      "description": "Holding sorrow steady and quiet."
     }
   ]
 }
