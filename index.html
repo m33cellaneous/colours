@@ -170,8 +170,9 @@ section.out{opacity:0}
 <div id="find" hidden><div class="panel"><h2>Find a feeling</h2><label>Type a feeling<input id="fq2" autocomplete="off" placeholder="e.g. furious, wistful, overwhelmed"></label><div id="fres"></div><button class="btn ghost" id="fclose">Close</button></div></div>
 <button class="mini" id="acc" style="position:fixed;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:15;opacity:.75;background:var(--card);color:var(--fg);font-size:12px;padding:6px 10px">Access code</button>
 <div id="admin" hidden><button class="mini" id="openRq">Review queue <span id="rqn"></span></button><select class="mini" id="asRole" aria-label="Viewing as"><option value="">Viewing as: myself</option><option value="trusted">Test: trusted contributor</option><option value="visitor">Test: visitor</option></select></div>
+<p id="ver" style="text-align:center;font-size:11px;color:var(--muted);opacity:.6;margin:28px 0 0">Build 2026-11-17b</p>
 </main>
-<script src="config.js"></script>
+<script src="config.js?v=20261117b"></script>
 <script>
 (async()=>{
 // ---- Connection to the optional server (see server/ and README). Without apiUrl the app runs fully offline. ----
@@ -369,14 +370,16 @@ $('ssend').onclick=async()=>{
 const noApi=!(window.CONFIG||{}).apiUrl,CFG=window.CONFIG||{};
 // Without a server, entries and flags go straight to your inbox through a form-to-email service (submitEndpoint).
 // Fields are sent labelled (kind, type, title, creator, text, url, families, tags, feeling), so each email arrives already sorted.
-// Second route when the browser cannot make the request itself (blocked or cross-site rules): a plain form post into a hidden frame.
-// The page cannot read the reply this way, so delivery is checked in the inbox.
+// Two ways to reach your inbox through a form-to-email service (set in config.js). Web3Forms is the default; other services work too.
+const isW3=()=>/web3forms/.test(CFG.submitEndpoint||'');
+const extras=subject=>isW3()?{access_key:CFG.submitKey,subject,from_name:'Emotion app'}:{access_key:CFG.submitKey||undefined,subject,_subject:subject,_template:'table',_captcha:'false',from_name:'Emotion app'};
+// Second route when the browser cannot make the request itself: a plain form post into a hidden frame (the reply cannot be read this way).
 function viaForm(subject,fields){
   try{
     const f=document.createElement('iframe');f.name='ce-sub';f.hidden=true;f.setAttribute('aria-hidden','true');
-    const fm=document.createElement('form');fm.method='POST';fm.action=CFG.submitEndpoint.replace('/ajax/','/');fm.target='ce-sub';fm.hidden=true;
-    const add=(k,v)=>{const x=document.createElement('input');x.type='hidden';x.name=k;x.value=String(v==null?'':v);fm.appendChild(x);};
-    add('_subject',subject);add('_captcha','false');add('_template','table');Object.keys(fields).forEach(k=>add(k,fields[k]));
+    const fm=document.createElement('form');fm.method='POST';fm.action=isW3()?CFG.submitEndpoint:CFG.submitEndpoint.replace('/ajax/','/');fm.target='ce-sub';fm.hidden=true;
+    const add=(k,v)=>{if(v===undefined)return;const x=document.createElement('input');x.type='hidden';x.name=k;x.value=String(v==null?'':v);fm.appendChild(x);};
+    Object.entries(extras(subject)).forEach(([k,v])=>add(k,v));Object.keys(fields).forEach(k=>add(k,fields[k]));
     document.body.appendChild(f);document.body.appendChild(fm);fm.submit();
     setTimeout(()=>{f.remove();fm.remove();},8000);return true;
   }catch(e){return false;}
@@ -384,7 +387,7 @@ function viaForm(subject,fields){
 async function send(subject,fields){
   if(!CFG.submitEndpoint){note('Suggestions and flags are not switched on in this test version yet.');return false;}
   try{
-    const r=await fetch(CFG.submitEndpoint,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(Object.assign({access_key:CFG.submitKey||undefined,subject,_subject:subject,_template:'table',_captcha:'false',from_name:'Emotion app'},fields))});
+    const r=await fetch(CFG.submitEndpoint,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(Object.assign(extras(subject),fields))});
     let j={};try{j=await r.json();}catch(e){}
     if(!r.ok||j.success===false||j.success==='false'){console.error('Submit failed',r.status,j);throw new Error(j.message||('the service answered '+r.status));}
     note('Thanks \u2014 sent.');return true;

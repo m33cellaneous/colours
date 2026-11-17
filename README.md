@@ -12,14 +12,13 @@ Upload `index.html`, `config.js`, `robots.txt` and the `data/` folder to any hos
 Local test: `python3 -m http.server 8000` in this folder, then open http://localhost:8000 (double-clicking index.html will not work).
 
 ### Suggestions and flags without the server
-Suggestions and flags are emailed straight to howarehue.app@gmail.com (no email app opens) through FormSubmit, set in `config.js` as `submitEndpoint`.
-1. **One-time activation:** the first submission makes FormSubmit email that address a confirmation link. Click it, and delivery starts. I could not test this live, so send one test suggestion yourself first.
-2. Each email arrives with labelled fields and a subject starting `[emotion-app suggestion]` or `[emotion-app flag]`:
-   kind, type (book, film, poem, other), title, creator, quote (up to 220 characters), why (up to 220), year, source_detail (page, scene or timestamp), families, tags, feeling.
-   Quote and reason are separate fields on purpose: the quote can be checked against its page, scene or year, and the reason is judged on whether it fits. A quote is only accepted with a year or a page/scene.
-   **If a submission says it can't be sent:** the message now shows the reason. "Needs its one-time activation" means the confirmation email to howarehue.app@gmail.com has not been clicked yet (check the inbox and spam). If the browser cannot make the request itself ("Failed to fetch"), the page sends the entry a second way, through a hidden form post, and says so; check the inbox to confirm it arrived. If nothing arrives, open the site from its web address (not a file on your computer) and try with ad or tracker blockers off. Any other message names what the service answered.
-   **Not sure why it fails?** Open `diagnose.html` on your site (for example `https://yourname.github.io/yourrepo/diagnose.html`) and press the button. It shows which step is blocked and sends one test message to the inbox.
-3. The address is visible to anyone who views the site's code, so it can attract spam. A hidden trap field in the form stops simple bots. If spam becomes a problem, switch to a service that hides the address (FormSubmit offers an alias; Web3Forms and Formspree use a key or form id instead) and change `submitEndpoint`.
+Suggestions and flags are emailed to the inbox registered with Web3Forms (no email app opens). The endpoint and access key are in `config.js`. The key is meant to be public: it only lets people send you messages.
+- Each email arrives with labelled fields (kind, type, title, creator, quote, why, year, source_detail, families, tags, feeling) and a subject starting `[emotion-app suggestion]` or `[emotion-app flag]`, so it is already sorted; a Gmail filter on those subjects can label them.
+- Quote and reason are separate fields on purpose: the quote can be checked against its page, scene or year, and the reason is judged on whether it fits. A quote is only accepted with a year or a page/scene.
+- A hidden trap field in the form stops simple bots. In your Web3Forms dashboard, look for options to restrict which sites may use the key, and for spam protection, and check the current free limits.
+- If the browser cannot make the request itself ("Failed to fetch"), the page sends the entry a second way, through a hidden form post, and says so; check the inbox to confirm it arrived.
+- Other services (Formspree, FormSubmit) also work: change `submitEndpoint` and `submitKey`.
+- The page shows a small "Build ..." stamp at the bottom, so you can tell which version is online.
 Good suggestions: add a row to `source/works.csv`, run `python3 build_data.py`, upload `data/works.json`.
 
 ### works.csv columns
