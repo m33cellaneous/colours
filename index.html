@@ -371,9 +371,16 @@ const noApi=!(window.CONFIG||{}).apiUrl,CFG=window.CONFIG||{};
 // Fields are sent labelled (kind, type, title, creator, text, url, families, tags, feeling), so each email arrives already sorted.
 async function send(subject,fields){
   if(!CFG.submitEndpoint){note('Suggestions and flags are not switched on in this test version yet.');return false;}
-  try{const r=await fetch(CFG.submitEndpoint,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(Object.assign({access_key:CFG.submitKey||undefined,subject,_subject:subject,_template:'table',_captcha:'false',from_name:'Emotion app'},fields))});
-    if(!r.ok)throw new Error(r.status);note('Thanks \u2014 sent.');return true;}
-  catch(e){note('Couldn\u2019t send just now. Please try again later.');return false;}
+  try{
+    const r=await fetch(CFG.submitEndpoint,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify(Object.assign({access_key:CFG.submitKey||undefined,subject,_subject:subject,_template:'table',_captcha:'false',from_name:'Emotion app'},fields))});
+    let j={};try{j=await r.json();}catch(e){}
+    if(!r.ok||j.success===false||j.success==='false'){console.error('Submit failed',r.status,j);throw new Error(j.message||('the service answered '+r.status));}
+    note('Thanks \u2014 sent.');return true;
+  }catch(e){
+    console.error('Submit error',e);const m=String((e&&e.message)||e);
+    note(/activat/i.test(m)?'Almost there: the inbox needs its one-time activation. Please try again once it is confirmed.':'Couldn\u2019t send just now ('+m.slice(0,70)+'). Please try again later.');
+    return false;
+  }
 }
 const flagSend=x=>send('[emotion-app flag] '+x.t,{kind:'flag',item:x.t,feeling:finalName});
 $('fq').onclick=noApi?()=>flagSend(cq):()=>toggleFlag(cq);$('fm').onclick=noApi?()=>flagSend(cm):()=>toggleFlag(cm);

@@ -17,6 +17,7 @@ Suggestions and flags are emailed straight to howarehue.app@gmail.com (no email 
 2. Each email arrives with labelled fields and a subject starting `[emotion-app suggestion]` or `[emotion-app flag]`:
    kind, type (book, film, poem, other), title, creator, quote (up to 220 characters), why (up to 220), year, source_detail (page, scene or timestamp), families, tags, feeling.
    Quote and reason are separate fields on purpose: the quote can be checked against its page, scene or year, and the reason is judged on whether it fits. A quote is only accepted with a year or a page/scene.
+   **If a submission says it can't be sent:** the message now shows the reason. "Needs its one-time activation" means the confirmation email to howarehue.app@gmail.com has not been clicked yet (check the inbox and spam). "Failed to fetch" means the browser could not reach the service: open the site from its web address, not from a file on your computer, and try with ad or tracker blockers off. Any other message names what the service answered.
 3. The address is visible to anyone who views the site's code, so it can attract spam. A hidden trap field in the form stops simple bots. If spam becomes a problem, switch to a service that hides the address (FormSubmit offers an alias; Web3Forms and Formspree use a key or form id instead) and change `submitEndpoint`.
 Good suggestions: add a row to `source/works.csv`, run `python3 build_data.py`, upload `data/works.json`.
 
