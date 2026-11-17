@@ -369,6 +369,18 @@ $('ssend').onclick=async()=>{
 const noApi=!(window.CONFIG||{}).apiUrl,CFG=window.CONFIG||{};
 // Without a server, entries and flags go straight to your inbox through a form-to-email service (submitEndpoint).
 // Fields are sent labelled (kind, type, title, creator, text, url, families, tags, feeling), so each email arrives already sorted.
+// Second route when the browser cannot make the request itself (blocked or cross-site rules): a plain form post into a hidden frame.
+// The page cannot read the reply this way, so delivery is checked in the inbox.
+function viaForm(subject,fields){
+  try{
+    const f=document.createElement('iframe');f.name='ce-sub';f.hidden=true;f.setAttribute('aria-hidden','true');
+    const fm=document.createElement('form');fm.method='POST';fm.action=CFG.submitEndpoint.replace('/ajax/','/');fm.target='ce-sub';fm.hidden=true;
+    const add=(k,v)=>{const x=document.createElement('input');x.type='hidden';x.name=k;x.value=String(v==null?'':v);fm.appendChild(x);};
+    add('_subject',subject);add('_captcha','false');add('_template','table');Object.keys(fields).forEach(k=>add(k,fields[k]));
+    document.body.appendChild(f);document.body.appendChild(fm);fm.submit();
+    setTimeout(()=>{f.remove();fm.remove();},8000);return true;
+  }catch(e){return false;}
+}
 async function send(subject,fields){
   if(!CFG.submitEndpoint){note('Suggestions and flags are not switched on in this test version yet.');return false;}
   try{
@@ -378,6 +390,7 @@ async function send(subject,fields){
     note('Thanks \u2014 sent.');return true;
   }catch(e){
     console.error('Submit error',e);const m=String((e&&e.message)||e);
+    if(!/activat/i.test(m)&&((e&&e.name==='TypeError')||/fetch|network/i.test(m))&&viaForm(subject,fields)){note('Thanks \u2014 sent. This page can\u2019t see the reply, so please check the inbox.');return true;}
     note(/activat/i.test(m)?'Almost there: the inbox needs its one-time activation. Please try again once it is confirmed.':'Couldn\u2019t send just now ('+m.slice(0,70)+'). Please try again later.');
     return false;
   }
