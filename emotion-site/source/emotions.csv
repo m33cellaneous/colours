@@ -1,0 +1,161 @@
+family,hue_start,hue_end,tier,emotion,finer_feelings,affect
+Red,345,15,light,Eager,Keen; Spirited; Fired up; Restless,anticipation;joy
+Red,345,15,light,Flushed,Embarrassed; Bashful; Excited; Warm,surprise;joy
+Red,345,15,light,Affectionate,Fond; Caring; Warm; Cuddly,trust;joy
+Red,345,15,light,Flirtatious,Teasing; Coy; Playful,joy;anticipation
+Red,345,15,light,Zealous,Ardent; Fervent; Keen,anticipation;joy
+Red,345,15,mid,Angry,Irritated; Furious; Resentful; Bitter; Indignant,anger
+Red,345,15,mid,Frustrated,Blocked; Impatient; Fed up; Exasperated; Stuck,anger;sadness
+Red,345,15,mid,Passionate,Intense; Driven; Fiery; Eager; Devoted,anticipation;joy
+Red,345,15,mid,Determined,Resolute; Bold; Courageous; Stubborn; Fierce,anticipation;anger
+Red,345,15,mid,Indignant,Offended; Affronted; Incensed,anger;surprise
+Red,345,15,mid,Fierce,Bold; Intense; Unyielding,anger;anticipation
+Red,345,15,deep,Rage,Seething; Vengeful; Wrathful; Explosive,anger
+Red,345,15,deep,Desire,Lust; Hunger; Obsession; Craving,anticipation;joy
+Red,345,15,deep,Resentment,Grudging; Bitter; Simmering; Hostile,anger;disgust
+Red,345,15,deep,Vengeful,Spiteful; Vindictive; Grudging,anger;disgust
+Red,345,15,deep,Craving,Hungry; Aching; Needing,anticipation;joy
+Orange,15,45,light,Cheerful,Sunny; Friendly; Bubbly; Chatty,joy
+Orange,15,45,light,Cosy,Snug; Homey; Warm; Comforted,trust;joy
+Orange,15,45,light,Welcoming,Open; Inviting; Kind; Generous,trust;joy
+Orange,15,45,light,Amused,Tickled; Entertained; Chuckling,joy;surprise
+Orange,15,45,light,Sociable,Chatty; Friendly; Outgoing,trust;joy
+Orange,15,45,mid,Excited,Thrilled; Pumped; Giddy; Anticipating; Buzzing,joy;anticipation
+Orange,15,45,mid,Energetic,Lively; Restless; Spirited; Active; Charged,joy;anticipation
+Orange,15,45,mid,Adventurous,Daring; Curious; Free; Spontaneous; Restless,anticipation;surprise
+Orange,15,45,mid,Warm,Welcoming; Friendly; Generous; Cosy; Sociable,trust;joy
+Orange,15,45,mid,Enthusiastic,Keen; Fired up; Lively,joy;anticipation
+Orange,15,45,mid,Confident,Assured; Bold; Self-assured,trust;joy
+Orange,15,45,deep,Ambitious,Driven; Hungry; Competitive; Striving,anticipation;joy
+Orange,15,45,deep,Agitated,Impatient; Fidgety; Unsettled; On edge,fear;anger
+Orange,15,45,deep,Nostalgic,Reminiscent; Sentimental; Fond of the past; Longing,sadness;joy
+Orange,15,45,deep,Restless,Itchy; Fidgety; Unsettled,anticipation;fear
+Orange,15,45,deep,Impatient,Chafing; Antsy; Short-fused,anticipation;anger
+Yellow,45,75,light,Gentle joy,Content; Sweet; Pleased; Amused,joy;trust
+Yellow,45,75,light,Hopeful,Expectant; Bright; Looking up; Eager,anticipation;trust
+Yellow,45,75,light,Innocent,Naive; Playful; Carefree; Trusting,trust;joy
+Yellow,45,75,light,Pleased,Glad; Satisfied; Happy,joy;trust
+Yellow,45,75,light,Giddy,Silly; Lightheaded; Bubbly,joy;surprise
+Yellow,45,75,mid,Joyful,Delighted; Elated; Grateful; Amused; Radiant,joy
+Yellow,45,75,mid,Optimistic,Hopeful; Confident; Encouraged; Bright; Upbeat,anticipation;joy
+Yellow,45,75,mid,Playful,Silly; Mischievous; Light-hearted; Carefree; Cheeky,joy;surprise
+Yellow,45,75,mid,Proud,Accomplished; Satisfied; Worthy; Triumphant; Fulfilled,joy;anger
+Yellow,45,75,mid,Grateful,Thankful; Appreciative; Blessed,joy;trust
+Yellow,45,75,mid,Inspired,Uplifted; Moved; Sparked,joy;surprise
+Yellow,45,75,deep,Triumphant,Victorious; Proud; Glorious; Radiant,joy;anger
+Yellow,45,75,deep,Wary,Cautious; Suspicious; On edge; Doubtful,fear;anticipation
+Yellow,45,75,deep,Ecstatic,Euphoric; Overjoyed; Exalted; Blissful,joy;surprise
+Yellow,45,75,deep,Overjoyed,Elated; Thrilled; Jubilant,joy;surprise
+Yellow,45,75,deep,Jittery,On edge; Frazzled; Nervy,fear;anticipation
+Lime,75,105,light,Refreshed,Cleansed; Invigorated; Crisp; Awake,joy;trust
+Lime,75,105,light,Budding,Tentative; New; Beginning; Sprouting,anticipation;trust
+Lime,75,105,light,Curious,Wondering; Playful; Open; Exploring,surprise;anticipation
+Lime,75,105,light,Open-minded,Receptive; Flexible; Willing,trust;surprise
+Lime,75,105,light,Awake,Alert; Alive; Present,joy;anticipation
+Lime,75,105,mid,Fresh,Renewed; Awake; Revived; Clean; Open,joy;anticipation
+Lime,75,105,mid,Curious,Intrigued; Inquisitive; Wondering; Absorbed; Interested,surprise;anticipation
+Lime,75,105,mid,Growing,Learning; Changing; Developing; Emerging; Stretching,anticipation;trust
+Lime,75,105,mid,Hopeful,Expectant; Looking forward; Trusting; Aspiring; Patient,anticipation;trust
+Lime,75,105,mid,Inquisitive,Questioning; Probing; Wondering,surprise;anticipation
+Lime,75,105,mid,Restored,Renewed; Revived; Recovered,joy;trust
+Lime,75,105,deep,Envious,Jealous; Covetous; Begrudging; Sour,sadness;anger
+Lime,75,105,deep,Queasy,Sick; Uneasy; Disgusted; Nauseated,disgust;fear
+Lime,75,105,deep,Stagnant,Stuck; Dull; Weary; Unchanging,sadness;disgust
+Lime,75,105,deep,Jealous,Covetous; Suspicious; Possessive,anger;fear
+Lime,75,105,deep,Bored,Flat; Uninterested; Weary,sadness;disgust
+Green,105,165,light,Soothed,Eased; Relieved; Comforted; Soft,trust;joy
+Green,105,165,light,Gentle,Mild; Kind; Tender; Patient,trust
+Green,105,165,light,Harmonious,In tune; Balanced; Connected; Agreeable,trust;joy
+Green,105,165,light,Relieved,Eased; Unburdened; Exhaling,joy;trust
+Green,105,165,light,Mellow,Easygoing; Laid-back; Soft,trust;joy
+Green,105,165,mid,Calm,Peaceful; Relaxed; Settled; Easy; Still,trust
+Green,105,165,mid,Content,Comfortable; Satisfied; At home; Secure; Fine,joy;trust
+Green,105,165,mid,Balanced,Grounded; Steady; Centred; Even; Stable,trust
+Green,105,165,mid,Envious,Jealous; Covetous; Wanting; Comparing; Resentful,sadness;anger
+Green,105,165,mid,Satisfied,Fulfilled; Sated; Pleased,joy;trust
+Green,105,165,mid,Secure,Safe; Protected; Anchored,trust
+Green,105,165,deep,Grounded,Rooted; Secure; Steady; Stable,trust
+Green,105,165,deep,Possessive,Greedy; Territorial; Guarded; Clinging,anger;fear
+Green,105,165,deep,Resilient,Enduring; Sturdy; Persistent; Strong,trust;anger
+Green,105,165,deep,Stubborn,Dug in; Immovable; Obstinate,anger;trust
+Green,105,165,deep,Protective,Guarding; Watchful; Shielding,trust;anger
+Teal,165,205,light,Airy,Light; Free; Weightless; Open,joy
+Teal,165,205,light,Clear-headed,Sharp; Calm; Focused; Rational,trust
+Teal,165,205,light,Breezy,Easy; Cool; Relaxed; Unbothered,joy;trust
+Teal,165,205,light,Lucid,Sharp; Aware; Clear-eyed,trust;surprise
+Teal,165,205,light,Cool,Collected; Unruffled; Chilled,trust
+Teal,165,205,mid,Serene,Tranquil; Soothed; Quiet; Gentle; Floating,trust;joy
+Teal,165,205,mid,Clear,Focused; Lucid; Sharp; Certain; Open-minded,trust
+Teal,165,205,mid,Refreshed,Cleansed; Relieved; Lighter; Restored; Released,joy;trust
+Teal,165,205,mid,Detached,Distant; Numb; Aloof; Neutral; Disconnected,sadness;disgust
+Teal,165,205,mid,Focused,Absorbed; Locked in; Attentive,anticipation;trust
+Teal,165,205,mid,Numb,Blank; Flat; Muted,sadness;disgust
+Teal,165,205,deep,Composed,Poised; Controlled; Cool; Dignified,trust
+Teal,165,205,deep,Introspective,Inward; Searching; Private; Quiet,sadness;anticipation
+Teal,165,205,deep,Aloof,Remote; Cold; Reserved; Detached,disgust;fear
+Teal,165,205,deep,Withdrawn,Closed off; Distant; Reserved,sadness;fear
+Teal,165,205,deep,Stoic,Unflinching; Enduring; Impassive,trust
+Blue,205,255,light,Peaceful,Tranquil; Calm; Easy; Restful,trust;joy
+Blue,205,255,light,Optimistic,Dreaming; Open; Trusting; Hopeful,anticipation;joy
+Blue,205,255,light,Wistful,Pensive; Soft sadness; Longing; Gentle,sadness;joy
+Blue,205,255,light,Sympathetic,Caring; Understanding; Compassionate,trust;sadness
+Blue,205,255,light,Restful,Easy; Slowed; Quiet,trust
+Blue,205,255,mid,Sad,Down; Heartbroken; Grieving; Disappointed; Hurt,sadness
+Blue,205,255,mid,Lonely,Isolated; Left out; Missing someone; Empty; Forgotten,sadness;fear
+Blue,205,255,mid,Trusting,Safe; Loyal; Reassured; Faithful; Supported,trust
+Blue,205,255,mid,Tired,Drained; Weary; Sleepy; Burnt out; Heavy,sadness
+Blue,205,255,mid,Disappointed,Let down; Deflated; Crestfallen,sadness;surprise
+Blue,205,255,mid,Homesick,Missing; Yearning; Displaced,sadness;anticipation
+Blue,205,255,deep,Grief,Mourning; Loss; Despair; Anguish,sadness
+Blue,205,255,deep,Melancholy,Gloomy; Brooding; Low; Heavy,sadness
+Blue,205,255,deep,Loyal,Devoted; Steadfast; Dutiful; Dependable,trust
+Blue,205,255,deep,Heartbroken,Devastated; Crushed; Shattered,sadness
+Blue,205,255,deep,Hopeless,Defeated; Resigned; Empty,sadness;fear
+Indigo,255,285,light,Contemplative,Pondering; Musing; Open; Quiet,anticipation;trust
+Indigo,255,285,light,Intuitive,Sensing; Perceptive; Insightful; Attuned,trust;surprise
+Indigo,255,285,light,Unsure,Uncertain; Tentative; Fragile; Hesitant,fear;surprise
+Indigo,255,285,light,Pensive,Thoughtful; Musing; Mulling,sadness;anticipation
+Indigo,255,285,light,Wondering,Marvelling; Questioning; Open,surprise;trust
+Indigo,255,285,mid,Reflective,Thoughtful; Introspective; Pensive; Wistful; Meditative,anticipation;sadness
+Indigo,255,285,mid,Anxious,Worried; Nervous; Uneasy; Overwhelmed; Dread,fear;anticipation
+Indigo,255,285,mid,Mysterious,Uncertain; Intrigued; Hidden; Guarded; Unknown,surprise;fear
+Indigo,255,285,mid,Spiritual,Connected; Awed; Reverent; Transcendent; Humble,trust;surprise
+Indigo,255,285,mid,Confused,Muddled; Puzzled; Adrift,surprise;fear
+Indigo,255,285,mid,Vulnerable,Exposed; Open; Raw,fear;trust
+Indigo,255,285,deep,Dread,Foreboding; Terror; Doom; Panic,fear
+Indigo,255,285,deep,Solitary,Alone; Withdrawn; Isolated; Brooding,sadness;fear
+Indigo,255,285,deep,Awed,Humbled; Overwhelmed; Reverent; Small,surprise;fear
+Indigo,255,285,deep,Terrified,Petrified; Panicked; Frozen,fear
+Indigo,255,285,deep,Haunted,Preoccupied; Shadowed; Tormented,fear;sadness
+Purple,285,325,light,Whimsical,Fanciful; Dreamy; Playful; Quirky,joy;surprise
+Purple,285,325,light,Sentimental,Fond; Wistful; Touched; Longing,trust;sadness
+Purple,285,325,light,Imaginative,Inventive; Visionary; Open; Curious,surprise;joy
+Purple,285,325,light,Enchanted,Spellbound; Charmed; Taken,joy;surprise
+Purple,285,325,light,Entranced,Absorbed; Rapt; Captivated,surprise;joy
+Purple,285,325,mid,Creative,Inspired; Imaginative; Expressive; Original; Visionary,joy;anticipation
+Purple,285,325,mid,Longing,Yearning; Nostalgic; Homesick; Craving; Aching,sadness;anticipation
+Purple,285,325,mid,Dreamy,Wistful; Drifting; Romantic; Whimsical; Far away,joy;surprise
+Purple,285,325,mid,Ashamed,Embarrassed; Guilty; Self-conscious; Humiliated; Regretful,fear;disgust
+Purple,285,325,mid,Awkward,Self-conscious; Flustered; Out of place,fear;disgust
+Purple,285,325,mid,Embarrassed,Mortified; Red-faced; Exposed,fear;disgust
+Purple,285,325,deep,Regal,Dignified; Powerful; Commanding; Proud,joy;trust
+Purple,285,325,deep,Obsessive,Fixated; Consumed; Intense; Driven,anticipation;anger
+Purple,285,325,deep,Mournful,Aching; Sorrowful; Yearning; Haunted,sadness
+Purple,285,325,deep,Humiliated,Degraded; Shamed; Belittled,fear;anger
+Purple,285,325,deep,Guilty,Remorseful; Culpable; Sorry,sadness;fear
+Pink,325,345,light,Sweet,Gentle; Innocent; Kind; Cute,joy;trust
+Pink,325,345,light,Nurtured,Cared for; Safe; Soothed; Cherished,trust;joy
+Pink,325,345,light,Shy,Bashful; Timid; Reserved; Modest,fear;trust
+Pink,325,345,light,Fond,Warm; Endeared; Charmed,trust;joy
+Pink,325,345,light,Charmed,Delighted; Taken; Won over,joy;trust
+Pink,325,345,mid,Loving,Affectionate; Adoring; Caring; Devoted; Close,trust;joy
+Pink,325,345,mid,Tender,Gentle; Soft; Protective; Compassionate; Moved,trust;joy
+Pink,325,345,mid,Shy,Bashful; Timid; Reserved; Flustered; Modest,fear;trust
+Pink,325,345,mid,Hopeful romance,Infatuated; Smitten; Flirty; Butterflies; Crush,anticipation;joy
+Pink,325,345,mid,Compassionate,Caring; Kind; Moved,trust;sadness
+Pink,325,345,mid,Romantic,Dreamy; Swept up; Wooing,joy;anticipation
+Pink,325,345,deep,Passionate,Adoring; Ardent; Infatuated; Smitten,anticipation;joy
+Pink,325,345,deep,Pining,Craving; Aching; Heartsick; Yearning,sadness;anticipation
+Pink,325,345,deep,Possessive love,Insecure; Clingy; Anxious; Jealous,trust;fear
+Pink,325,345,deep,Heartsick,Lovesick; Aching; Bereft,sadness;anticipation
+Pink,325,345,deep,Insecure,Doubting; Clingy; Unsure of being loved,fear;sadness

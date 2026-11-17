@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Connection check</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:520px;margin:24px auto;padding:0 16px;line-height:1.5}
+li{margin:10px 0}.ok{color:#1a7f37}.bad{color:#b42318}code{background:#eee;padding:1px 5px;border-radius:4px}
+button{font:inherit;padding:10px 16px;border-radius:10px;border:0;background:#333;color:#fff;cursor:pointer}
+@media (prefers-color-scheme:dark){body{background:#171513;color:#f2eee9}code{background:#333}}
+</style>
+</head>
+<body>
+<h1>Connection check</h1>
+<p>Press the button. It sends one test message to the suggestion inbox, so one email may arrive. Then send me the three lines below.</p>
+<button id="go">Run the check</button>
+<ol id="out"></ol>
+<p id="verdict"></p>
+<script>
+const EP='https://formsubmit.co/ajax/howarehue.app@gmail.com';
+const out=document.getElementById('out'),verdict=document.getElementById('verdict');
+const line=(ok,t)=>{const li=document.createElement('li');li.className=ok?'ok':'bad';li.textContent=(ok?'OK: ':'FAILED: ')+t;out.appendChild(li);};
+document.getElementById('go').onclick=async()=>{
+  out.innerHTML='';verdict.textContent='';let general=false,reach=false,post=false,detail='';
+  try{const r=await fetch('https://api.github.com/zen');general=r.ok;line(general,'1. Browser can make a cross-site request at all (GitHub test), answer '+r.status);}
+  catch(e){line(false,'1. Browser cannot make cross-site requests here ('+e.message+')');}
+  try{await fetch('https://formsubmit.co/',{mode:'no-cors'});reach=true;line(true,'2. formsubmit.co can be reached');}
+  catch(e){line(false,'2. formsubmit.co cannot be reached ('+e.message+')');}
+  try{
+    const r=await fetch(EP,{method:'POST',headers:{'content-type':'application/json',accept:'application/json'},body:JSON.stringify({_subject:'[emotion-app] connection test',_captcha:'false',message:'Test from diagnose.html'})});
+    let j={};try{j=await r.json();}catch(e){}
+    post=true;detail=r.status+' '+JSON.stringify(j).slice(0,160);line(r.ok,'3. Test message: the service answered '+detail);
+  }catch(e){line(false,'3. Test message could not be sent ('+e.message+')');}
+  verdict.textContent=!general?'Your browser or network is blocking cross-site requests (a blocker, privacy setting or network rule). Try another browser or phone data.'
+    :!reach?'formsubmit.co is blocked on this browser or network (blocker or network rule). Try with blockers off, or another device.'
+    :!post?'formsubmit.co is reachable but does not accept requests from this page. The service needs changing (I can switch to another one).'
+    :'The request got through. If the answer in line 3 mentions activation, click the confirmation link in the inbox.';
+};
+</script>
+</body>
+</html>
