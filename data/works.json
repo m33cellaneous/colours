@@ -10,7 +10,9 @@
     "url": "https://www.poetryfoundation.org/poems/45477",
     "source_detail": "",
     "families": [],
-    "feelings": [],
+    "feelings": [
+      "random"
+    ],
     "cores": [
       "joy",
       "trust",
@@ -71,13 +73,13 @@
   {
     "id": "quote-hope-is-the-thing-with-feathers",
     "type": "quote",
-    "title": "mily Dickinson",
-    "creator": "Emily Dickinso",
+    "title": "The Poems of Emily Dickinson",
+    "creator": "Emily Dickinson",
     "year": "",
     "text": "Hope is the thing with feathers.",
     "note": "",
     "url": "https://www.poetryfoundation.org/poems/42889/hope-is-the-thing-with-feathers-314",
-    "source_detail": "",
+    "source_detail": "“Hope” is the thing with feathers",
     "families": [
       "Yellow",
       "Lime",
@@ -146,13 +148,13 @@
   {
     "id": "quote-after-great-pain-a-formal-feeling-comes",
     "type": "quote",
-    "title": "mily Dickinson",
-    "creator": "Emily Dickinso",
+    "title": "The Poems of Emily Dickinson",
+    "creator": "Emily Dickinson",
     "year": "",
     "text": "After great pain, a formal feeling comes.",
     "note": "",
     "url": "https://www.poetryfoundation.org/poems/47651",
-    "source_detail": "",
+    "source_detail": "After great pain, a formal feeling comes",
     "families": [
       "Blue",
       "Teal"
@@ -186,7 +188,8 @@
     ],
     "feelings": [
       "nostalg",
-      "reflect"
+      "reflect",
+      "random"
     ],
     "cores": [
       "sadness",
@@ -334,7 +337,8 @@
     "feelings": [
       "resilien",
       "sorrow",
-      "heavy"
+      "heavy",
+      "random"
     ],
     "cores": [
       "sadness",
@@ -372,7 +376,7 @@
     "id": "film-inside-out-2015",
     "type": "film",
     "title": "Inside Out",
-    "creator": "",
+    "creator": "Pete Docter",
     "year": "2015",
     "text": "",
     "note": "A Pixar film in which Joy, Sadness and other feelings share one mind. It argues that sadness has a job to do, and that feelings blend rather than take turns.",
@@ -387,7 +391,7 @@
     "id": "film-lost-in-translation-2003",
     "type": "film",
     "title": "Lost in Translation",
-    "creator": "",
+    "creator": "Sofia Coppola",
     "year": "2003",
     "text": "",
     "note": "Two lonely strangers in Tokyo form a brief, unlabelled bond. A quiet film about jet-lagged disconnection and unexpected tenderness.",
@@ -413,7 +417,7 @@
     "id": "film-in-the-mood-for-love-2000",
     "type": "film",
     "title": "In the Mood for Love",
-    "creator": "",
+    "creator": "Wong Kar-wai",
     "year": "2000",
     "text": "",
     "note": "Hong Kong in the 1960s: two neighbours are drawn together by what their spouses are doing. Restraint and longing, told through glances and music.",
@@ -440,7 +444,7 @@
     "id": "film-spirited-away-2001",
     "type": "film",
     "title": "Spirited Away",
-    "creator": "",
+    "creator": "Hayao Miyazaki",
     "year": "2001",
     "text": "",
     "note": "Miyazaki’s story of a girl who must find courage and her own name in a spirit bathhouse. Wonder, fear and a nostalgia for childhood, all at once.",
@@ -466,7 +470,7 @@
     "id": "film-eternal-sunshine-of-the-spotless-mind-20",
     "type": "film",
     "title": "Eternal Sunshine of the Spotless Mind",
-    "creator": "",
+    "creator": "Michel Gondry",
     "year": "2004",
     "text": "",
     "note": "A couple erase each other from memory. It asks whether the pain is worth losing the love that came with it.",
@@ -493,7 +497,7 @@
     "id": "film-amelie-2001",
     "type": "film",
     "title": "Amélie",
-    "creator": "",
+    "creator": "Jean-Pierre Jeunet",
     "year": "2001",
     "text": "",
     "note": "A shy woman in Paris quietly arranges small joys for strangers, and slowly learns to risk her own happiness.",
@@ -518,7 +522,7 @@
     "id": "film-the-grand-budapest-hotel-2014",
     "type": "film",
     "title": "The Grand Budapest Hotel",
-    "creator": "",
+    "creator": "Wes Anderson",
     "year": "2014",
     "text": "",
     "note": "Nostalgia for a vanished world, told as stories inside stories. Comedy with loss running underneath.",
@@ -543,7 +547,7 @@
     "id": "film-wall-e-2008",
     "type": "film",
     "title": "Wall-E",
-    "creator": "",
+    "creator": "Andrew Stanton",
     "year": "2008",
     "text": "",
     "note": "A lonely robot tends an abandoned Earth. Almost wordless, tender and hopeful.",
@@ -569,7 +573,7 @@
     "id": "film-moonlight-2016",
     "type": "film",
     "title": "Moonlight",
-    "creator": "",
+    "creator": "Barry Jenkins",
     "year": "2016",
     "text": "",
     "note": "Three chapters in one man’s life, growing up in Miami. Shyness, identity and tenderness, mostly unspoken.",
@@ -596,7 +600,7 @@
     "id": "film-whiplash-2014",
     "type": "film",
     "title": "Whiplash",
-    "creator": "",
+    "creator": "Damien Chazelle",
     "year": "2014",
     "text": "",
     "note": "A young drummer and a brutal teacher. Ambition tipping into obsession, and what it costs.",
@@ -622,7 +626,7 @@
     "id": "film-paddington-2-2017",
     "type": "film",
     "title": "Paddington 2",
-    "creator": "",
+    "creator": "Paul King",
     "year": "2017",
     "text": "",
     "note": "A kind bear is wrongly jailed and wins people over anyway. Warmth and gratitude as a form of strength.",
@@ -649,7 +653,7 @@
     "id": "film-arrival-2016",
     "type": "film",
     "title": "Arrival",
-    "creator": "",
+    "creator": "Denis Villeneuve",
     "year": "2016",
     "text": "",
     "note": "A linguist tries to talk with visitors from elsewhere. A story about grief, time, and loving someone knowing you will lose them.",
@@ -1001,7 +1005,8 @@
     ],
     "feelings": [
       "joy",
-      "delight"
+      "delight",
+      "random"
     ],
     "cores": [
       "joy",
@@ -1025,7 +1030,8 @@
     ],
     "feelings": [
       "anxious",
-      "reflect"
+      "reflect",
+      "random"
     ],
     "cores": [
       "fear",
@@ -1219,7 +1225,8 @@
     ],
     "feelings": [
       "awe",
-      "wonder"
+      "wonder",
+      "random"
     ],
     "cores": [
       "surprise",

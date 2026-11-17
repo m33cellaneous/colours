@@ -49,6 +49,8 @@ tr:last-child td{border-bottom:0}
 #s3,#s4,#s5{text-align:center}#s4{position:relative}
 #find{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;justify-content:center;z-index:20}#find:not([hidden]){animation:fi .3s ease backwards}
 #fres{margin:4px 0 12px}#fres p{text-align:left;color:var(--muted);font-size:14px;margin:6px 0}.row.hl{background:var(--tint)}
+.mini.quiet{border:0;padding:0;font-size:11px;color:var(--muted);background:none;text-decoration:underline;opacity:.85}
+#xs{font-size:13px}#xs em{font-style:italic}#xmb{display:block;font-size:13px;margin-bottom:6px}
 textarea{width:100%;min-height:70px;font:inherit;padding:11px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--fg);margin:4px 0 14px;text-align:left}
 .pl{display:block;text-align:left;font-weight:600;font-size:15px;margin-top:6px}
 .rng{display:block;margin:6px 0 14px;text-align:left}.rng input{width:100%;accent-color:var(--acc)}
@@ -137,8 +139,8 @@ section.out{opacity:0}
   <div class="big" id="final" hidden></div>
   <div id="extras" hidden>
     
-    <div class="layer"><small id="xql">A line to sit with</small><span class="ics"><button class="ico" id="fq" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="aq" title="Suggest a line or book" aria-label="Suggest a line or book"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><i id="xq"></i><span id="xs"></span><div class="acts"><a class="mini" id="qlink" target="_blank" rel="noopener">Read the source ↗</a></div><div class="cons" id="qc"></div></div>
-    <div class="layer"><small id="xml">A film or book in this mood</small><span class="ics"><button class="ico" id="fm" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="am" title="Suggest a film" aria-label="Suggest a film"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><b id="xf"></b><p id="fnote" hidden></p><div class="acts"><button class="mini" id="fwhy">Read more</button></div><div class="cons" id="mc"></div></div>
+    <div class="layer"><small id="xql">A line to sit with</small><span class="ics"><button class="ico" id="fq" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="aq" title="Suggest a line or book" aria-label="Suggest a line or book"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><i id="xq"></i><span id="xs"></span><div class="acts"><a class="mini quiet" id="qlink" target="_blank" rel="noopener">Read the source ↗</a><button class="mini quiet" id="qrand" hidden>Another random line</button></div><div class="cons" id="qc"></div></div>
+    <div class="layer"><small id="xml">A film or book in this mood</small><span class="ics"><button class="ico" id="fm" title="I don’t think this fits" aria-label="Flag this match"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h11l-2 4 2 4H5"/></svg><i></i></button><button class="ico" id="am" title="Suggest a film" aria-label="Suggest a film"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button></span><b id="xf"></b><span class="by" id="xmb"></span><p id="fnote" hidden></p><div class="acts"><button class="mini quiet" id="fwhy">Read more</button></div><div class="cons" id="mc"></div></div>
     <button class="btn" id="toJournal">Journal about this</button>
   </div>
 </section>
@@ -226,8 +228,8 @@ function blendNames(a,b){
 }
 const Q=[],M=[],FD={},QU={};
 WJ.forEach(w=>{const n=(w.feelings||[]).concat(w.default_for_layered?[' + ']:[]),c=w.cores||[],who=w.creator||'',lab=w.title+(w.year?' ('+w.year+')':'');
-  if(w.text&&w.type!=='word'){Q.push({t:w.text,s:(who?who+', ':'')+w.title,f:w.families,n,c,d:!!w.default_for_layered,sd:w.source_detail||''});if(w.url)QU[w.text]=w.url;}
-  if((w.type==='film'||w.type==='book')&&w.note){M.push({t:lab,f:w.families,n,c,kind:w.type,by:who});FD[lab]=w.note;}});
+  if(w.text&&w.type!=='word'){Q.push({t:w.text,by:who,ti:w.title,s:(who?who+', ':'')+w.title,f:w.families,n,c,d:!!w.default_for_layered,sd:w.source_detail||''});if(w.url)QU[w.text]=w.url;}
+  if((w.type==='film'||w.type==='book')&&w.note){M.push({t:lab,ti:w.title,yr:w.year||'',f:w.families,n,c,kind:w.type,by:who});FD[lab]=w.note;}});
 // Hue families: [start°, end°, name, {emotion: [finer feelings]}]
 
 // Light (inner, pale) and deep (outer, dark) tiers per family; the original lists are the true-colour middle.
@@ -333,8 +335,8 @@ async function toggleFlag(x){
 function mergeComm(){
   Q.length=NQ;M.length=NM;
   comm.filter(c=>(c.status||'approved')==='approved').forEach(c=>{const f=c.fams||[],n=c.tags||[],key='c:'+c.id,q=c.quote||c.text||'',w=c.why||'',lab=c.title+(c.year?' ('+c.year+')':'');
-    if(q)Q.push({t:q,s:(c.creator?c.creator+', ':'')+c.title,f,n,c:[],key});
-    if(w&&(c.type==='film'||c.type==='book'))M.push({t:lab,f,n,c:[],key,note:w,kind:c.type,by:c.creator||''});});
+    if(q)Q.push({t:q,by:c.creator||'',ti:c.title,s:(c.creator?c.creator+', ':'')+c.title,f,n,c:[],key});
+    if(w&&(c.type==='film'||c.type==='book'))M.push({t:lab,ti:c.title,yr:c.year||'',f,n,c:[],key,note:w,kind:c.type,by:c.creator||''});});
 }
 async function initDb(){
   if(!(window.claude&&claude.use))return;
@@ -402,15 +404,15 @@ $('openRq').onclick=()=>{renderRq();show('s6');};$('back6').onclick=()=>show('s1
 $('asRole').onchange=e=>{asRole=e.target.value||null;updAdmin();note(asRole?'Testing as: '+e.target.selectedOptions[0].text.replace('Test: ',''):'Back to your own role.');};
 initDb();
 const NS='http://www.w3.org/2000/svg';
-const sim=(a,b)=>a.f.filter(x=>b.f.includes(x)).length*2+a.n.filter(k=>b.n.some(j=>j.includes(k)||k.includes(j))).length*3;
+const sim=(a,b)=>(a.c||[]).filter(x=>(b.c||[]).includes(x)).length*3+a.f.filter(x=>b.f.includes(x)).length*2+a.n.filter(k=>b.n.some(j=>j.includes(k)||k.includes(j))).length*3;
 const sh=s=>s.length>20?s.slice(0,19)+'…':s;
-const qlab=x=>sh(x.s.includes(',')?x.s.slice(x.s.indexOf(',')+2):x.t.split(' ').slice(0,3).join(' ')+'…');
+const qlab=x=>{const a=x.by||'';if(!a)return sh(x.ti||x.t.split(' ').slice(0,3).join(' ')+'\u2026');return sh(a.length>14?a.split(' ').slice(-1)[0]:a);};
 const mlab=x=>sh(x.t.replace(/ \(\d{4}\)$/,''));
 // A big dot (current choice) joined by lines to smaller dots (nearest neighbours); tapping one makes it the new big dot.
 function cons(el,items,cur,pick,lab){
   el.innerHTML='';if(items.length<2)return;
   const P=[[84,62],[256,62],[66,104],[274,104],[170,130]];
-  const nb=items.filter(x=>x!==cur).map((x,i)=>({x,i,s:sim(cur,x)})).sort((a,b)=>b.s-a.s||a.i-b.i).slice(0,5).map(o=>o.x);
+  const nb=items.filter(x=>x!==cur).map((x,i)=>({x,i,s:sim(cur,x)})).filter(o=>o.s>0).sort((a,b)=>b.s-a.s||a.i-b.i).slice(0,5).map(o=>o.x);
   const svg=document.createElementNS(NS,'svg');svg.setAttribute('viewBox','0 0 340 154');
   const mk=(p,t,a)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);p.appendChild(e);return e;};
   const gid='g'+el.id,gr=mk(mk(svg,'defs',{}),'radialGradient',{id:gid});[[0,1],[.5,.85],[1,0]].forEach(s=>{const st=mk(gr,'stop',{offset:s[0]});st.style.stopColor='var(--acc)';st.style.stopOpacity=s[1];});
@@ -427,7 +429,7 @@ function cons(el,items,cur,pick,lab){
 async function aiNames(){
   if(!(window.claude&&claude.use))return;
   let sm=null;try{sm=await claude.use('sample');}catch(e){}
-  if(!sm)return;
+  if(!sm){$('cx').hidden=false;return;}
   const st=$('aiState');st.hidden=false;st.textContent='Finding names that fit…';
   const tn={light:'pale and soft',mid:'true colour',deep:'deep and heavy'};
   const d=layers.map((l,i)=>'Layer '+(i+1)+': '+l.emo+' ('+l.fam+' family, '+(tn[l.tone]||'true colour')+(l.words.length?'; finer feelings: '+l.words.join(', '):'')+')').join(' | ');
@@ -437,24 +439,26 @@ async function aiNames(){
     a.slice(0,6).forEach(x=>{if(!x||!x.name)return;const b=document.createElement('button'),n=document.createElement('b'),s=document.createElement('span');
       b.className='sug';n.textContent=x.name;s.textContent=x.gloss||'';b.appendChild(n);b.appendChild(s);b.onclick=()=>finish(x.name,x.gloss);box.appendChild(b);});$('cx').hidden=box.children.length>0;
     st.hidden=true;
-  }catch(e){st.hidden=true;}
+  }catch(e){st.hidden=true;$('cx').hidden=false;}
 }
 // Links to the texts (public-domain sources); lines without one fall back to a web search.
 
 
 
 
-function showQ(){const q=cq;$('xq').textContent='“'+q.t+'”';$('xql').textContent=qph?'A placeholder line \u2014 we\u2019re still collecting lines for this feeling':'A line to sit with';$('xs').textContent=q.s+(q.sd?' ('+q.sd+')':'');const u=q.u||QU[q.t];$('qlink').href=u||sl(q.s+' full text');$('qlink').textContent=u?'Read the source ↗':'Find the source ↗';cons($('qc'),qph?[]:QF,q,x=>{cq=x;showQ();},qlab);updFlags();}
+function showQ(){const q=cq;$('xq').textContent='“'+q.t+'”';$('qrand').hidden=!qph;$('xql').textContent=qph?'A random line \u2014 we\u2019re still collecting lines for this feeling':'A line to sit with';const xs=$('xs');xs.textContent='';if(q.by||q.ti){if(q.by)xs.appendChild(document.createTextNode(q.by+(q.ti?', ':'')));if(q.ti){const em=document.createElement('em');em.textContent=q.ti;xs.appendChild(em);}}else xs.textContent=q.s;const u=q.u||QU[q.t];$('qlink').href=u||sl(q.s+' full text');$('qlink').textContent=u?'Read the source ↗':'Find the source ↗';cons($('qc'),qph?[]:Q,q,x=>{cq=x;showQ();},qlab);updFlags();}
 function showM(){const m=cm;
-  if(!m){$('xml').textContent='A film or book in this mood';$('xf').textContent='We don\u2019t have one for this feeling yet.';$('fnote').textContent='Know a film or book that fits? Tap + to suggest it.';$('fnote').hidden=false;$('fwhy').hidden=true;$('fm').hidden=true;$('mc').innerHTML='';return;}
+  if(!m){$('xml').textContent='A film or book in this mood';$('xf').textContent='We don\u2019t have one for this feeling yet.';$('xmb').textContent='';$('fnote').textContent='Know a film or book that fits? Tap + to suggest it.';$('fnote').hidden=false;$('fwhy').hidden=true;$('fm').hidden=true;$('mc').innerHTML='';return;}
   $('fwhy').hidden=false;$('fm').hidden=false;$('xml').textContent=m.kind==='book'?'A book in this mood':'A film in this mood';
-  $('xf').textContent=m.t+(m.by?' \u2014 '+m.by:'');$('fnote').textContent=FD[m.t]||m.note||'';$('fnote').hidden=true;cons($('mc'),MF,m,x=>{cm=x;showM();},mlab);updFlags();}
+  $('xf').textContent=m.ti||m.t;$('xmb').textContent=[m.by,m.yr].filter(Boolean).join(', ');$('fnote').textContent=FD[m.t]||m.note||'';$('fnote').hidden=true;$('fwhy').textContent='Read more';cons($('mc'),M,m,x=>{cm=x;showM();},mlab);updFlags();}
 
 
-$('fwhy').onclick=()=>{$('fnote').hidden=!$('fnote').hidden;};
+$('qrand').onclick=()=>{const prev=cq;let n=rnd(),k=0;while(n===prev&&k++<6)n=rnd();cq=n||cq;showQ();};
+$('fwhy').onclick=()=>{$('fnote').hidden=!$('fnote').hidden;$('fwhy').textContent=$('fnote').hidden?'Read more':'Read less';};
 let QF=[],MF=[],qph=false;
+const rnd=()=>{const p=Q.filter(x=>x.n.includes('random'));return p[Math.floor(Math.random()*p.length)];};
 function renderExtras(name){
-  QF=rank(Q,name);MF=rank(M,name);qph=!QF.length;cq=QF[0]||Q.find(x=>x.d)||Q[0];cm=MF[0]||null;showQ();showM();
+  QF=rank(Q,name);MF=rank(M,name);qph=!QF.length;cq=QF[0]||rnd()||Q.find(x=>x.d)||Q[0];cm=MF[0]||null;showQ();showM();
   
   
   $('extras').hidden=false;
@@ -509,7 +513,7 @@ $('refine').onclick=()=>{
   const s=new Set();
   for(let i=0;i<layers.length;i++)for(let j=i+1;j<layers.length;j++){const a=layers[i],b=layers[j];
     blendNames(a,b).forEach(x=>s.add(x));}
-  const c=$('cx');c.hidden=false;c.innerHTML='';
+  const c=$('cx');c.hidden=!!(window.claude&&claude.use);c.innerHTML='';
   (()=>{const nm=[...s].slice(0,6);if(!nm.length)nm.push(layers.map(l=>l.emo).join(' + '));return nm;})().forEach(x=>{const b=document.createElement('button');if(GL[x]){b.className='sug';const n=document.createElement('b'),g=document.createElement('span');n.textContent=x;g.textContent=GL[x];b.appendChild(n);b.appendChild(g);b.onclick=()=>finish(x,GL[x]);}else{b.className='chip';b.textContent=x;b.onclick=()=>finish(x);}c.appendChild(b);});
   $('final').hidden=true;$('extras').hidden=true;$('pick').hidden=false;$('again').hidden=true;$('so4').hidden=true;$('own').value='';$('ai').innerHTML='';$('aiState').hidden=true;$('cxh').hidden=true;show('s4');aiNames();
 };
@@ -530,6 +534,7 @@ function openFind(){$('fq2').value='';$('fres').innerHTML='';$('find').hidden=fa
 $('fclose').onclick=()=>{$('find').hidden=true;};
 $('fq2').oninput=()=>{
   const q=$('fq2').value.trim().toLowerCase(),box=$('fres');box.innerHTML='';if(!q)return;
+  if(q==='submit'){$('find').hidden=true;openSub('film');return;}
   const line=(it,sub)=>{const b=document.createElement('button');b.className='row';b.innerHTML='<b></b><span></span>';b.children[0].textContent=it.word;b.children[1].textContent=sub;b.onclick=()=>goTo(it);box.appendChild(b);};
   const info=m=>{const p=document.createElement('p');p.textContent=m;box.appendChild(p);};
   const seen=new Set(),hit=ALL.filter(x=>x.word.toLowerCase().includes(q)).filter(x=>{const k=x.word+x.emo;if(seen.has(k))return false;seen.add(k);return true;}).slice(0,8);

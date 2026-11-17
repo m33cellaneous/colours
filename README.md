@@ -21,7 +21,7 @@ Suggestions and flags are emailed straight to howarehue.app@gmail.com (no email 
 Good suggestions: add a row to `source/works.csv`, run `python3 build_data.py`, upload `data/works.json`.
 
 ### works.csv columns
-`type` is book, film, poem or other (quote and word also work). `text` is the line, `note` is why it fits, `source_detail` is the page, scene or timestamp, `cores` are the core feelings it carries (joy, trust, fear, surprise, sadness, disgust, anger, anticipation), first one being the main one. A work is shown only if its main core feeling matches the mood the person built, so rows without `cores` only appear when a `feelings` keyword matches.
+`type` is book, film, poem or other (quote and word also work). `text` is the line, `note` is why it fits, `source_detail` is the page, scene or timestamp, `cores` are the core feelings it carries (joy, trust, fear, surprise, sadness, disgust, anger, anticipation), first one being the main one. Add `random` to a line's `feelings` to put it in the random pool: when no line fits a mood, one is picked from that pool (with an "Another random line" link) instead of a fixed placeholder. A work is shown only if its main core feeling matches the mood the person built, so rows without `cores` only appear when a `feelings` keyword matches.
 
 ## Where the content comes from
 Written by me from general knowledge, not checked against the original papers, so treat it as an informed starting point:
